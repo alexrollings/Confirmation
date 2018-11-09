@@ -78,8 +78,8 @@
 \begin{abstract}
 \noindent
 \\
-  The decay $B^{\pm} \rightarrow D^{*}\pi^{\pm}$, where $D^{*} \rightarrow [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$, is studied using 3.3 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb experiment. This combines 2011, 2012 and 2015 data taken at center-of-mass energies of 7 TeV, 8 TeV and 13 TeV, respectively. The techniques for discriminating
-  against combinatorial backgrounds are described and the physics backgrounds are identified. Using a preliminary optimisation, the number of events is reported and an extrapolation of event yields to the modes sensitive to $\phi_3$ is made. 
+  % The decay $B^{\pm} \rightarrow D^{*}\pi^{\pm}$, where $D^{*} \rightarrow [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$, is studied using 3.3 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb experiment. This combines 2011, 2012 and 2015 data taken at center-of-mass energies of 7 TeV, 8 TeV and 13 TeV, respectively. The techniques for discriminating
+  % against combinatorial backgrounds are described and the physics backgrounds are identified. Using a preliminary optimisation, the number of events is reported and an extrapolation of event yields to the modes sensitive to $\phi_3$ is made. 
 \end{abstract}
 \vfill
 \end{titlepage}
@@ -119,7 +119,7 @@ measurement.
   \label{fig:CKMGlobalFit}
   \vspace{-10pt}
 \end{figure}
-\noindent A significant contribution to this effort comes from studying tree-level processes of the type $B^{\pm}\rightarrow D^{0(*)}K^{\pm (*)}$~\cite{B2DKD2hh, DalitzRun1, DalitzRun2, B2DKstD2hh, B2DstKD2hh}. The ADS~\cite{ADSRef} and GLW~\cite{GLWRef} methods can be employed to gain access to $\phi_3$, the relative weak phase between the $b\rightarrow c\overbar{u}s$ and $b\rightarrow u\overbar{c}s$ transitions, as can be seen in the Feynman diagrams displayed in Fig.~\ref{fig:B2DstarKstar}. This report will study $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays, where the neutral D$^{*}$ meson represents $D^{*0}$ or $\overbar{D}^{*0}$ and is reconstructed as either $D\pi^{0}$ or $D\gamma$. 
+\noindent A significant contribution to this effort comes from studying tree-level processes of the type $B^{\pm}\rightarrow D^{0(*)}K^{\pm (*)}$~\cite{B2DKD2hh, DalitzRun1, DalitzRun2, B2DKstD2hh, B2DstKD2hh}. The ADS~\cite{ADSRef} and GLW~\cite{GLWRef} methods can be employed to gain access to $\phi_3$, the relative weak phase between the $b\rightarrow c\overbar{u}s$ and $b\rightarrow u\overbar{c}s$ transitions, as can be seen in the Feynman diagrams displayed in Fig.~\ref{fig:B2DstarKstar}. This report will study fully reconstructed $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays, where the neutral D$^{*}$ meson represents $D^{*0}$ or $\overbar{D}^{*0}$ and is reconstructed as either $D\pi^{0}$ or $D\gamma$. 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/B2DstarKstar}
@@ -140,7 +140,7 @@ measurement.
 \noindent as was first shown in~\cite{ADSDstar}. Here, $r_B=\frac{|A(B^{-}\rightarrow \overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow {D}^{*0}K^-)|}$ and $\delta_{B}$ is the relative strong phase between the 2 $B$ decays.
  
 The CP eigenvalue of the $D^*$ state is given by the product $\lambda_{D^*}=\lambda_D\times \lambda_{\pi^0\text{/}\gamma} \times(-1)^l$. In the case of the strong $D^*$ decay via $\pi^0$ emission, $\lambda_{\pi^0}=-1$ and $l=1$ therefore $\lambda_{D^*}=\lambda_D$ and $D^*_{\pm}\rightarrow D_{\pm}\pi^0$. Where as, for $\gamma$ emission, $\lambda_{\gamma}=+1$ and $l=1$ therefore $\lambda_{D^*}=-\lambda_D$ and $D^*_{\pm}\rightarrow D_{\mp}\gamma$. This introduces a
-  strong phase shift of $\pi$ between the two neutral $D$ mesons produced in the decay $B^-\rightarrow \tilde{D}^*K^-$, as can be seen by equations~\eqref{DTildePi0} and~\eqref{DTildeGamma}, which are the equivalent of Eq.~\eqref{DstTilde} for the $D$ meson produced in $\tilde{D}^*\rightarrow D\pi^0$ and $\tilde{D}^*\rightarrow D\gamma$, respectively.
+  strong phase shift of $\pi$ between the two neutral $D$ mesons produced in the decay $B^-\rightarrow \tilde{D}^*K^-$, as can be seen by equations~\eqref{eq:DTildePi0} and~\eqref{eq:DTildeGamma}, which are the equivalent of Eq.~\eqref{eq:DstTilde} for the $D$ meson produced in $\tilde{D}^*\rightarrow D\pi^0$ and $\tilde{D}^*\rightarrow D\gamma$, respectively.
   \begin{equation}
     \tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0
     \label{eq:DTildePi0}
@@ -202,6 +202,7 @@ When applying GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in the CP
 		\Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\gamma)\propto r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
     \label{eq:DecayRateADSSUPgamma}
   \end{equation}
+\\
 \noindent The SUP mode is known as the ADS mode. $r_{D} \sim r_{B}$ therefore the ADS mode possesses particularly high sensitivity to $\phi_3$ as the moduli of the interfering amplitudes are of comparible size. In the usual ADS analysis~\cite{ADSRef}, two independent equations are obtained with three unknowns, $r_B$, $\delta_B$ and $\phi_3$ ($r_{D}$ is known from $D$ decays). Performing the same method using the intermediate $D^*$ results in four independent equations~\cite{ADSDstar}. This enhanced ADS method therefore has the potential to measure $\phi_3$ alone.
 
 \section{\normalsize CP Observables}
@@ -255,13 +256,12 @@ Simply counting events of $B^{+}$ and $B^{-}$ decays, to the final states of int
 		R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp \phi_{3})}
     \label{eq:RPlusMinusGamma}
   \end{equation}
-
-
-PREVIOUS MEASUREMENTS
+\\
+\noindent GLW analyses of $B\rightarrow D^{*}K$ decays have been successfully studied by the Belle~\cite{BelleGLW}, BaBar~\cite{BaBarGLW} and LHCb~\cite{PartReco} collaborations. The latter was performed recently using a partially reconstructed analysis, where the neutral was not included in the final state. In 2014, the BaBar experiment attempted the ADS analysis, but in the absence of significant signals set the upper limit $r_B<0.21$ ($90\%$ C.L.) \cite{BaBarADS}. No results have yet been published on the ADS mode from the LHCb collaboration. 
 
 \section{Neutral Particle Reconstruction at the LHCb Detector} \label{detector}
-\section{MVA Training} \label{MVA}
 \section{Selections} \label{selections}
+\section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
 
 \end{document}
