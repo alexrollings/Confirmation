@@ -1,0 +1,267 @@
+\documentclass[oneside,12pt]{article} 
+
+\usepackage[margin=2.5cm]{geometry} 
+\usepackage{sidecap}
+\usepackage{fullpage}
+\geometry{a4paper}
+\usepackage[final]{graphicx}
+\usepackage{url}
+\usepackage{amsmath, amssymb}
+\usepackage{amsfonts}
+\usepackage[mathscr]{euscript}
+\usepackage{mathtools}
+\usepackage{bbold}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{sidecap}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage[rflt]{floatflt}
+\usepackage{titlesec}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{accents}
+\usepackage[sorting=none]{biblatex}
+% \usepackage[backend=biber, bibencoding=utf8, style=authoryear, citestyle=authoryear]{biblatex}
+\bibliography{Bibliography}
+% \usepackage[square, comma, sort&compress]{natbib}
+% \usepackage{bibentry}
+
+\titleformat{\section}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+
+% \graphicspath{{/Users/alexandrarollings/Analysis/Confirmation/latex/figures/}}
+
+% \renewcommand{\refname}{References}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand\brabar{\scalebox{.3}{(}\raisebox{-1.7pt}{$-$}\scalebox{.3}{)}}
+\newcommand\brobor{\smash[b]{\raisebox{0.6\height}{\scalebox{0.5}{\tiny(}}{\mkern-1.5mu\scriptstyle-\mkern-1.5mu}\raisebox{0.6\height}{\scalebox{0.5}{\tiny)}}}}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}     % Horizontal rule
+
+\makeatletter                            % Title
+\def\printtitle{%                       
+  {\centering \@title\par}}
+\makeatother                                    
+
+\makeatletter                            % Author
+\def\printauthor{%                    
+  {\centering \large \@author}}                
+\makeatother                
+
+\title{
+      \LARGE \textbf{Study of $B^{\pm} \rightarrow D^{*}K^{\pm}$ decays in the interest of obtaining a direct measuring of $\phi_3$} \\
+		}
+
+\author{
+		Alexandra Rollings\\	
+		Supervisor: Dr M. John\\	
+}
+
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty} 
+\begin{flushright}
+\normalsize {Confirmation Report} 	% Subtitle
+\\ \normalsize \today			% Todays date
+\end{flushright}
+\HRule{0.5pt} \\						% Upper rule
+[2.0cm]
+\printtitle 
+\vspace{75pt}
+\printauthor
+\vfill
+\begin{abstract}
+\noindent
+\\
+  The decay $B^{\pm} \rightarrow D^{*}\pi^{\pm}$, where $D^{*} \rightarrow [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$, is studied using 3.3 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb experiment. This combines 2011, 2012 and 2015 data taken at center-of-mass energies of 7 TeV, 8 TeV and 13 TeV, respectively. The techniques for discriminating
+  against combinatorial backgrounds are described and the physics backgrounds are identified. Using a preliminary optimisation, the number of events is reported and an extrapolation of event yields to the modes sensitive to $\phi_3$ is made. 
+\end{abstract}
+\vfill
+\end{titlepage}
+\setcounter{page}{1}
+\section{\normalsize Introduction}
+% The Standard Model (SM) of particle physics is a quantum field theory which describes the electromagnetic, strong and weak interactions, and classifies all known elementary particles. Work over the last century has developed this successful theory, and many aspects of it have been validated by particle physics experiments around the world, a substantial contribution of which has been made by the CERN experiment in Geneva. However, the SM does fall short in a number of aspects, one
+% of which being its failure to describe the matter-antimatter asymmentry we see in the observable Universe.  
+Quantities of matter and antimatter should have been equally created by the Big Bang, but the observable Universe is almost entirely matter dominated~\cite{UniAsymmetry}. It is therefore postulated that baryogenesis, the process that produced baryon assymmetry, occurred in the early Universe. Three Sakharaov conditions are required for this to be possible: I) baryon number violation, II) C and CP violation, III) deviation from thermail equilibrium~\cite{Sakharov}. The Standard Model (SM) of particle physics, the quantum field
+theory describing three of the four fundamental forces, allows for CP violating processes, but the level at which these processes occur would need to be several orders of magnitude larger to account for the observable assymmetry. This suggest that New Physics,
+beyond the SM, is needed to fully describe the asymmetry. The LHCb experiment at CERN has been designed in order to test CP violation in decays of $B$ mesons, and this report will describe an ongoing measurement of a SM parameter that can help to quantify this. \\ 
+\\
+DESCRIPTION OF REPORT STRUCTURE.
+\section{\normalsize Theoretical Background}
+In the SM, the charged-current, weak interactions of quarks are described by the SM Lagrangian term given in Eq.~\eqref{eq:CCLagrangian}.
+\begin{equation}
+  L_{CC}=-\frac{g}{\sqrt{2}}\overbar{q}_{Li}\gamma^{\mu}W_{\mu}^{+}(V_{CKM})_{ij}q_{Lj} + h.c.
+  \label{eq:CCLagrangian}
+\end{equation}
+\noindent Here, $W_{\mu}^{+}$ is the W-boson field, which couples to the left-handed quark triplets, $\overbar{q}_{L}^{i}$ and $q_{L}^{j}$, where $i,j=1,2,3$ are the generation numbers, and $V_{CKM}$ are elements of the $3\times 3$ Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{CKMTheory}. These elements are coupling constants quantifying the strength of iter- and intra-generational mixing, and so can be represented by complex numbers with arbitrary phases.
+
+For a $3\times 3$ unitary matrix, $3^2=9$ real parameters must be specified. Our ability to absorb one phase into each quark field, but inability to observe an overall common phase, removes $5$ of these parameters. $4$ degrees of freedom therefore remain: $3$ amplitudes and $1$ complex phase. It is the presence of this single irreducible phase that results in CP violation in this sector.
+
+Verifying the unitarity of the CKM matrix is an important test of the SM~\cite{CKMTheory}. This requirement can be summarised by $\sum_{k=1}^{3}V_{ik}V^{\dagger}_{kj}=V_{ik}V^*_{jk}=\delta_{ij}$. Of particular interest is the condition $V_{ud}V^{*}_{ub}+V_{cd}V^{*}_{cb}+V_{td}V^{*}_{tb}=0$, which forms the \emph{Unitarity Triangle}
+  (UT) in the complex plane. The geometry of the UT allows all lengths and angles to be accessed experimentally, and thus it can be over-constrained, and used as a probe of new physics in precision measurements of the quark-mixing parameters. 
+
+The angles in this triangle, $\phi_1$, $\phi_2$ and $\phi_3$, can be accessed experimentally via the study of $B$ meson decays. For many years, the least well known angle was $\phi_3=arg(-V_{ud}V^{*}_{ub}/V_{cd}V^{*}_{cb}$) (more commonly referred to as $\gamma$), but recently its precision has overtaken that of $\phi_2$. $\phi_3$ can be thought of as the Standard Candle of the UT, as it can be accessed via tree-level decays of $B$ mesons to a variety of $D$ final states. New Physics (NP)
+processes would only enter at higher orders, therefore $\phi_3$ can be measured with very low theoretical uncertainty, $\mathcal{O} \sim 10^{-7}$. The current best World estimate
+using a combination of direct measurements is $\phi_3=(72.1^{+5.4}_{-5.8})$\degree~\cite{website:CKMFitter}.
+
+It is also possible to constrain $\phi_3$ indirectly, by excluding direct measurements and performing global fits to the CKM triangle, as is shown in Fig.~\ref{fig:CKMGlobalFit}. The current best indirect measurement is $\phi_3=(65.33^{+0.96}_{-2.54})$\degree~\cite{website:CKMFitter}. The difference between the values of the direct and indirect measurements is of great interest to flavour physicists in the current climate. Over the past few years, flavour anomolies have appeared in
+measurements of $\mathcal{B} (B^{0}_{s}\rightarrow \phi \rightarrow \mu \mu)$~\cite{B2phimumu}, $\mathcal{B} (B^{0}\rightarrow K^{*}\rightarrow \mu \mu)$~\cite{B2Kstmumu}, $R_{K}$~\cite{Rk}, $R_{K^{*0}}$~\cite{Rkst} and $R_{D^{*-}}$~\cite{RDst}, though none have yet reached the significance level to justify a discovery. These anomolies, and the contention in the measurements of $\phi_3$, could be explained by the presence of new, heavy particles entering interactions at loop-level. It is therefore hugely motivated to perform direct measurements to reduce the uncertainy on $\phi_{3}$ to a comparible size to that of the indirect
+measurement.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/CKMGlobalFit}
+  \caption{\small{Diagram to show current measurements of the Unitarity Triangle. The black line represents the fit obtained by CKM fitter.}}
+  \label{fig:CKMGlobalFit}
+  \vspace{-10pt}
+\end{figure}
+\noindent A significant contribution to this effort comes from studying tree-level processes of the type $B^{\pm}\rightarrow D^{0(*)}K^{\pm (*)}$~\cite{B2DKD2hh, DalitzRun1, DalitzRun2, B2DKstD2hh, B2DstKD2hh}. The ADS~\cite{ADSRef} and GLW~\cite{GLWRef} methods can be employed to gain access to $\phi_3$, the relative weak phase between the $b\rightarrow c\overbar{u}s$ and $b\rightarrow u\overbar{c}s$ transitions, as can be seen in the Feynman diagrams displayed in Fig.~\ref{fig:B2DstarKstar}. This report will study $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays, where the neutral D$^{*}$ meson represents $D^{*0}$ or $\overbar{D}^{*0}$ and is reconstructed as either $D\pi^{0}$ or $D\gamma$. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/B2DstarKstar}
+  \caption{\small{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}. The decay to $\overbar{{D}}^{(*)0}$ is CKM $|V_{ub}V^{*}_{cs}/V_{cb}V^{*}_{us}|\approx0.4$ and colour ${F}_{CS}\approx1/3$ suppressed with respect to (w.r.t.) the ${D}^{(*)0}$ final state.}
+  \label{fig:B2DstarKstar}
+  \vspace{-10pt}
+\end{figure}
+\noindent The neutral ${D}^*$ meson produced in the decay of a $B^-$ can be expressed as:
+  \begin{equation}
+    \tilde{D}^*=D^{*0}+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^{*0}
+    \label{eq:DstTilde}
+  \end{equation}
+\noindent Writing this in terms of odd and even CP eigenstates, where $D^{*}_{+}=\frac{D^{*0}+\overbar{D}^{*0}}{2}$ and $D^{*}_{-}=\frac{D^{*0}-\overbar{D}^{*0}}{2}$:
+  \begin{equation}
+    \tilde{D}^*=\frac{D^{*}_{+}+D^{*}_{-}}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{D^{*}_{+}-D^{*}_{-}}{\sqrt{2}}
+    \label{eq:DstTildeCP}
+  \end{equation}
+\noindent as was first shown in~\cite{ADSDstar}. Here, $r_B=\frac{|A(B^{-}\rightarrow \overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow {D}^{*0}K^-)|}$ and $\delta_{B}$ is the relative strong phase between the 2 $B$ decays.
+ 
+The CP eigenvalue of the $D^*$ state is given by the product $\lambda_{D^*}=\lambda_D\times \lambda_{\pi^0\text{/}\gamma} \times(-1)^l$. In the case of the strong $D^*$ decay via $\pi^0$ emission, $\lambda_{\pi^0}=-1$ and $l=1$ therefore $\lambda_{D^*}=\lambda_D$ and $D^*_{\pm}\rightarrow D_{\pm}\pi^0$. Where as, for $\gamma$ emission, $\lambda_{\gamma}=+1$ and $l=1$ therefore $\lambda_{D^*}=-\lambda_D$ and $D^*_{\pm}\rightarrow D_{\mp}\gamma$. This introduces a
+  strong phase shift of $\pi$ between the two neutral $D$ mesons produced in the decay $B^-\rightarrow \tilde{D}^*K^-$, as can be seen by equations~\eqref{DTildePi0} and~\eqref{DTildeGamma}, which are the equivalent of Eq.~\eqref{DstTilde} for the $D$ meson produced in $\tilde{D}^*\rightarrow D\pi^0$ and $\tilde{D}^*\rightarrow D\gamma$, respectively.
+  \begin{equation}
+    \tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0
+    \label{eq:DTildePi0}
+  \end{equation}
+  \begin{equation}
+    \tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
+    \label{eq:DTildeGamma}
+  \end{equation}
+\noindent From the decay diagrams displayed in Fig.~\ref{fig:B2DstKDiagram}, we can construct 4 equations for the decay amplitudes of $B^{-}$ mesons to final states $F(\accentset{\brobor}{D}\phantom{})$:
+  \begin{equation}
+    A_{Bf}^{\pi^{0}}=A(B^{-}\rightarrow [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+    \label{eq:A(Bf)pi0}
+  \end{equation}
+  \begin{equation}
+    A_{B\overbar{f}}^{\pi^{0}}=A(B^{-}\rightarrow [f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+    \label{eq:A(Bfbar)pi0}
+  \end{equation}
+  \begin{equation}
+    A_{Bf}^{\gamma}=A(B^{-}\rightarrow [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}-\pi+\phi_{3}))})
+    \label{eq:A(Bf)gamma}
+  \end{equation}
+  \begin{equation}
+    A_{B\overbar{f}}^{\gamma}=A(B^{-}\rightarrow [f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
+    \label{eq:A(Bfbar)gamma}
+  \end{equation}
+\noindent 4 analogous charge conjugate equations can be written for the $B^{+}$ meson. Compared to Fig.~\ref{fig:B2DstKDiagram}, in these equations we have replaced $\accentset{\brobor}{A}\phantom{}_{D^{*}}$ with $A_{\pi^{0}}\accentset{\brobor}{A}\phantom{}_{D}$ or $A_{\gamma}\accentset{\brobor}{A}\phantom{}_{D}e^{{i\pi}}$. 
+
+When applying GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in the CP-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$, therefore $A_{D}=\overbar{A}_{D}$ can also be factorised out. This allows us to construct the following decay rate equations for $B^{\pm}$ mesons:
+  \begin{equation}
+		\Gamma_{hh}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2} + 2r_{B}\cos(\delta_{B}\mp \phi_{3})
+    \label{eq:DecayRateGLWpi0}
+  \end{equation}
+  \begin{equation}
+		\Gamma_{hh}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2} - 2r_{B}\cos(\delta_{B}\mp \phi_{3})
+    \label{eq:DecayRateGLWgamma}
+  \end{equation}
+\noindent It should be noted that the strong phase shift of $\pi$ from the $D^{*}\rightarrow D\gamma$ decay converts the CP eigenstate of the final state from even to odd. This provides a unique opportunity to study a CP-odd state and use this extra constraint to further limit the possible phase-space of $\phi_3$. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/B2DstKDiagram.png}
+  \caption{\small{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay. These decays proceed via 2 interfering resonances, $D^{*}$ and $\overbar{D}^{*}$. The amplitudes are defined as: $A_{B}=A(B^{-}\rightarrow D^{*0}K^{-})=A(B^{+}\rightarrow \overbar{D}^{*0}K^{+})$, $\overbar{A}_{D}=A(D^{*0}\rightarrow f(\overbar{D}))=A(\overbar{D}^{*0}\rightarrow f(D))$ and $A_{D}=A(\overbar{D}^{*0}\rightarrow f(\overbar{D}))=A(D^{*0}\rightarrow f(D))$. $r_{B}$ represents the amplitude ratio, and $\delta_{B}$ the strong phase difference, between the suppressed with respect to the favoured $B$ decay.}}
+  \label{fig:B2DstKDiagram}
+  \vspace{-10pt}
+\end{figure}
+\noindent In the ADS method~\cite{ADSRef}, the $D$ meson is reconstructed as $D^{0}\rightarrow K^{+}\pi^{-}$, $D^{0}\rightarrow K^{-}\pi^{+}$ and their charge conjugates. The former is doubly Cabibbo suppressed with respect to the latter, therefore we label these as the suppressed (SUP) and favoured (FAV) modes. Defining $A_{D}=A(D^{0}\rightarrow K^{-}\pi^{+})=A(\overbar{D}^{0}\rightarrow K^{+}\pi^{-})$ and $\overbar{A}_{D}= A(D^{0}\rightarrow K^{+}\pi^{-})=A(\overbar{D}^{0}\rightarrow K^{-}\pi^{+})=A_{D}r_{D}e^{i\delta_{D}}$, where $r_{D}$ is the amplitude ratio of the SUP with respect to the FAV $D$ decay mode and $\delta_{B}$ is their relative phase, we can construct the following decay rate equations for $B^{\pm}$ mesons:
+  \begin{equation}
+		\Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2}r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
+    \label{eq:DecayRateADSFAVpi0}
+  \end{equation}
+  \begin{equation}
+		\Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto r_{B}^{2} + r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
+    \label{eq:DecayRateADSSUPpi0}
+  \end{equation}
+  \begin{equation}
+		\Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2}r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
+    \label{eq:DecayRateADSFAVgamma}
+  \end{equation}
+  \begin{equation}
+		\Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\gamma)\propto r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
+    \label{eq:DecayRateADSSUPgamma}
+  \end{equation}
+\noindent The SUP mode is known as the ADS mode. $r_{D} \sim r_{B}$ therefore the ADS mode possesses particularly high sensitivity to $\phi_3$ as the moduli of the interfering amplitudes are of comparible size. In the usual ADS analysis~\cite{ADSRef}, two independent equations are obtained with three unknowns, $r_B$, $\delta_B$ and $\phi_3$ ($r_{D}$ is known from $D$ decays). Performing the same method using the intermediate $D^*$ results in four independent equations~\cite{ADSDstar}. This enhanced ADS method therefore has the potential to measure $\phi_3$ alone.
+
+\section{\normalsize CP Observables}
+Simply counting events of $B^{+}$ and $B^{-}$ decays, to the final states of interest, would give us access to CP assymmetries. However, we can create observables that do not depend on absolute efficiencies by taking ratios. The CP observables that we therefore measure are assymmetries, $A$, between $B^{-}$ and $B^{+}$ decay rates and ratios, $R$, of decay rates to the GLW and ADS final states with respect to the FAV mode ($hh=\pi \pi /KK$):
+  \begin{equation}
+		A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}
+    \label{eq:Aglw}
+  \end{equation}
+  \begin{equation}
+		R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \times \frac{\mathcal{B}(D^{0}\rightarrow K^{-}\pi^{+})}{\mathcal{B}(D^{0}\rightarrow h^{-}h^{+})}
+    \label{eq:Rglw}
+  \end{equation}
+  \begin{equation}
+		A_{K\pi}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}
+    \label{eq:Afav}
+  \end{equation}
+  \begin{equation}
+		R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow [[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow [[K^{\pm}\pi^{\mp}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}
+    \label{eq:Rads}
+  \end{equation}
+\noindent Direct CP violation in $D$ decays is negligible, therefore $A_{KK}^{\pi^{0}}=A_{\pi\pi}^{\pi^{0}}=A_{CP+}$, $A_{KK}^{\gamma}=A_{\pi\pi}^{\gamma}=A_{CP-}$, $R_{KK}^{\pi^{0}}=R_{\pi\pi}^{\pi^{0}}=R_{CP+}$ and $R_{KK}^{\gamma}=R_{\pi\pi}^{\gamma}=R_{CP-}$. We can express these ratios in terms of the parameters of interest, giving 8 distinct equations: 
+  \begin{equation}
+		A_{CP+}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}+2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
+    \label{eq:ACPPlus}
+  \end{equation}
+  \begin{equation}
+		R_{CP+}=\frac{1 + r_{B}^{2} + 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    \label{eq:RCPPlus}
+  \end{equation}
+  \begin{equation}
+		A_{CP-}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}-2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
+    \label{eq:ACPMinus}
+  \end{equation}
+  \begin{equation}
+		R_{CP-}=\frac{1 + r_{B}^{2} - 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    \label{eq:RCPMinus}
+  \end{equation}
+  \begin{equation}
+		A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    \label{eq:AfavPi0}
+  \end{equation}
+  \begin{equation}
+		R_{\pm}^{\pi^{0}}=\frac{r_{B}^{2} + r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp \phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp \phi_{3})}
+    \label{eq:RPlusMinusPi0}
+  \end{equation}
+  \begin{equation}
+		A_{K\pi}^{\gamma}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    \label{eq:AfavGamma}
+  \end{equation}
+  \begin{equation}
+		R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp \phi_{3})}
+    \label{eq:RPlusMinusGamma}
+  \end{equation}
+
+
+PREVIOUS MEASUREMENTS
+
+\section{Neutral Particle Reconstruction at the LHCb Detector} \label{detector}
+\section{MVA Training} \label{MVA}
+\section{Selections} \label{selections}
+\section{Conclusions and Ongoing Work} \label{conclusion}
+
+\end{document}

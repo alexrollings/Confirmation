@@ -1,6 +1,6 @@
-LATEXSOURCE=Report.tex
+LATEXSOURCE=ConfirmationReport.tex
 
-Report.pdf: Report.tex ${LATEXSOURCE} 
+ConfirmationReport.pdf: ConfirmationReport.tex ${LATEXSOURCE} 
 		latexmk -pdf -pdflatex="pdflatex" -use-make $< 
 
 clean:
