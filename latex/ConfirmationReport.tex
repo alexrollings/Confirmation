@@ -40,7 +40,8 @@
 % \graphicspath{{/Users/alexandrarollings/Analysis/Confirmation/latex/figures/}}
 
 % \renewcommand{\refname}{References}
-\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern
+1.5mu}
 \newcommand\brabar{\scalebox{.3}{(}\raisebox{-1.7pt}{$-$}\scalebox{.3}{)}}
 \newcommand\brobor{\smash[b]{\raisebox{0.6\height}{\scalebox{0.5}{\tiny(}}{\mkern-1.5mu\scriptstyle-\mkern-1.5mu}\raisebox{0.6\height}{\scalebox{0.5}{\tiny)}}}}
 
@@ -56,9 +57,8 @@
   {\centering \large \@author}}                
 \makeatother                
 
-\title{
-      \LARGE \textbf{Study of $B^{\pm} \rightarrow D^{*}K^{\pm}$ decays in the interest of obtaining a direct measuring of $\phi_3$} \\
-		}
+\title{ \LARGE \textbf{Study of $B^{\pm} \rightarrow D^{*}K^{\pm}$ decays in the
+interest of obtaining a direct measuring of $\phi_3$} \\ }
 
 \author{
 		Alexandra Rollings\\	
@@ -69,13 +69,19 @@
 \begin{titlepage}
 \begin{nolinenumbers}
 \thispagestyle{empty} 
-\begin{figure}[H]
-  \includegraphics[width=0.2\textwidth]{figures/Oxford}
-\end{figure}
-\begin{flushright}
-\normalsize {Confirmation Report} 	% Subtitle
-\\ \normalsize \today			% Todays date
-\end{flushright}
+
+\begin{minipage}[c]{.15\linewidth}
+  \includegraphics[width=\linewidth]{figures/Oxford}
+\end{minipage}\hfill
+\begin{minipage}[c]{.75\linewidth}
+  \begin{flushright}
+  \normalsize {Confirmation Report} 	% Subtitle
+  \\ \normalsize \today			% Todays date
+  \end{flushright}
+\end{minipage}
+
+
+
 \HRule{0.5pt} \\						% Upper rule
 [2.0cm]
 \printtitle 
@@ -85,8 +91,15 @@
 \begin{abstract}
 \noindent
 \\
-  % The decay $B^{\pm} \rightarrow D^{*}\pi^{\pm}$, where $D^{*} \rightarrow [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$, is studied using 3.3 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb experiment. This combines 2011, 2012 and 2015 data taken at center-of-mass energies of 7 TeV, 8 TeV and 13 TeV, respectively. The techniques for discriminating
-  % against combinatorial backgrounds are described and the physics backgrounds are identified. Using a preliminary optimisation, the number of events is reported and an extrapolation of event yields to the modes sensitive to $\phi_3$ is made. 
+  % The decay $B^{\pm} \rightarrow D^{*}\pi^{\pm}$, where $D^{*} \rightarrow
+  % [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$, is studied using 3.3
+  % fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb
+  % experiment. This combines 2011, 2012 and 2015 data taken at center-of-mass
+  % energies of 7 TeV, 8 TeV and 13 TeV, respectively. The techniques for
+  % discriminating against combinatorial backgrounds are described and the
+  % physics backgrounds are identified. Using a preliminary optimisation, the
+  % number of events is reported and an extrapolation of event yields to the
+  % modes sensitive to $\phi_3$ is made. 
 \end{abstract}
 \vfill
 \end{nolinenumbers}
@@ -121,7 +134,8 @@ DESCRIPTION OF REPORT STRUCTURE.
 In the SM, the charged-current, weak interactions of quarks are described by the
 SM Lagrangian term given in Eq.~\eqref{eq:CCLagrangian}.
 \begin{equation}
-  L_{CC}=-\frac{g}{\sqrt{2}}\overbar{q}_{Li}\gamma^{\mu}W_{\mu}^{+}(V_{CKM})_{ij}q_{Lj} + h.c.
+  L_{CC}=-\frac{g}{\sqrt{2}}\overbar{q}_{Li}\gamma^{\mu}W_{\mu}^{+}(V_{CKM})_{ij}q_{Lj}
+  + h.c.  
   \label{eq:CCLagrangian}
 \end{equation}
 \noindent Here, $W_{\mu}^{+}$ is the W-boson field, which couples to the
@@ -175,13 +189,12 @@ of new, heavy particles entering interactions at loop-level. It is therefore
 hugely motivated to perform direct measurements to reduce the uncertainty on
 $\phi_{3}$ to a comparable size to that of the indirect measurement.
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=1\textwidth]{figures/CKMGlobalFit}
-  \caption{\small{Diagram to show current measurements of the Unitarity Triangle. The black line represents the fit obtained by CKM fitter.}}
-  \label{fig:CKMGlobalFit}
-  \vspace{-10pt}
+  \centering \includegraphics[width=1\textwidth]{figures/CKMGlobalFit}
+  \caption{\small{Diagram to show current measurements of the Unitarity
+  Triangle. The black line represents the fit obtained by CKM fitter.}}
+  \label{fig:CKMGlobalFit} \vspace{-10pt}
 \end{figure}
-\noindent A significant contribution to this effort comes from studying
+A significant contribution to this effort comes from studying
 tree-level processes of the type $B^{\pm}\rightarrow D^{0(*)}K^{\pm
 (*)}$~\cite{B2DKD2hh, DalitzRun1, DalitzRun2, B2DKstD2hh, B2DstKD2hh}. The
 ADS~\cite{ADSRef} and GLW~\cite{GLWRef} methods can be employed to gain access
@@ -204,15 +217,16 @@ either $D\pi^{0}$ or $D\gamma$.
     \tilde{D}^*=D^{*0}+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^{*0}
     \label{eq:DstTilde}
   \end{equation}
-\noindent Writing this in terms of odd and even CP eigenstates, where $D^{*}_{+}=\frac{D^{*0}+\overbar{D}^{*0}}{2}$ and $D^{*}_{-}=\frac{D^{*0}-\overbar{D}^{*0}}{2}$:
+\noindent Writing this in terms of odd and even CP eigenstates, where
+$D^{*}_{+}=\frac{D^{*0}+\overbar{D}^{*0}}{2}$ and
+$D^{*}_{-}=\frac{D^{*0}-\overbar{D}^{*0}}{2}$:
   \begin{equation}
     \tilde{D}^*=\frac{D^{*}_{+}+D^{*}_{-}}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{D^{*}_{+}-D^{*}_{-}}{\sqrt{2}}
     \label{eq:DstTildeCP}
   \end{equation}
-\noindent as was first shown in~\cite{ADSDstar}. Here,
-$r_B=\frac{|A(B^{-}\rightarrow \overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow
-{D}^{*0}K^-)|}$ and $\delta_{B}$ is the relative strong phase between the 2 $B$
-decays.
+\noindent Here, $r_B=\frac{|A(B^{-}\rightarrow
+\overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow {D}^{*0}K^-)|}$ and $\delta_{B}$ is
+the relative strong phase between the 2 $B$ decays.
  
 The CP eigenvalue of the $D^*$ state is given by the product
 $\lambda_{D^*}=\lambda_D\times \lambda_{\pi^0\text{/}\gamma} \times(-1)^l$. In
@@ -224,8 +238,8 @@ This introduces a strong phase shift of $\pi$ between the two neutral $D$ mesons
 produced in the decay $B^-\rightarrow \tilde{D}^*K^-$, as can be seen by
 equations~\eqref{eq:DTildePi0} and~\eqref{eq:DTildeGamma}, which are the
 equivalent of Eq.~\eqref{eq:DstTilde} for the $D$ meson produced in
-$\tilde{D}^*\rightarrow D\pi^0$ and $\tilde{D}^*\rightarrow D\gamma$,
-respectively.
+$\tilde{D}^*\rightarrow \tilde{D}\pi^0$ and $\tilde{D}^*\rightarrow
+\tilde{D}\gamma$, respectively.
   \begin{equation}
     \tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0
     \label{eq:DTildePi0}
@@ -234,23 +248,28 @@ respectively.
     \tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
     \label{eq:DTildeGamma}
   \end{equation}
-\noindent From the decay diagrams displayed in Fig.~\ref{fig:B2DstKDiagram}, we
-can construct 4 equations for the decay amplitudes of $B^{-}$ mesons to final
-states $F(\accentset{\brobor}{D}\phantom{})$:
+\noindent This logic was first demonstrated in~\cite{ADSDstar}. From the decay
+diagrams displayed in Fig.~\ref{fig:B2DstKDiagram}, we can construct 4 equations
+for the decay amplitudes of $B^{-}$ mesons to final states
+$f(\accentset{\brobor}{D}\phantom{})$:
   \begin{equation}
-    A_{Bf}^{\pi^{0}}=A(B^{-}\rightarrow [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+    A_{Bf}^{\pi^{0}}=A(B^{-}\rightarrow
+    [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
     \label{eq:A(Bf)pi0}
   \end{equation}
   \begin{equation}
-    A_{B\overbar{f}}^{\pi^{0}}=A(B^{-}\rightarrow [f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+    A_{B\overbar{f}}^{\pi^{0}}=A(B^{-}\rightarrow
+    [f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
     \label{eq:A(Bfbar)pi0}
   \end{equation}
   \begin{equation}
-    A_{Bf}^{\gamma}=A(B^{-}\rightarrow [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}-\pi+\phi_{3}))})
+    A_{Bf}^{\gamma}=A(B^{-}\rightarrow
+    [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
     \label{eq:A(Bf)gamma}
   \end{equation}
   \begin{equation}
-    A_{B\overbar{f}}^{\gamma}=A(B^{-}\rightarrow [f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
+    A_{B\overbar{f}}^{\gamma}=A(B^{-}\rightarrow
+    [f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
     \label{eq:A(Bfbar)gamma}
   \end{equation}
 \noindent 4 analogous charge conjugate equations can be written for the $B^{+}$
@@ -264,16 +283,16 @@ CP-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$, therefore
 $A_{D}=\overbar{A}_{D}$ can also be factorised out. This allows us to construct
 the following decay rate equations for $B^{\pm}$ mesons:
   \begin{equation}
-		\Gamma_{hh}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2} + 2r_{B}\cos(\delta_{B}\mp \phi_{3})
-    \label{eq:DecayRateGLWpi0}
+    \Gamma_{hh}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2} +
+    2r_{B}\cos(\delta_{B}\mp \phi_{3}) \label{eq:DecayRateGLWpi0}
   \end{equation}
   \begin{equation}
-		\Gamma_{hh}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2} - 2r_{B}\cos(\delta_{B}\mp \phi_{3})
-    \label{eq:DecayRateGLWgamma}
+    \Gamma_{hh}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2} -
+    2r_{B}\cos(\delta_{B}\mp \phi_{3}) \label{eq:DecayRateGLWgamma}
   \end{equation}
 \noindent It should be noted that the strong phase shift of $\pi$ from the
 $D^{*}\rightarrow D\gamma$ decay converts the CP eigenstate of the final state
-from even to odd. This provides a unique opportunity to study a CP-odd state and
+from even to odd. This provides the rare opportunity to study a CP-odd state and
 use this extra constraint to further limit the possible phase-space of $\phi_3$. 
 \begin{figure}[H]
   \centering \includegraphics[width=1\textwidth]{figures/B2DstKDiagram.png}
@@ -289,7 +308,7 @@ use this extra constraint to further limit the possible phase-space of $\phi_3$.
   phase difference, between the suppressed with respect to the favoured $B$
   decay.}} \label{fig:B2DstKDiagram} \vspace{-10pt}
 \end{figure}
-\noindent In the ADS method~\cite{ADSRef}, the $D$ meson is reconstructed as
+In the ADS method~\cite{ADSRef}, the $D$ meson is reconstructed as
 $D^{0}\rightarrow K^{+}\pi^{-}$, $D^{0}\rightarrow K^{-}\pi^{+}$ and their
 charge conjugates. The former is doubly Cabbibo suppressed with respect to the
 latter, therefore we label these as the suppressed (SUP) and favoured (FAV)
@@ -301,19 +320,23 @@ of the SUP with respect to the FAV $D$ decay mode and $\delta_{B}$ is their
 relative phase, we can construct the following decay rate equations for
 $B^{\pm}$ mesons:
   \begin{equation}
-		\Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2}r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
+    \Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto 1 + r_{B}^{2}r_{D}^{2}
+    + 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
     \label{eq:DecayRateADSFAVpi0}
   \end{equation}
   \begin{equation}
-		\Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto r_{B}^{2} + r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
+    \Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\pi^{0})\propto r_{B}^{2} + r_{D}^{2} +
+    2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
     \label{eq:DecayRateADSSUPpi0}
   \end{equation}
   \begin{equation}
-		\Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2}r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
+    \Gamma_{FAV}^{\pm}(D^{*}\rightarrow D\gamma)\propto 1 + r_{B}^{2}r_{D}^{2} -
+    2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
     \label{eq:DecayRateADSFAVgamma}
   \end{equation}
   \begin{equation}
-		\Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\gamma)\propto r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
+    \Gamma_{SUP}^{\pm}(D^{*}\rightarrow D\gamma)\propto r_{B}^{2} + r_{D}^{2} -
+    2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3})
     \label{eq:DecayRateADSSUPgamma}
   \end{equation}
 \\
@@ -334,72 +357,94 @@ asymmetries, $A$, between $B^{-}$ and $B^{+}$ decay rates and ratios, $R$, of
 decay rates to the GLW and ADS final states with respect to the FAV mode
 ($hh=\pi \pi /KK$):
   \begin{equation}
-		A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}
-    \label{eq:Aglw}
+    A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \label{eq:Aglw}
   \end{equation}
   \begin{equation}
-		R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \times \frac{\mathcal{B}(D^{0}\rightarrow K^{-}\pi^{+})}{\mathcal{B}(D^{0}\rightarrow h^{-}h^{+})}
-    \label{eq:Rglw}
+    R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
+    [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+    [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \times
+    \frac{\mathcal{B}(D^{0}\rightarrow
+    K^{-}\pi^{+})}{\mathcal{B}(D^{0}\rightarrow h^{-}h^{+})} \label{eq:Rglw}
   \end{equation}
   \begin{equation}
-		A_{K\pi}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}
-    \label{eq:Afav}
+    A_{K\pi}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
+    [[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
+    [[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+    [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \label{eq:Afav}
   \end{equation}
   \begin{equation}
-		R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow [[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow [[K^{\pm}\pi^{\mp}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}
-    \label{eq:Rads}
+    R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow
+    [[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow
+    [[K^{\pm}\pi^{\mp}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})} \label{eq:Rads}
   \end{equation}
-\noindent Direct CP violation in $D$ decays is negligible, therefore
+\noindent Direct CP violation in $D$ decays is considered negligible, therefore
 $A_{KK}^{\pi^{0}}=A_{\pi\pi}^{\pi^{0}}=A_{CP+}$,
 $A_{KK}^{\gamma}=A_{\pi\pi}^{\gamma}=A_{CP-}$,
 $R_{KK}^{\pi^{0}}=R_{\pi\pi}^{\pi^{0}}=R_{CP+}$ and
-$R_{KK}^{\gamma}=R_{\pi\pi}^{\gamma}=R_{CP-}$. We can express these ratios in
+$R_{KK}^{\gamma}=R_{\pi\pi}^{\gamma}=R_{CP-}$.
+
+We can express these ratios in
 terms of the parameters of interest, giving 8 distinct equations: 
   \begin{equation}
-		A_{CP+}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}+2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
+    A_{CP+}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}+2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
     \label{eq:ACPPlus}
   \end{equation}
   \begin{equation}
-		R_{CP+}=\frac{1 + r_{B}^{2} + 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    R_{CP+}=\frac{1 + r_{B}^{2} +
+    2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
     \label{eq:RCPPlus}
   \end{equation}
   \begin{equation}
-		A_{CP-}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}-2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
+    A_{CP-}=\frac{2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}-2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
     \label{eq:ACPMinus}
   \end{equation}
   \begin{equation}
-		R_{CP-}=\frac{1 + r_{B}^{2} - 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    R_{CP-}=\frac{1 + r_{B}^{2} -
+    2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
     \label{eq:RCPMinus}
   \end{equation}
   \begin{equation}
-		A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
     \label{eq:AfavPi0}
   \end{equation}
   \begin{equation}
-		R_{\pm}^{\pi^{0}}=\frac{r_{B}^{2} + r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp \phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp \phi_{3})}
-    \label{eq:RPlusMinusPi0}
+    R_{\pm}^{\pi^{0}}=\frac{r_{B}^{2} + r_{D}^{2} +
+    2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp
+    \phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
+    \phi_{3})} \label{eq:RPlusMinusPi0}
   \end{equation}
   \begin{equation}
-		A_{K\pi}^{\gamma}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+    A_{K\pi}^{\gamma}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
     \label{eq:AfavGamma}
   \end{equation}
   \begin{equation}
-		R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp \phi_{3})}
-    \label{eq:RPlusMinusGamma}
+    R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} -
+    2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp
+    \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
+    \phi_{3})} \label{eq:RPlusMinusGamma}
   \end{equation}
-\\
-\noindent GLW analyses of $B\rightarrow D^{*}K$ decays have been successfully
+
+GLW analyses of $B\rightarrow D^{*}K$ decays have been successfully
 studied by the Belle~\cite{BelleGLW}, BaBar~\cite{BaBarGLW} and
 LHCb~\cite{PartReco} collaborations. The latter was performed recently using a
-partially reconstructed analysis, where the neutral was not included in the
+partially reconstructed analysis, where the neutral particle was not included in the
 final state. In 2014, the BaBar experiment attempted the ADS analysis, but in
 the absence of significant signals set the upper limit $r_B<0.21$ ($90\%$ C.L.)
 \cite{BaBarADS}. No results have yet been published on the ADS mode from the
 LHCb collaboration. 
 
-\section{Neutral Particle Reconstruction at the LHCb Detector} \label{detector}
+\section{The LHCb Detector and Neutral Particle Reconstruction} \label{detector}
 \section{Selections} \label{selections}
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
+
+\printbibliography[heading=bibintoc,{title=References}]
 
 \end{document}
