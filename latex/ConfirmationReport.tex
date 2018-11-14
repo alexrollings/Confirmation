@@ -441,6 +441,92 @@ the absence of significant signals set the upper limit $r_B<0.21$ ($90\%$ C.L.)
 LHCb collaboration. 
 
 \section{The LHCb Detector and Neutral Particle Reconstruction} \label{detector}
+The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
+27km circular $pp$ collider located at CERN. LHCb has been designed to study $b$
+and $c$ quarks, which are predominantly produced in the forward/backward
+direction from gluon interactions. For this reason, LHCb is a single-arm forward
+spectrometer covering the pseudorapidity region $2 < \eta < 5$, where $\eta =
+-\ln (\tan \theta / 2)$. Here, $\theta$ is the angle between the particle's
+momentum vector and the beam axis. During Run1 (Run2), the LHC operated with a
+collision frequency of 20 MHz (40 MHz). At the interaction point of LHCb, the
+transverse overlap of the 2 beams is reduced, so that on average 1.7 $pp$
+interactions occur per bunch crossing. It is then the job of multiple
+sub-detectors and a trigger system to reconstruct interesting events and save
+the information to storage.
+
+The Vertex Locator (VELO) is a silicon microstrip detector located $8$ mm from
+the beam line in order to identify the $B$ and $D$ decay vertices crucial to
+this analysis. The vertex resolution of the VELO is $\mathcal{O}(10$ $\mu$m) in
+the transverse plane. The rest of the tracking system is located further from
+the $pp$ interaction point and consists of the Tracker Turicensis (TT),
+positioned upstream of the dipole magnet, and tracking stations T1-T3,
+downstream of the dipole magnet. The TT and the inner tracker (IT) of T1-T3 are
+also silicon microstrip detectors with a single hit resolution $\mathcal{O}(50$
+$\mu$m). The outer tracker (OT) of the tracking stations is a straw drift tube
+detector and has a resolution $\mathcal{O}(200$ $\mu$m). The dipole magnet
+itself has an integrated magnetic field $\int B dl = 4$ Tm.  Positive and
+negatively charged particles bend in opposite directions in this field,
+therefore, to avoid charge detection assymetries, it's direction reversed
+regularly during data taking. A charged particle passing through the whole
+tracking system has a 96\% probability of being reconstructed, with a momentum
+resolution $\mathcal{O}(0.5\%)$. 
+
+There are two Ring Imaging Cherenkov detectors (RICH1 and RICH2), placed at
+different distances from the PV to provide particle identification (PID) of
+kaons, pions and protons. When a charged particle travels through a dielectric
+medium faster than the speed of light, $v>\frac{c}{n}$, where $n$ is the
+rafractive index of the medium, a cone of light is emitted at an angle $\cos
+(\theta_{ck})=\frac{1}{n\beta}$, where $\beta=\frac{v}{c}$. This light is then
+focused using mirrors onto the focal plane containing a ring of hybrid photon
+detectors. $\theta_{ck}$, combined with knowledge of particle momenta from the
+tracking system, allows discrimination between kaons, pions and protons.
+
+The reconstruction of neutrals involves the calorimeter system, consisting of
+the electromagnetic (ECAL) and hadronic (HCAL) calorimeters preceded by the
+Silicon Pad Detector (SPD) and Preshower (PS), separated by a lead wall. The
+ECAL consists of alternating scintillating tiles and lead plates, and the HCAL
+iron plates interspaced with scintillating tiles aligned parallel to the beam
+pipe. The SPD identifies whether incident particles are charged or neutral,
+whilst the PS determines whether they are electrons (if charged) or photons (if
+neutral). Both the SPD and PS consist of scintillating pads and all light
+produced in the system is sent down wavelength-shifting fibres and transmitted
+to photomultiplier tubes.
+
+Once a candidate has been identified as a $\gamma$ or $\pi^0$ from its energy
+deposition sequence in the calorimeter system, reconstruction is performed using
+the ECAL \cite{NeutralReconstruction}. Energy deposits in ECAL cells are grouped
+together into clusters by applying a $3\times3$ cell pattern around the local
+energy deposition maxima. If clusters overlap, a convergent iterative procedure
+is applied that redistributes the cell energy between the clusters according to
+their total energies.  Defining: 
+\begin{equation}
+  \chi^2_{2D}=(\vec{r}_{tr}-\vec{r}_{cl})^T(C_{tr}+S_{cl})^{-1}(\vec{r}_{tr}-\vec{r}_{cl})
+  \label{Chi2}
+\end{equation}
+$\vec{r}_{tr}$ and $\vec{r}_{cl}$ represent the local coordinates of tracks and
+clusters, respectively, at the energy-weighted cluster centres. $C_{tr}$ is the
+covariance matrix of the $\vec{r}_{tr}$ and $S_{cl}$ is the cluster energy
+spread matrix. Photon candidates are identified to be those without any
+associated extrapolated track. This means that they must have a $\chi^2_{2D}$ of
+at least 4 for every track in the event. This method has a good charged particle
+rejection rate whilst maintaining the photon signal efficiency.
+
+The photon energy is then the sum of the total cluster energy in the ECAL and
+the reconstructed energy deposit in the PS. Its direction is determined using
+the assumed origin and cluster centre of the candidate. It should be noted that,
+in this report, only unconverted photons have been considered, i.e. those that
+have not pair produced upon reaching the SPD.
+
+Neutral pions are then reconstructed as pairs of well separated photons. These
+resolved $\pi^0$s have transverse momentum ($p_T$) in the range $p_{T}<2$ GeV/c.
+Above this, the daughter photons cannot be identified as individual clusters due
+to finite ECAL granularity. These merged $\pi^0$ candidates are not considered
+in this analysis.
+
+The data presented in this report was taken at center-of-mass energies of $7$
+TeV in 2011, $8$ TeV in 2012 (Run1) and $13$ TeV in 2015, 2016 and 2017 (Run2),
+resulting in a total integrated luminosity of $6.6$ $\text{fb}^{-1}$.
+
 \section{Selections} \label{selections}
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
