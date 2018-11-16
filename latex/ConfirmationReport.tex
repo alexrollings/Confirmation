@@ -450,36 +450,30 @@ spectrometer covering the pseudorapidity region $2 < \eta < 5$, where $\eta =
 momentum vector and the beam axis. During Run1 (Run2), the LHC operated with a
 collision frequency of 20 MHz (40 MHz). At the interaction point of LHCb, the
 transverse overlap of the 2 beams is reduced, so that on average 1.7 $pp$
-interactions occur per bunch crossing. It is then the job of multiple
-sub-detectors and a trigger system to reconstruct interesting events and save
-the information to storage.
+interactions occur per bunch crossing.  Once an interaction has occured, online
+event selection consists of a hardware and software trigger. The hardware
+trigger uses information from the calorimeter and muon systems, and reduces the
+rate of information that needs to be stored from 40 MHz to 1 MHz, allowing
+latency for the full detector to be read out for the software trigger, which
+involves a full event reconstrucion. Events that pass the software trigger are
+read out at a rate of 3 kHz (2011), 5 kHz (2012) and 12.5 kHz (Run2).
 
-The Vertex Locator (VELO) is a silicon microstrip detector located $8$ mm from
-the beam line in order to identify the $B$ and $D$ decay vertices crucial to
-this analysis. The vertex resolution of the VELO is $\mathcal{O}(10$ $\mu$m) in
-the transverse plane. The rest of the tracking system is located further from
-the $pp$ interaction point and consists of the Tracker Turicensis (TT),
-positioned upstream of the dipole magnet, and tracking stations T1-T3,
-downstream of the dipole magnet. The TT and the inner tracker (IT) of T1-T3 are
-also silicon microstrip detectors with a single hit resolution $\mathcal{O}(50$
-$\mu$m). The outer tracker (OT) of the tracking stations is a straw drift tube
-detector and has a resolution $\mathcal{O}(200$ $\mu$m). The dipole magnet
-itself has an integrated magnetic field $\int B dl = 4$ Tm.  Positive and
-negatively charged particles bend in opposite directions in this field,
-therefore, to avoid charge detection assymetries, it's direction reversed
-regularly during data taking. A charged particle passing through the whole
-tracking system has a 96\% probability of being reconstructed, with a momentum
-resolution $\mathcal{O}(0.5\%)$. 
-
-There are two Ring Imaging Cherenkov detectors (RICH1 and RICH2), placed at
+The full description of the LHCb detector can be found in \cite{LHCbDetector},
+whilst the relevant components will be described here.  The vertex locator, a
+semiconductor silicon detector with a transverse resolution of $\mathcal{O}(10$
+$\mu$m), sits $8$ mm from the beam line in order to identify the $B$ and $D$
+decay vertices crucial for this analysis. The rest of the tracking system is
+located further from the $pp$ interaction point and consists of the Tracker
+Turicensis (TT), positioned upstream of the dipole magnet, and tracking stations
+T1-T3, downstream of the magnet. The TT and the inner tracker (IT) of T1-T3 are
+also silicon microstrip detectors, whilst the outer tracker (OT) of the tracking
+stations consists of straw drift tube detectors. The dipole magnet itself has an
+integrated magnetic field $\int B dl = 4$ Tm.  Positive and negatively charged
+particles bend in opposite directions in this field, therefore, to avoid charge
+detection assymetries, it's direction reversed regularly during data taking.
+There are also two Ring Imaging Cherenkov detectors (RICH1 and RICH2), placed at
 different distances from the PV to provide particle identification (PID) of
-kaons, pions and protons. When a charged particle travels through a dielectric
-medium faster than the speed of light, $v>\frac{c}{n}$, where $n$ is the
-rafractive index of the medium, a cone of light is emitted at an angle $\cos
-(\theta_{ck})=\frac{1}{n\beta}$, where $\beta=\frac{v}{c}$. This light is then
-focused using mirrors onto the focal plane containing a ring of hybrid photon
-detectors. $\theta_{ck}$, combined with knowledge of particle momenta from the
-tracking system, allows discrimination between kaons, pions and protons.
+kaons, pions and protons. 
 
 The reconstruction of neutrals involves the calorimeter system, consisting of
 the electromagnetic (ECAL) and hadronic (HCAL) calorimeters preceded by the
@@ -522,6 +516,12 @@ resolved $\pi^0$s have transverse momentum ($p_T$) in the range $p_{T}<2$ GeV/c.
 Above this, the daughter photons cannot be identified as individual clusters due
 to finite ECAL granularity. These merged $\pi^0$ candidates are not considered
 in this analysis.
+
+A charged particle passing through the whole tracking system has a 96\%
+probability of being reconstructed, with a momentum resolution
+$\mathcal{O}(0.5\%)$. In contrast, photons detected by the ECAL have a
+reconstruction efficiency of ? \% and an energy resolution of ? \%. This is what
+makes this analysis so challenging.
 
 The data presented in this report was taken at center-of-mass energies of $7$
 TeV in 2011, $8$ TeV in 2012 (Run1) and $13$ TeV in 2015, 2016 and 2017 (Run2),
