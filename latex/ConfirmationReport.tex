@@ -561,9 +561,8 @@ to finite ECAL granularity. These merged $\pi^0$ candidates are not considered
 in this analysis.
 
 A charged particle passing through the whole tracking system has a 96\%
-probability of being reconstructed, with a momentum resolution
-$\mathcal{O}(0.5\%)$. In contrast, photons detected by the ECAL have a
-reconstruction efficiency of ? \% and an energy resolution of ? \%. This is what
+probability of being reconstructed. In contrast, photons and $\pi^0$ mesons have a
+reconstruction efficiency of around 10\% and 3\%, respectively. This is what
 makes this analysis so challenging.
 
 The data presented in this report was taken at center-of-mass energies of $7$
@@ -571,6 +570,32 @@ TeV in 2011, $8$ TeV in 2012 (Run1) and $13$ TeV in 2015, 2016 and 2017 (Run2),
 resulting in a total integrated luminosity of $6.6$ $\text{fb}^{-1}$.
 
 \section{Selections} \label{selections}
+
+Signal candidates are initially chosen to have the decay chain and event
+topology of the type $B^{\pm}\rightarrow DK^{\pm}$, then a neutral particle
+is combined with the $D$ meson to make a $B^{\pm}\rightarrow D^*K^{\pm}$
+candidate.
+
+The $D$ meson, reconstructed from two oppositely charged daughter particles, is
+required to be within $\pm$25 MeV/c$^2$ of the nominal $D^0$ mass, which
+corresponds to approximately three times the mass resolution. The charged pion
+and kaon from the $B^{\pm}$ decay vertex are chosen to occupy the kinematic
+range of the RICH detector, $5 < p < 100$ GeV/c and $0.5 < p_T < 10$ GeV/c. When
+a neutral pion is present, it is required to lie within the asymmetric mass
+window of $110 < m_{\pi^0} < 185$ MeV/c$^2$. A kinematic fit is performed to the
+entire decay chain of each candidate, with vertex constraints applied to both
+the $B^{\pm}$ and $D$ daughters, and $D$ and $\pi^0$ (when present) mesons are
+constrained to their own masses.
+
+Candidates must fulfil the hardware trigger, meaning that decay products of the
+signal candidate detected by the HCAL, or events containing at least one
+candidate from elsewhere in the event, must lie above a fixed threshold in
+transverse energy.  The software trigger must also be passed. This places
+requirements on the quality of tracks, which are then combined one-by-one, and
+identified as having either 2-, 3-, or 4-body topology depending on their
+distance of closest approach.
+
+
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
 
