@@ -588,10 +588,10 @@ candidate from elsewhere in the event, must lie above a fixed threshold in
 transverse energy.  The software trigger must also be passed. This places
 requirements on the quality of tracks, which are then combined one-by-one, and
 identified as having either 2-, 3-, or 4-body topology depending on their
-distance of closest approach.
+distance of closest approach. 
 
 The offline selection consits of 2 stages of multivariate analysis (MVA) and
-rectangular cuts, in order to reduce combinatorial and physics backgrounds.
+rectangular cuts, in order to reduce combinatorial and physics backgrounds. 
 
 The combinatoric backgrounds we are trying to suppress during the first stage
 MVA are fake $D$ candidates, formed from the combination of random tracks
@@ -640,7 +640,7 @@ the range 5800 $ < m[D\pi] <$ 6800 MeV/c$^2$, as shown in
 Fig.~\ref{fig:trainingData}. The signal sample consists of simulated events of
 the same decay mode. The training variables used are related to the decay
 kinematics and topology of tracks, and are displayed in
-Fig.~\ref{bdt1TrainingVar}. 
+Table~\ref{table:bdt1TrainingVar}. 
 
 The working point of BDT1 $>$ 0.05 was chosen by performing fits to the $D$ mass
 distribution of the high statistics mode, in BDT steps of 0.05. The extracted
@@ -661,18 +661,21 @@ background samples consist of data in the $\Delta_M=m[D^{*}] - m[D]- (m[\pi^0]
 + m[\pi^0]_{PDG})$ upper side-bands, 250 $ < \Delta_{M} < $ 500 MeV/c$^2$, but
 $m[Dh]$ signal region, as shown in Fig.~\ref{fig:trainingData}. The training
 variables are a mixture of momentum variables and parameters quantifying photon
-quality, as displayed in Fig.~\ref{bdt2TrainingVar}. 
+quality, as displayed in Table.~\ref{table:bdt2TrainingVar}. 
 
 The same optimisation procedure was applied for the second stage BDT, with
 signal and background estimates extracted from fits to $\Delta_M$
 distributions. The chosen working point was BDT2 $>0$ for both $D^{*}$ decay modes.
 
+The charged pion and kaon from the $B^{\pm}$ decay vertex are required to occupy
+the kinematic range of the RICH detector, $5 < p < 100$ GeV/c and $0.5 < p_T <
+10$ GeV/c. Talk about PID.
+
+After the application of the BDTs, a series of rectangular cuts are applied.
 The $D$ meson is required to be within $\pm$25 MeV/c$^2$ of the nominal $D^0$
-mass, which corresponds to approximately three times the mass resolution. The
-charged pion and kaon from the $B^{\pm}$ decay vertex are chosen to occupy the
-kinematic range of the RICH detector, $5 < p < 100$ GeV/c and $0.5 < p_T < 10$
-GeV/c. When a neutral pion is present, it is required to lie within the
-asymmetric mass window of $110 < m[\pi^0] < 185$ MeV/c$^2$. 
+mass, which corresponds to approximately three times the mass resolution.  When
+a neutral pion is present, it is required to lie within the asymmetric mass
+window of $110 < m[\pi^0] < 185$ MeV/c$^2$. 
 
 \afterpage{
 \clearpage % Flush earlier floats (otherwise order might not be
