@@ -487,23 +487,22 @@ states is $\sim 5\%$ that of $D^*K$ final states, therefore decays of this
 type are less sensitive to $\phi_3$.
 
 \section{The LHCb Detector and Neutral Particle Reconstruction} \label{detector}
-The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider,
-a 27km circular $pp$ collider located at CERN. LHCb has been designed to study
+The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
+27 km circular $pp$ collider located at CERN. LHCb has been designed to study
 $b$ and $c$ quarks, which are predominantly produced in the forward/backward
-direction from gluon interactions. For this reason, LHCb is a single-arm
-forward spectrometer covering the pseudorapidity region $2 < \eta < 5$, where
-$\eta = -\ln (\tan \theta / 2)$. Here, $\theta$ is the angle between the
-particle's momentum vector and the beam axis. During Run1 (Run2), the LHC
-operated with a collision frequency of 20 MHz (40 MHz). At the interaction
-point of LHCb the transverse overlap of the 2 beams is reduced so that on
-average 1.7 $pp$ interactions occur per bunch crossing. To reduce the rate of
-data uptake, online event selection consists of a hardware and software
-trigger. The hardware trigger uses information from the calorimeter and muon
-systems, and reduces the rate of information that needs to be stored down to 1
-MHz, allowing latency for the full detector to be read out for the software
-trigger, which involves a full event reconstruction. Events that pass the
-software trigger are read out at a rate of 3 kHz (2011), 5 kHz (2012) and 12.5
-kHz (Run2).
+direction from gluon interactions. For this reason, LHCb is a single-arm forward
+spectrometer covering the pseudorapidity region $2 < \eta < 5$, where $\eta =
+-\ln (\tan \theta / 2)$. Here, $\theta$ is the angle between the particle's
+momentum vector and the beam axis. During Run1 (Run2), the LHC operated with a
+collision frequency of 20 MHz (40 MHz). At the interaction point, the transverse
+overlap of the 2 beams is reduced so that, on average, 1.7 $pp$ interactions
+occur per bunch crossing. To reduce the rate of data uptake, online event
+selection consists of a hardware and software trigger. The hardware trigger uses
+information from the calorimeter and muon systems, and reduces the rate of
+information that needs to be stored down to 1 MHz, allowing latency for the full
+detector to be read out. This is required for the software trigger, which
+involves a full event reconstruction. Events that pass the software trigger are
+read out at a rate of 3 kHz (2011), 5 kHz (2012) and 12.5 kHz (Run2).
 
 The full description of the LHCb detector can be found in \cite{LHCbDetector},
 whilst the relevant components will be described here.  The vertex locator, a
@@ -513,8 +512,8 @@ decay vertices crucial for this analysis. The rest of the tracking system is
 located further from the $pp$ interaction point and consists of the Tracker
 Turicensis (TT), positioned upstream of the dipole magnet, and tracking stations
 T1-T3, downstream of the magnet. The TT and the inner tracker (IT) of T1-T3 are
-also silicon microstrip detectors, whilst the outer tracker (OT) of the tracking
-stations consists of straw drift tube detectors. The dipole magnet itself has an
+silicon microstrip detectors, whilst the outer tracker (OT) of the tracking
+stations consists of straw drift tubes. The dipole magnet itself has an
 integrated magnetic field $\int B dl = 4$ Tm.  Positive and negatively charged
 particles bend in opposite directions in this field, therefore, to avoid charge
 detection asymmetries, it's direction is reversed regularly during data taking.
@@ -565,8 +564,7 @@ in this analysis.
 
 A charged particle passing through the whole tracking system has a 96\%
 probability of being reconstructed. In contrast, photons and $\pi^0$ mesons have a
-reconstruction efficiency of around 10\% and 3\%, respectively. This is what
-makes this analysis so challenging.
+reconstruction efficiency of around 10\% and 3\%, respectively.
 
 The data presented in this report was taken at center-of-mass energies of $7$
 TeV in 2011, $8$ TeV in 2012 (Run1) and $13$ TeV in 2015, 2016 and 2017 (Run2),
@@ -575,12 +573,12 @@ resulting in a total integrated luminosity of $6.6$ $\text{fb}^{-1}$.
 \section{Selections} \label{selections}
 
 Signal candidates are initially chosen to have the decay chain and event
-topology of the type $B^{\pm}\rightarrow Dh^{\pm}$. A neutral particle is then
-combined with the $D$ meson to make a $B^{\pm}\rightarrow D^*h^{\pm}$ candidate.
-A kinematic fit is performed to the entire decay chain of each candidate, with
-vertex constraints applied to both the $B^{\pm}$ and $D$ daughters, and $D$
-(1864.8 MeV/$c^2$) and $\pi^0$ (135.0 MeV/$c^2$) (when present) mesons are
-constrained to their known masses.
+topology of the type $B^{\pm}\rightarrow Dh^{\pm}$. A neutral particle from the
+event is then combined with the $D$ meson to make a $B^{\pm}\rightarrow
+D^*h^{\pm}$ candidate. A kinematic fit is performed to the entire decay chain
+of each candidate, with vertex constraints applied to both the $B^{\pm}$ and $D$
+daughters, and $D$ and $\pi^0$ (when present) mesons are constrained to their
+known masses, 1864.8 MeV/$c^2$ and 135.0 MeV/$c^2$ respectively.
 
 Candidates must fulfil the hardware trigger, meaning that decay products of the
 signal candidate detected by the HCAL, or events containing at least one
@@ -609,30 +607,28 @@ the charged meson from the $B^{\pm}$ decay vertex and $D$ meson candidates from
 appearing in more than one category. Cross feed between the final states
 $D^{0}\rightarrow K^-\pi^+, K^-K^+, \pi^-\pi^+$ is negligible. When both $D$
 secondaries are misidentified, however, there is some contamination of
-Cabibbo-favoured $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^-\pi^+])h^{\pm}$
-decay in the $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^+\pi^-])h^{\pm}$ sample,
+Cabbibo-favoured $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^-\pi^+])h^{\pm}$
+decays in the $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^+\pi^-])h^{\pm}$ sample,
 due to its relatively large branching fraction. To suppress this cross-feed, a
-veto is applied to $D$ final states containing and pion and kaon combination.
-The $D^0$ mass is reconstructed with the mass hypothesis of the daughters
-swapped, so the kaon is reconstructed whilst assigned the mass of a pion and the
-pion is reconstructed whilst assigned the mass of a kaon. $D$ candidates
-reconstructed in this way that lie within 15 MeV/$c^2$ of the nominal $D$ mass
-are removed, which ensures any cross-feed is negligible.
+veto is applied to $D$ final states containing a pion and kaon.  The $D$ mass is
+reconstructed with the mass hypothesis of the daughters swapped, $i.e.$ the kaon
+is reconstructed as a pion and the pion is reconstructed as a kaon. These
+mass-swapped $D$ candidates that lie within 15 MeV/$c^2$ of the nominal $D$ mass
+are removed. This veto renders the doubly misidentified background negligible.
 
 Combinatorial backgrounds are supressed using two stages of multivariate
-analysis (MVA). During the first stage, we try to discriminate against fake $D$
-candidates, formed from the combination of random tracks disguised as $D$
-daughters, and fake $B$ candidates, made up of a $D$ meson plus a random track.
-The use of Boosted Decision Trees (BDTs)~\cite{RegressionTrees} in isolating
+analysis (MVA). During the first stage, fake $D$ candidates, formed from the
+combination of random tracks disguised as $D$ daughters, and fake $B$
+candidates, made up of a $D$ meson plus a random track, are targetted.  The
+use of Boosted Decision Trees (BDTs)~\cite{RegressionTrees} in isolating
 $B^{\pm}\rightarrow [h^{\pm}h^{\mp}]_{D}h^{\pm}$ decays has been well
-established by the 2-body ADS/GLW analysis of this mode~\cite{B2DKD2hh}. We
-therefore employ a similar strategy here. 
+established by the 2-body ADS/GLW analysis of this mode~\cite{B2DKD2hh}. A
+similar strategy is employed here. 
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0,0)
-  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
 \begin{scope}[x={(image.south east)},y={(image.north west)}]
 % \draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
 % \foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
@@ -656,12 +652,13 @@ therefore employ a similar strategy here.
 \node[red,ultra thick] at (0.295,0.7) {BDT2};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{$\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] +
-m[\pi^0]_{PDG})$, where the part in brackets refers to the definition for the
-$D^*\rightarrow D\pi^0$ decay mode, is plotted against partially reconstructed
-$m[Dh]$ for both $D^*$ meson decay modes. The training regions in data for
-both stages of MVA are shown by the labelled boxes.}}
-\label{fig:trainingData}
+\caption{\small{$\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] + m[\pi^0]_{PDG})$, where
+the part in brackets refers to the definition for the $D^*\rightarrow D\pi^0$
+decay mode, is plotted against partially reconstructed $m[D\pi]$. The training
+regions in $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (left) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (right) data for both
+stages of MVA are shown by the labelled boxes.}} \label{fig:trainingData}
 \end{figure}
 
 Data side-bands for the high statistics modes $B^{\pm}\rightarrow(D^{*}
@@ -673,40 +670,43 @@ the same decay mode. The training variables used are related to the decay
 kinematics and topology of tracks, and are displayed in
 Table~\ref{table:bdt1TrainingVar}. 
 
-The working point of BDT1 $>$ 0.05 was chosen by performing fits to the $D$ mass
+The working point of BDT1 $>$ 0.05 is chosen by performing fits to the $D$ mass
 distribution of the high statistics mode, in BDT steps of 0.05. The extracted
-signal yield was then scaled to the ADS mode using the branching ratio
+signal yield is then scaled to the ADS mode using the branching ratio
 $\mathcal{BR} = \frac{\mathcal{BF}(D^0 \rightarrow K^- \pi^+)}{\mathcal{BF}(D^0
 \rightarrow K^+ \pi^-)}$. The optimisation was performed using the
-significanc:
+significance figure of merit:
 \begin{equation}
-S = \frac{Sig. Yield}{\sqrt{Sig. Yield \times Bkg. Yield}}
+S = \frac{Yield_{Sig}}{\sqrt{Yield_{Sig} \times Yield_{Bkg}}}
 \label{D_branching_ratio}
 \end{equation}
 
-BDTs were also employed in the second stage MVA, designed to select the correct
-neutral and therefore the true $D^*$ candidate. Separate BDTs were trained for
-the two $D^*$ final states, $D\pi^0$ and $D\gamma$. The signal sample provided
-was made up of the same simulation samples as were used in the first stage. The
-background samples consist of data in the $\Delta_M=m[D^{*}] - m[D]- (m[\pi^0]
-+ m[\pi^0]_{PDG})$ upper side-bands, 250 $ < \Delta_{M} < $ 500 MeV/$c^2$, but
-$m[Dh]$ signal region, as shown in Fig.~\ref{fig:trainingData}. The training
-variables are a mixture of momentum variables and parameters quantifying photon
-quality, as displayed in Table.~\ref{table:bdt2TrainingVar}. 
+BDTs are also employed in the second stage MVA, designed to select the true
+neutral and $D^*$ candidate. Separate BDTs are trained for the two $D^*$ final
+states, $D\pi^0$ and $D\gamma$. The signal samples provided are made up of
+$B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]\pi^0/\gamma)\pi^{\pm}$
+simulation samples. The background samples consist of data in the
+$\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] + m[\pi^0]_{PDG})$ upper side-bands, 250 $
+< \Delta_{M} < $ 500 MeV/$c^2$, but $m[D\pi]$ signal region, as shown in
+Fig.~\ref{fig:trainingData}. The training variables, listed in
+Table~\ref{table:bdt2TrainingVar}, are a mixture of momentum variables and
+parameters quantifying photon quality. 
 
-The same optimisation procedure was applied for the second stage BDT, with
-signal and background estimates extracted from fits to $\Delta_M$
-distributions. The chosen working point was BDT2 $>0$ for both $D^{*}$ decay modes.
+The same optimisation procedure is used for the second stage BDT, with
+signal and background yields extracted from fits to $\Delta_M$
+distributions. The chosen working point is BDT2 $>0$ for both $D\pi^0$ and
+$D\gamma$ final states.
 
-At the end of the selection process, events reconstructed in both
-$D^{*}\rightarrow D\pi^0$ and $D^{*}\rightarrow D\gamma$ modes are removed from
-the latter. Multiple candidates occur at a rate of $\sim 1.5$ in the $D\pi^0$
-mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the $D\gamma$
-mode is due to the tighter transverse momentum cut on the photons in the event,
-removing combinatoric background from low energy photons.
+Events reconstructed in both $D^{*}$ decay modes modes are kept in the $D\pi^0$
+and removed from the $D\gamma$ sample. This is motivated by the reduced
+statistics in the $D\pi^0$ final state and an increase in purity of signal data
+in the $D\gamma$ sample. Multiple candidates occur at a rate of $\sim 1.5$ in
+the $D\pi^0$ mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the
+$D\gamma$ mode is due to the tighter transverse momentum cut on the photons in
+the event, removing combinatoric background from low energy photons. The
+selected candidate to be used in the mass fit is chosen at random.
 
-\afterpage{
-\clearpage % Flush earlier floats (otherwise order might not be
+\afterpage{ \clearpage % Flush earlier floats (otherwise order might not be
 \begin{landscape}
 \begin{table}[]
 \centering
@@ -816,8 +816,7 @@ Asymmetry of transverse energy of photons
 }
 \caption{\small{Variables used in the training of the second stage BDT, ranked
 by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
-$\pi^0$, $\pi^0_{\gamma}$ refers to the partially reconstructed $\pi^0$ mode, where only
-one of the photons from the $\pi^0$ is reconstructed in the final state.}}
+$\pi^0$.}}
 \label{table:bdt2TrainingVar}
 \end{table}
 \end{landscape}
