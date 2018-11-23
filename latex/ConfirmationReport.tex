@@ -628,6 +628,45 @@ $B^{\pm}\rightarrow [h^{\pm}h^{\mp}]_{D}h^{\pm}$ decays has been well
 established by the 2-body ADS/GLW analysis of this mode~\cite{B2DKD2hh}. We
 therefore employ a similar strategy here. 
 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0,0)
+  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+% \draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+% \foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+% \foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+\draw[green,ultra thick] (0.533,0.0899) rectangle (0.84,0.899);
+\node[green,ultra thick] at (0.7,0.5) {BDT1};
+\draw[red,ultra thick] (0.2,0.355) rectangle (0.39,0.899);
+\node[red,ultra thick] at (0.295,0.62) {BDT2};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMgamma}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+% \draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+% \foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+% \foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+\draw[green,ultra thick] (0.533,0.12) rectangle (0.84,0.899);
+\node[green,ultra thick] at (0.7,0.55) {BDT1};
+\draw[red,ultra thick] (0.2,0.499) rectangle (0.39,0.899);
+\node[red,ultra thick] at (0.295,0.7) {BDT2};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{$\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] +
+m[\pi^0]_{PDG})$, where the part in brackets refers to the definition for the
+$D^*\rightarrow D\pi^0$ decay mode, is plotted against partially reconstructed
+$m[Dh]$ for both $D^*$ meson decay modes. The training regions in data for
+both stages of MVA are shown by the labelled boxes.}}
+\label{fig:trainingData}
+\end{figure}
+
+
+
+
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
 
