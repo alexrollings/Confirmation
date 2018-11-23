@@ -600,6 +600,33 @@ D\gamma$ final state, $\gamma_{P_T}>350$ MeV/$c^2$. In the $D^*\rightarrow
 D\pi^0$ mode, $\pi^0_{P_T}>350$ MeV/$c^2$, and the $\pi^0$ secondary photons are
 required to have $P_T>200$ MeV/$c^2$.
 
+Particle identification (PID) information is obtained from the RICH detector.
+The charged pion and kaon from the $B^{\pm}$ decay vertex are required to occupy
+the momentum regions $5 < p < 100$ GeV/$c$ and $0.5 < p_T < 10$ GeV/$c$, to lie
+within the RICH's kinematic range. PID cuts are placed on these particles, and
+on the $D$ meson daughters, to identify them as pions or kaons. This prevents
+the charged meson from the $B^{\pm}$ decay vertex and $D$ meson candidates from
+appearing in more than one category. Cross feed between the final states
+$D^{0}\rightarrow K^-\pi^+, K^-K^+, \pi^-\pi^+$ is negligible. When both $D$
+secondaries are misidentified, however, there is some contamination of
+Cabibbo-favoured $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^-\pi^+])h^{\pm}$
+decay in the $B^{\pm}\rightarrow (D^{*0}\rightarrow [K^+\pi^-])h^{\pm}$ sample,
+due to its relatively large branching fraction. To suppress this cross-feed, a
+veto is applied to $D$ final states containing and pion and kaon combination.
+The $D^0$ mass is reconstructed with the mass hypothesis of the daughters
+swapped, so the kaon is reconstructed whilst assigned the mass of a pion and the
+pion is reconstructed whilst assigned the mass of a kaon. $D$ candidates
+reconstructed in this way that lie within 15 MeV/$c^2$ of the nominal $D$ mass
+are removed, which ensures any cross-feed is negligible.
+
+Combinatorial backgrounds are supressed using two stages of multivariate
+analysis (MVA). During the first stage, we try to discriminate against fake $D$
+candidates, formed from the combination of random tracks disguised as $D$
+daughters, and fake $B$ candidates, made up of a $D$ meson plus a random track.
+The use of Boosted Decision Trees (BDTs)~\cite{RegressionTrees} in isolating
+$B^{\pm}\rightarrow [h^{\pm}h^{\mp}]_{D}h^{\pm}$ decays has been well
+established by the 2-body ADS/GLW analysis of this mode~\cite{B2DKD2hh}. We
+therefore employ a similar strategy here. 
 
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
