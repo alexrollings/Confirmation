@@ -705,6 +705,123 @@ mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the $D\gamma$
 mode is due to the tighter transverse momentum cut on the photons in the event,
 removing combinatoric background from low energy photons.
 
+\afterpage{
+\clearpage % Flush earlier floats (otherwise order might not be
+\begin{landscape}
+\begin{table}[]
+\centering
+\resizebox{.82\paperheight}{!}{ % with resizebox only specify one of {width}{height} as text is not scaled proportionally.
+\begin{tabular}{lll}
+\hline
+Variable                    & Description
+                            & BDT Importance ($\times 10^{-2}$)
+                            \\ \hline
+log$_{10}$(Bu\_RHO\_BPV)    & $\Delta (\rho )$ (cylindrical coordinates) between
+the end vertex of the $B$ and the best primary vertex
+                            & 9.01
+                            \\
+bach\_PT                    & Bachelor transverse momentum
+                            & 7.52                              
+                            \\
+log$_{10}$(D0\_RHO\_BPV)    & $\Delta(\rho )$ (cylindrical coordinates) between 
+the end vertex of the $D$ and the best primary vertex         
+                            & 7.41
+                            \\
+log(1-D0\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $D$
+momentum and the vector from the primary to the secondary vertex 
+                            & 6.96
+                            \\
+log(1-Bu\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $B$
+momentum and the vector from the primary to the secondary vertex     
+                            & 6.96
+                            \\
+bach\_P                     & Bachelor momentum
+                            & 6.59                              
+                            \\
+log(Bu\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $B$ with respect to 
+the primary vertex
+                            & 6.32
+                            \\
+Bu\_ptasy\_1.50             & $P_{T}$ asymmetry of the $B$ candidate using a cone 
+radius of 1.50
+                            & 6.31                              
+                            \\
+log$_{10}$(Bu\_MIPCHI2\_PV) & Minimal $\chi^2$ for the impact parameter of the $B$ 
+with respect to the primary vertex
+                            & 5.89
+                            \\
+log$_{10}$(Bu\_FD\_BPV)     & Flight  distance of the $B$ with respect to the 
+primary vertex
+                            & 5.42
+                            \\
+log(D0\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $D$ with respect to
+the primary vertex          & 5.40
+                            \\
+log(D0\_MIPCHI2\_PV)        & Minimal $\chi^2$ for the impact parameter of the $D$
+with respect to the primary vertex
+                            & 5.34
+                            \\
+D0\_AMAXDOCA                & Distance of closest approach of the $D$ daughters
+                            & 5.03
+                            \\
+Bu\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $B$
+                            & 4.96
+                            \\
+log$_{10}$(D0\_FD\_OWNPV)   & Flight distance of the $D$ with respect to the
+primary vertex              & 3.76
+                            \\
+D0\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $D$
+                            & 3.73
+                            \\
+D0\_LT\_BPV                 & $D$ lifetime (laboratory frame) with respect to 
+the primary vertex          & 3.41
+                            \\ \hline
+\end{tabular}
+} \caption{\small{Variables used in the training of the first stage BDT, ranked
+by importance. The name Bu refers to the $B$, bach to the $\pi/K$ from the
+$B^{\pm}$ decay vertex, and D0 to the $D$.}}
+\label{table:bdt1TrainingVar}
+\end{table}
+
+\begin{table}[]
+\centering
+\resizebox{.82\paperheight}{!}{
+\begin{tabular}{lllll}
+\hline
+\multicolumn{2}{l}{Variable} &
+Description &
+\multicolumn{2}{l}{BDT Importance$(\times 10^{-2})$} \\
+$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ &
+ &
+$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ \\ \hline
+$D^{*}_{P_{T}}$ & $D^{*}_{P_{T}}$ & 
+Transverse momentum of $D^*$ & 
+2.117 & 2.828 \\
+$\gamma^{1}_{CL} \times \gamma^{2}_{CL}$ & $\gamma_{CL}$ & 
+Discriminates against non-EM deposits & 
+2.098 & 2.572 \\
+$\gamma^{1}_{IsNotE} \times \gamma^{2}_{IsNotE}$ & $\gamma_{IsNotE}$ & 
+Discriminates against electrons & 
+2.078 & 2.406 \\
+- & $\gamma_{P_{T}}$ & 
+Transverse energy of photon & 
+- & 2.194 \\
+$(\gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})/2$ & - & 
+Average transverse energy of photons & 
+1.991 & - \\
+$(\gamma^{1}_{P_{T}} - \gamma^{2}_{P_{T}})/( \gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})$ & - & 
+Asymmetry of transverse energy of photons 
+& 1.716 & - \\ \hline
+\end{tabular}
+}
+\caption{\small{Variables used in the training of the second stage BDT, ranked
+by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
+$\pi^0$, $\pi^0_{\gamma}$ refers to the partially reconstructed $\pi^0$ mode, where only
+one of the photons from the $\pi^0$ is reconstructed in the final state.}}
+\label{table:bdt2TrainingVar}
+\end{table}
+\end{landscape}
+}
 
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
