@@ -575,11 +575,11 @@ resulting in a total integrated luminosity of $6.6$ $\text{fb}^{-1}$.
 \section{Selections} \label{selections}
 
 Signal candidates are initially chosen to have the decay chain and event
-topology of the type $B^{\pm}\rightarrow Dh^{\pm}$. A neutral particle
-is then combined with the $D$ meson to make a $B^{\pm}\rightarrow D^*h^{\pm}$
-candidate. A kinematic fit is performed to the
-entire decay chain of each candidate, with vertex constraints applied to both
-the $B^{\pm}$ and $D$ daughters, and $D$ and $\pi^0$ (when present) mesons are
+topology of the type $B^{\pm}\rightarrow Dh^{\pm}$. A neutral particle is then
+combined with the $D$ meson to make a $B^{\pm}\rightarrow D^*h^{\pm}$ candidate.
+A kinematic fit is performed to the entire decay chain of each candidate, with
+vertex constraints applied to both the $B^{\pm}$ and $D$ daughters, and $D$
+(1864.8 MeV/$c^2$) and $\pi^0$ (135.0 MeV/$c^2$) (when present) mesons are
 constrained to their known masses.
 
 Candidates must fulfil the hardware trigger, meaning that decay products of the
@@ -590,210 +590,16 @@ requirements on the quality of tracks, which are then combined one-by-one, and
 identified as having either 2-, 3-, or 4-body topology depending on their
 distance of closest approach. 
 
-The offline selection consits of 2 stages of multivariate analysis (MVA) and
-rectangular cuts, in order to reduce combinatorial and physics backgrounds. 
-
-The combinatoric backgrounds we are trying to suppress during the first stage
-MVA are fake $D$ candidates, formed from the combination of random tracks
-disguised as $D$ daughters, and fake $B$ candidates, made up of a $D$ meson
-plus a random track.  The use of Boosted Decision Trees
-(BDTs)~\cite{RegressionTrees} in isolating $B^{\pm}\rightarrow
-[h^{\pm}h^{\mp}]_{D}h^{\pm}$ decays has been well established by the 2-body
-ADS/GLW analysis of this mode~\cite{B2DKD2hh}. We therefore employ a similar
-strategy here. 
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0,0)
-  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\draw[green,ultra thick] (0.533,0.29) rectangle (0.90,0.90);
-\node[green,ultra thick] at (0.72,0.6) {BDT1};
-\draw[red,ultra thick] (0.20,0.50) rectangle (0.42,0.90);
-\node[red,ultra thick] at (0.31,0.7) {BDT2};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMgamma}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\draw[green,ultra thick] (0.533,0.10) rectangle (0.90,0.90);
-\node[green,ultra thick] at (0.72,0.6) {BDT1};
-\draw[red,ultra thick] (0.20,0.50) rectangle (0.42,0.90);
-\node[red,ultra thick] at (0.31,0.7) {BDT2};
-\end{scope}
-\end{tikzpicture}
-\caption{\small{$\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] +
-m[\pi^0]_{PDG})$, where the part in brackets refers to the definition for the
-$D^*\rightarrow D\pi^0$ decay mode, is plotted against partially reconstructed
-$m[Dh]$ for both $D^*$ meson decay modes. The training regions in data for
-both stages of MVA are shown by the labelled boxes. The data falling below the
-$\pi^0$ mass along the $\Delta_M$ axis in the left hand plot is a resolution
-effect.}} \label{fig:trainingData}
-\end{figure}
-
-Data side-bands for the high statistics modes $B^{\pm}\rightarrow(D^{*}
-\rightarrow [K^{\pm}\pi^{\mp}]_{D} \pi^0 /\gamma)\pi^{\pm}$ are provided as a
-background sample for the BDT. Here, side-bands constitutes data that falls in
-the range 5800 $ < m[D\pi] <$ 6800 MeV/c$^2$, as shown in
-Fig.~\ref{fig:trainingData}. The signal sample consists of simulated events of
-the same decay mode. The training variables used are related to the decay
-kinematics and topology of tracks, and are displayed in
-Table~\ref{table:bdt1TrainingVar}. 
-
-The working point of BDT1 $>$ 0.05 was chosen by performing fits to the $D$ mass
-distribution of the high statistics mode, in BDT steps of 0.05. The extracted
-signal yield was then scaled to the ADS mode using the branching ratio
-$\mathcal{BR} = \frac{\mathcal{BF}(D^0 \rightarrow K^- \pi^+)}{\mathcal{BF}(D^0
-\rightarrow K^+ \pi^-)}$. The optimisation was performed using the
-significanc:
-\begin{equation}
-S = \frac{Sig. Yield}{\sqrt{Sig. Yield \times Bkg. Yield}}
-\label{D_branching_ratio}
-\end{equation}
-
-BDTs were also employed in the second stage MVA, designed to select the correct
-neutral and therefore the true $D^*$ candidate. Separate BDTs were trained for
-the two $D^*$ final states, $D\pi^0$ and $D\gamma$. The signal sample provided
-was made up of the same simulation samples as were used in the first stage. The
-background samples consist of data in the $\Delta_M=m[D^{*}] - m[D]- (m[\pi^0]
-+ m[\pi^0]_{PDG})$ upper side-bands, 250 $ < \Delta_{M} < $ 500 MeV/c$^2$, but
-$m[Dh]$ signal region, as shown in Fig.~\ref{fig:trainingData}. The training
-variables are a mixture of momentum variables and parameters quantifying photon
-quality, as displayed in Table.~\ref{table:bdt2TrainingVar}. 
-
-The same optimisation procedure was applied for the second stage BDT, with
-signal and background estimates extracted from fits to $\Delta_M$
-distributions. The chosen working point was BDT2 $>0$ for both $D^{*}$ decay modes.
-
-The charged pion and kaon from the $B^{\pm}$ decay vertex are required to occupy
-the kinematic range of the RICH detector, $5 < p < 100$ GeV/c and $0.5 < p_T <
-10$ GeV/c. Talk about PID.
-
-After the application of the BDTs, a series of rectangular cuts are applied.
-The $D$ meson is required to be within $\pm$25 MeV/c$^2$ of the nominal $D^0$
+The $D$ meson is required to be within $\pm$25 MeV/$c^2$ of the known $D^0$
 mass, which corresponds to approximately three times the mass resolution.  When
 a neutral pion is present, it is required to lie within the asymmetric mass
-window of $110 < m[\pi^0] < 185$ MeV/c$^2$. 
+window of $110 < m[\pi^0] < 185$ MeV/$c^2$. In order to remove combinatorial
+backgrounds from low energy photons in the event, transverse momentum
+requirements are placed on the neutral particles. In the $D^*\rightarrow
+D\gamma$ final state, $\gamma_{P_T}>350$ MeV/$c^2$. In the $D^*\rightarrow
+D\pi^0$ mode, $\pi^0_{P_T}>350$ MeV/$c^2$, and the $\pi^0$ secondary photons are
+required to have $P_T>200$ MeV/$c^2$.
 
-\afterpage{
-\clearpage % Flush earlier floats (otherwise order might not be
-\begin{landscape}
-\begin{table}[]
-\centering
-\resizebox{.82\paperheight}{!}{ % with resizebox only specify one of {width}{height} as text is not scaled proportionally.
-\begin{tabular}{lll}
-\hline
-Variable                    & Description
-                            & BDT Importance ($\times 10^{-2}$)
-                            \\ \hline
-log$_{10}$(Bu\_RHO\_BPV)    & $\Delta (\rho )$ (cylindrical coordinates) between
-the end vertex of the $B$ and the best primary vertex
-                            & 9.01
-                            \\
-bach\_PT                    & Bachelor transverse momentum
-                            & 7.52                              
-                            \\
-log$_{10}$(D0\_RHO\_BPV)    & $\Delta(\rho )$ (cylindrical coordinates) between 
-the end vertex of the $D$ and the best primary vertex         
-                            & 7.41
-                            \\
-log(1-D0\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $D$
-momentum and the vector from the primary to the secondary vertex 
-                            & 6.96
-                            \\
-log(1-Bu\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $B$
-momentum and the vector from the primary to the secondary vertex     
-                            & 6.96
-                            \\
-bach\_P                     & Bachelor momentum
-                            & 6.59                              
-                            \\
-log(Bu\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $B$ with respect to 
-the primary vertex
-                            & 6.32
-                            \\
-Bu\_ptasy\_1.50             & $P_{T}$ asymmetry of the $B$ candidate using a cone 
-radius of 1.50
-                            & 6.31                              
-                            \\
-log$_{10}$(Bu\_MIPCHI2\_PV) & Minimal $\chi^2$ for the impact parameter of the $B$ 
-with respect to the primary vertex
-                            & 5.89
-                            \\
-log$_{10}$(Bu\_FD\_BPV)     & Flight  distance of the $B$ with respect to the 
-primary vertex
-                            & 5.42
-                            \\
-log(D0\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $D$ with respect to
-the primary vertex          & 5.40
-                            \\
-log(D0\_MIPCHI2\_PV)        & Minimal $\chi^2$ for the impact parameter of the $D$
-with respect to the primary vertex
-                            & 5.34
-                            \\
-D0\_AMAXDOCA                & Distance of closest approach of the $D$ daughters
-                            & 5.03
-                            \\
-Bu\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $B$
-                            & 4.96
-                            \\
-log$_{10}$(D0\_FD\_OWNPV)   & Flight distance of the $D$ with respect to the
-primary vertex              & 3.76
-                            \\
-D0\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $D$
-                            & 3.73
-                            \\
-D0\_LT\_BPV                 & $D$ lifetime (laboratory frame) with respect to 
-the primary vertex          & 3.41
-                            \\ \hline
-\end{tabular}
-} \caption{\small{Variables used in the training of the first stage BDT, ranked
-by importance. The name Bu refers to the $B$, bach to the $\pi/K$ from the
-$B^{\pm}$ decay vertex, and D0 to the $D$.}}
-\label{table:bdt1TrainingVar}
-\end{table}
-
-\begin{table}[]
-\centering
-\resizebox{.82\paperheight}{!}{
-\begin{tabular}{lllll}
-\hline
-\multicolumn{2}{l}{Variable} &
-Description &
-\multicolumn{2}{l}{BDT Importance$(\times 10^{-2})$} \\
-$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ &
- &
-$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ \\ \hline
-$D^{*}_{P_{T}}$ & $D^{*}_{P_{T}}$ & 
-Transverse momentum of $D^*$ & 
-2.117 & 2.828 \\
-$\gamma^{1}_{CL} \times \gamma^{2}_{CL}$ & $\gamma_{CL}$ & 
-Discriminates against non-EM deposits & 
-2.098 & 2.572 \\
-$\gamma^{1}_{IsNotE} \times \gamma^{2}_{IsNotE}$ & $\gamma_{IsNotE}$ & 
-Discriminates against electrons & 
-2.078 & 2.406 \\
-- & $\gamma_{P_{T}}$ & 
-Transverse energy of photon & 
-- & 2.194 \\
-$(\gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})/2$ & - & 
-Average transverse energy of photons & 
-1.991 & - \\
-$(\gamma^{1}_{P_{T}} - \gamma^{2}_{P_{T}})/( \gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})$ & - & 
-Asymmetry of transverse energy of photons 
-& 1.716 & - \\ \hline
-\end{tabular}
-}
-\caption{\small{Variables used in the training of the second stage BDT, ranked
-by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
-$\pi^0$, $\pi^0_{\gamma}$ refers to the partially reconstructed $\pi^0$ mode, where only
-one of the photons from the $\pi^0$ is reconstructed in the final state.}}
-\label{table:bdt2TrainingVar}
-\end{table}
-\end{landscape}
-}
 
 \section{2D Mass Fit} \label{massfit}
 \section{Conclusions and Ongoing Work} \label{conclusion}
