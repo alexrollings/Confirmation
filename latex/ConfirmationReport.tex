@@ -515,14 +515,14 @@ $2 < \eta < 5$, where $\eta = -\ln (\tan \theta / 2)$.  Here, $\theta$ is the
 angle between the particle's momentum vector and the beam axis. During Run1
 (Run2), the LHC operated with a collision frequency of approximately 20 MHz (40
 MHz). At the interaction point, the transverse overlap of the 2 beams is reduced
-so that, on average, 1.7 $pp$ interactions occur per bunch crossing. To reduce
-the rate of data uptake, online event selection consists of a hardware and
-software trigger. The hardware trigger uses information from the calorimeter and
-muon systems, and reduces the rate of information that needs to be stored down
-to 1 MHz, allowing latency for the full detector to be read out. This is
-required for the software trigger, which involves a full event reconstruction.
-Events that pass the software trigger are read out at a rate of 3 kHz (2011), 5
-kHz (2012) and 12.5 kHz (Run2).
+so that, on average, 1.6 (1.1) $pp$ interactions occur per bunch crossing in
+Run1 (Run2). To reduce the rate of data uptake, online event selection consists
+of a hardware and software trigger. The hardware trigger uses information from
+the calorimeter and muon systems, and reduces the rate of information that needs
+to be stored down to 1 MHz, allowing latency for the full detector to be read
+out. This is required for the software trigger, which involves a full event
+reconstruction.  Events that pass the software trigger are read out at a rate of
+3 kHz (2011), 5 kHz (2012) and 12.5 kHz (Run2).
 
 The full description of the LHCb detector can be found in \cite{LHCbDetector},
 whilst the relevant components will be described here.  The vertex locator, a
@@ -578,23 +578,29 @@ The photon energy is then the sum of the total cluster energy in the ECAL and
 the reconstructed energy deposit in the PS. Its direction is determined using
 the assumed origin and cluster centre of the candidate. It should be noted that,
 in this report, only unconverted photons have been considered, i.e. those that
-have not pair produced upon reaching the SPD.
+have pair produced after passing through the SPD.
 
-Neutral pions are then reconstructed as pairs of well separated photons. These
-resolved $\pi^0$s have transverse momentum ($p_T$) in the range $p_{T}<2$ GeV/c.
-Above this, the daughter photons cannot be identified as individual clusters due
-to finite ECAL granularity. These merged $\pi^0$ candidates are not considered
-in this analysis.
+Neutral pions are reconstructed as pairs of well-separated photons. These
+$\pi^0$s are required to have transverse momentum ($p_T$) in the range $p_{T}<2$
+GeV/c.  Above this, the daughter photons are not sufficiently resolved as
+individual clusters due to finite ECAL granularity. Neutral pion candidates
+where the photon clusters are merged are not considered in this analysis.
 
-A charged particle passing through the whole tracking system has a 96\%
-probability of being reconstructed. In contrast, photons and $\pi^0$ mesons have a
-reconstruction efficiency of around 10\% and 3\%, respectively.
+A charged particle passing through the whole tracking system, with momentum
+withn the range 5 GeV/$c$ $< p <$ 200 GeV/$c$, has a 96\% probability of being
+reconstructed. In contrast, photons and $\pi^0$ mesons have a reconstruction
+efficiency of around 10\% and 3\%, respectively.
 
-The data presented in this report was taken at center-of-mass energies of $7$
-TeV in 2011, $8$ TeV in 2012 (Run1) and $13$ TeV in 2015, 2016 and 2017 (Run2),
-resulting in a total integrated luminosity of $6.6$ $\text{fb}^{-1}$.
+The data presented in this report consists of $6.6$ $\text{fb}^{-1}$ of $pp$
+collision data, broken down by center-of-mass energies into $1$ $\text{fb}^{-1}$ taken at $7$ TeV in 2011, $2$
+$\text{fb}^{-1}$ at $8$ TeV in 2012 (Run1) and $3.6$ $\text{fb}^{-1}$ at $13$
+TeV in 2015, 2016 and 2017 (Run2). The increase in energy between Run1 and Run2
+resulted in an increase in the $b\overbar{b}$ production cross
+section~\cite{PDG2018}, which, when combined with improvements in the online
+selection, caused the rate of selected signal candidates per integrated
+luminosity to increase by approximately a factor of 2.
 
-\section{Selections} \label{selections}
+\section{Selection of $B^{\pm}\rightarrow D^*h^{\pm}$ Candidates} \label{selections}
 
 Signal candidates are initially chosen to have the decay chain and event
 topology of the type $B^{\pm}\rightarrow Dh^{\pm}$. A neutral particle from the
