@@ -549,27 +549,30 @@ ECAL consists of alternating scintillating tiles and lead plates, and the HCAL
 iron plates interspaced with scintillating tiles aligned parallel to the beam
 pipe. The SPD identifies whether incident particles are charged or neutral,
 whilst the PS determines whether they are electrons (if charged) or photons (if
-neutral). Both the SPD and PS consist of scintillating pads and all light
-produced in the system is sent down wavelength-shifting fibres and transmitted
-to photomultiplier tubes.
+neutral), by looking at the longdtudinal segmentation of the electromagnetic
+shower, in order to discriminate against pions. Both the SPD and PS consist of
+scintillating pads and all light produced in the system is sent down
+wavelength-shifting fibres and transmitted to photomultiplier tubes.
 
 Once a candidate has been identified as a $\gamma$ or $\pi^0$ from its energy
 deposition sequence in the calorimeter system, reconstruction is performed using
 the ECAL \cite{NeutralReconstruction}. Energy deposits in ECAL cells are grouped
 together into clusters by applying a $3\times3$ cell pattern around the local
 energy deposition maxima. If clusters overlap, a convergent iterative procedure
-is applied that redistributes the cell energy between the clusters according to
-their total energies.  Defining: 
+is applied that redistributes the cell energy between the clusters
+proportionally to the total cluster energies.
+
+Photon candidates are identified to be neutral clusters without any associated
+extrapolated track. This means that they must have a $\chi^2_{2D}$, defined
+below, of at least 4 for every track in the event.
 \begin{equation}
   \chi^2_{2D}=(\vec{r}_{tr}-\vec{r}_{cl})^T(C_{tr}+S_{cl})^{-1}(\vec{r}_{tr}-\vec{r}_{cl})
   \label{Chi2}
 \end{equation}
-$\vec{r}_{tr}$ and $\vec{r}_{cl}$ represent the local coordinates of tracks and
-clusters, respectively, at the energy-weighted cluster centres. $C_{tr}$ is the
-covariance matrix of the $\vec{r}_{tr}$ and $S_{cl}$ is the cluster energy
-spread matrix. Photon candidates are identified to be those without any
-associated extrapolated track. This means that they must have a $\chi^2_{2D}$ of
-at least 4 for every track in the event. 
+\noindent Here, $\vec{r}_{tr}$ and $\vec{r}_{cl}$ represent the 2D coordinates
+of extrapolated tracks and energy-weighted cluster centres, respectively.
+$C_{tr}$ is the covariance matrix of the $\vec{r}_{tr}$ parameters and $S_{cl}$
+is the $2 \times 2$ cluster energy spread matrix.  
 
 The photon energy is then the sum of the total cluster energy in the ECAL and
 the reconstructed energy deposit in the PS. Its direction is determined using
