@@ -510,16 +510,16 @@ The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
 27 km circular $pp$ collider located at CERN. LHCb has been designed to study
 $b$ and $c$ quarks, which are predominantly produced in the forward/backward
 direction from gluon fusions into $c\overbar{c}$ or $b\overbar{b}$ pairs. For
-this reason, LHCb is a single-arm forward spectrometer covering the
-pseudorapidity region $2 < \eta < 5$, where $\eta = -\ln (\tan \theta / 2)$.
-Here, $\theta$ is the angle between the particle's momentum vector and the beam
-axis. During Run1 (Run2), the LHC operated with a collision frequency of 20 MHz
-(40 MHz). At the interaction point, the transverse overlap of the 2 beams is
-reduced so that, on average, 1.7 $pp$ interactions occur per bunch crossing. To
-reduce the rate of data uptake, online event selection consists of a hardware
-and software trigger. The hardware trigger uses information from the calorimeter
-and muon systems, and reduces the rate of information that needs to be stored
-down to 1 MHz, allowing latency for the full detector to be read out. This is
+this reason, LHCb is a forward spectrometer covering the pseudorapidity region
+$2 < \eta < 5$, where $\eta = -\ln (\tan \theta / 2)$.  Here, $\theta$ is the
+angle between the particle's momentum vector and the beam axis. During Run1
+(Run2), the LHC operated with a collision frequency of approximately 20 MHz (40
+MHz). At the interaction point, the transverse overlap of the 2 beams is reduced
+so that, on average, 1.7 $pp$ interactions occur per bunch crossing. To reduce
+the rate of data uptake, online event selection consists of a hardware and
+software trigger. The hardware trigger uses information from the calorimeter and
+muon systems, and reduces the rate of information that needs to be stored down
+to 1 MHz, allowing latency for the full detector to be read out. This is
 required for the software trigger, which involves a full event reconstruction.
 Events that pass the software trigger are read out at a rate of 3 kHz (2011), 5
 kHz (2012) and 12.5 kHz (Run2).
@@ -528,18 +528,19 @@ The full description of the LHCb detector can be found in \cite{LHCbDetector},
 whilst the relevant components will be described here.  The vertex locator, a
 semiconductor silicon detector with a transverse resolution of $\mathcal{O}(10$
 $\mu$m), sits $8$ mm from the beam line in order to identify the $B$ and $D$
-decay vertices crucial for this analysis. The rest of the tracking system is
-located further from the $pp$ interaction point and consists of the Tracker
-Turicensis (TT), positioned upstream of the dipole magnet, and tracking stations
-T1-T3, downstream of the magnet. The TT and the inner tracker (IT) of T1-T3 are
-silicon microstrip detectors, whilst the outer tracker (OT) of the tracking
-stations consists of straw drift tubes. The dipole magnet itself has an
+spatial decay vertices crucial for this analysis. The rest of the tracking
+system is located further from the $pp$ interaction point and consists of the
+Tracker Turicensis (TT), positioned upstream of the dipole magnet, and tracking
+stations T1-T3, downstream of the magnet. The TT and the inner tracker (IT) of
+T1-T3 are silicon microstrip detectors, whilst the outer tracker (OT) of the
+tracking stations consists of straw drift tubes. The dipole magnet itself has an
 integrated magnetic field $\int B dl = 4$ Tm.  Positive and negatively charged
 particles bend in opposite directions in this field, therefore, to avoid charge
-detection asymmetries, it's direction is reversed regularly during data taking.
-There are also two Ring Imaging Cherenkov detectors (RICH1 and RICH2), placed at
-different distances from the PV to provide particle identification (PID) of
-kaons, pions and protons.
+detection asymmetries from small differences in the left and right parts of the
+detector, the magnetic field is reversed regularly during data taking.  There
+are also two Ring Imaging Cherenkov detectors (RICH1 and RICH2), placed either
+side of the magnet, to provide direct discrimination between kaons, pions and
+protons.
 
 The reconstruction of neutrals involves the calorimeter system, consisting of
 the electromagnetic (ECAL) and hadronic (HCAL) calorimeters preceded by the
