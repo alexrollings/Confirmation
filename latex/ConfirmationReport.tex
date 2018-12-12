@@ -388,29 +388,39 @@ We create observables that do not depend on absolute efficiencies by taking
 ratios. The physics observables that will be measured in this analysis are:
 
 \begin{enumerate}
-	\item The $CP$ asymmetries between $B^{-}$ and $B^{+}$ mesons decaying to $CP$
-eigenstates, where $hh=\pi \pi /KK$:
+  \item The ratio of $B^{\pm} \rightarrow D^* K^{\pm}$ to $B^{\pm} \rightarrow
+  D^* \pi^{\pm}$ decays for the favoured $D$ decay mode:
+  \begin{equation}
+    R^{K\pi , \pi^0 /\gamma}_{K/\pi}=\frac{\Gamma(B^{-}\rightarrow
+    ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
+    ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
+    ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
+    ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})}
+  \end{equation}
+  \item The $CP$ asymmetries between $B^{-}$ and $B^{+}$ mesons decaying to $CP$
+  eigenstates, where $hh=\pi \pi /KK$:
 		\begin{equation}
-			A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \label{eq:Aglw}
+      A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
+      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
+      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
+      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \label{eq:Aglw}
 		\end{equation}
-	\item The ratios of $D\rightarrow hh$, where $hh=\pi \pi /KK$, to the favoured mode,
-scaled by the branching fraction:
+  \item The ratio of $B^{\pm} \rightarrow D^* K^{\pm}$ to $B^{\pm} \rightarrow
+  D^* \pi^{\pm}$ decays for $D\rightarrow hh$, where $hh=\pi \pi /KK$, divided
+  by $R^{K\pi , \pi^0 /\gamma}_{K/\pi}$:
 		\begin{equation}
-			R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
-			[[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
-			[[K^{-}\pi^{+}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
-			[[K^{+}\pi^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \times
-			\frac{\mathcal{B}(D^{0}\rightarrow
-			K^{-}\pi^{+})}{\mathcal{B}(D^{0}\rightarrow h^{-}h^{+})} \label{eq:Rglw}
+      R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
+      ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
+      ([h^{+}h^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
+      ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
+      ([h^{+}h^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})} \times \frac{1}{R^{K\pi ,
+      \pi^0 /\gamma}_{K/\pi}}
 		\end{equation}
-	\item The ratios of the ADS to the favoured mode, for $B^{\pm}$ decays. We
-measure $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
-statistically correlated. It should be noted that this constitutes 4 independent equations.
+  \item The ratios of the ADS to the favoured mode, for $B^{\pm}$ decays. We
+  measure $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
+  statistically correlated. It should be noted that this constitutes 4
+  independent equations.
 		\begin{equation}
 			R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow
 			[[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow
@@ -425,13 +435,26 @@ $R_{KK}^{\gamma}=R_{\pi\pi}^{\gamma}=R_{CP-}$.
 
 We can express these ratios in terms of the parameters of interest:
   \begin{equation}
+    R^{K\pi,
+    \pi^0}_{K/\pi}=R\frac{1+(r_Br_D)^2+2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2+2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
+    \label{eq:Rkpipi0}
+  \end{equation}
+  \begin{equation}
+    R^{K\pi,
+    \gamma}_{K/\pi}=R\frac{1+(r_Br_D)^2-2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2-2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
+    \label{eq:Rkpigamma}
+  \end{equation}
+  \begin{equation}
     A_{CP\pm}=\frac{\pm 2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}\pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
     \label{eq:ACP}
   \end{equation}
-  \begin{equation}
-    R_{CP\pm}=\frac{1 + r_{B}^{2} \pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1+r_{B}^{2}r_{D}^{2} \pm 2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+  \begin{align}
+    R_{CP\pm} &=R\frac{1 + r_{B}^{2} \pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1 +
+    r_{B}^{\pi^2} \pm 2r_{B}^{\pi}\cos(\delta_{B}^{\pi})\cos(\phi_{3})} \times
+    \frac{1}{R^{K\pi,\pi^0 /\gamma}_{K/\pi}} \nonumber \\
+    &= 1 + r_B^2 + 2r_B\cos(\delta_B)\cos(\phi_3) 
     \label{eq:RCP}
-  \end{equation}
+  \end{align}
   \begin{equation}
     A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
     \label{eq:AfavPi0}
@@ -453,11 +476,19 @@ We can express these ratios in terms of the parameters of interest:
     \phi_{3})} \label{eq:RPlusMinusGamma}
   \end{equation}
 
-For $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays, the current values for $r_B$ and
-$\delta_B$ are $0.119^{+0.018}_{-0.019}$ and $(-49^{+12}_{-15})$\degree,
-respectively~\cite{website:CKMFitter}. GLW analyses of $B^{\pm}\rightarrow
-D^{*}K^{\pm}$ decays have been successfully studied by the
-Belle~\cite{BelleGLW}, BaBar~\cite{BaBarGLW} and LHCb~\cite{PartReco}
+\noindent In Eq.~\eqref{eq:Rkpipi0}, \eqref{eq:Rkpigamma} and \eqref{eq:RCP},
+$R=\frac{B^{\pm}\rightarrow D^* K^{\pm}}{B^{\pm}\rightarrow D^* \pi^{\pm}}$,
+$r_B^{\pi}=\frac{|A(B^{-}\rightarrow
+\overbar{D}^{*0}\pi^-)|}{|A(B^{-}\rightarrow {D}^{*0}\pi^-)|}$ and
+$\delta_{B}^{\pi}$ is the relative strong phase between these $B$ decays. To
+arrive at Eq.~\eqref{eq:RCP}, it was approximated that $r_B^{\pi}\ll 1$ and
+$r_Br_D \ll 1$.
+
+For $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays, the
+current values for $r_B$ and $\delta_B$ are $0.119^{+0.018}_{-0.019}$ and
+$(-49^{+12}_{-15})$\degree, respectively~\cite{website:CKMFitter}. GLW analyses
+of $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays have been successfully studied by
+the Belle~\cite{BelleGLW}, BaBar~\cite{BaBarGLW} and LHCb~\cite{PartReco}
 collaborations. The latter was performed recently using a partially
 reconstructed analysis, where the neutral particle was not included in the final
 state. No results have yet been published on the ADS mode from the LHCb
@@ -478,19 +509,20 @@ type are less sensitive to $\phi_3$.
 The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
 27 km circular $pp$ collider located at CERN. LHCb has been designed to study
 $b$ and $c$ quarks, which are predominantly produced in the forward/backward
-direction from gluon interactions. For this reason, LHCb is a single-arm forward
-spectrometer covering the pseudorapidity region $2 < \eta < 5$, where $\eta =
--\ln (\tan \theta / 2)$. Here, $\theta$ is the angle between the particle's
-momentum vector and the beam axis. During Run1 (Run2), the LHC operated with a
-collision frequency of 20 MHz (40 MHz). At the interaction point, the transverse
-overlap of the 2 beams is reduced so that, on average, 1.7 $pp$ interactions
-occur per bunch crossing. To reduce the rate of data uptake, online event
-selection consists of a hardware and software trigger. The hardware trigger uses
-information from the calorimeter and muon systems, and reduces the rate of
-information that needs to be stored down to 1 MHz, allowing latency for the full
-detector to be read out. This is required for the software trigger, which
-involves a full event reconstruction. Events that pass the software trigger are
-read out at a rate of 3 kHz (2011), 5 kHz (2012) and 12.5 kHz (Run2).
+direction from gluon fusions into $c\overbar{c}$ or $b\overbar{b}$ pairs. For
+this reason, LHCb is a single-arm forward spectrometer covering the
+pseudorapidity region $2 < \eta < 5$, where $\eta = -\ln (\tan \theta / 2)$.
+Here, $\theta$ is the angle between the particle's momentum vector and the beam
+axis. During Run1 (Run2), the LHC operated with a collision frequency of 20 MHz
+(40 MHz). At the interaction point, the transverse overlap of the 2 beams is
+reduced so that, on average, 1.7 $pp$ interactions occur per bunch crossing. To
+reduce the rate of data uptake, online event selection consists of a hardware
+and software trigger. The hardware trigger uses information from the calorimeter
+and muon systems, and reduces the rate of information that needs to be stored
+down to 1 MHz, allowing latency for the full detector to be read out. This is
+required for the software trigger, which involves a full event reconstruction.
+Events that pass the software trigger are read out at a rate of 3 kHz (2011), 5
+kHz (2012) and 12.5 kHz (Run2).
 
 The full description of the LHCb detector can be found in \cite{LHCbDetector},
 whilst the relevant components will be described here.  The vertex locator, a
