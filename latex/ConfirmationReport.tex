@@ -728,6 +728,60 @@ and background yields extracted from fits to $\Delta_M$ distributions. The
 working point chosen to optimise $\sigma$ is BDT2 $>0.05$ for both $D\pi^0$ and
 $D\gamma$ final states, which has a signal efficiency of 40\% and 50\%,
 respectively.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaMC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaMC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaMC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaMC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaData}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaData}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaData}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.24]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaData}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(d)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{Distributions of the input variables to the second stage BDT for
+the $D^* \rightarrow D\gamma$ decay mode. The top and bottom rows show plots for
+simulation and data, respectively. The variables are labelled by letters: (a)
+shows the confident level, CL, of the photon, (b) the photon IsNotE, (c) the
+photon $p_T$ and (d) the $D^*$ meson $p_T$. The red points show the
+distributions before the cut on BDT2, and the blue points show the distributions
+after.}} \label{fig:GammaBDT2Variables}
+\end{figure}
 
 The input variables have been studied before and after this BDT cut, and their
 normalised distributions are show in Fig.~\ref{fig:GammaBDT2Variables} and
@@ -747,6 +801,72 @@ the $D\pi^0$ mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the
 $D\gamma$ mode is due to the tighter transverse momentum cut on the photons in
 the event, removing combinatoric background from low energy photons. The
 selected candidate to be used in the mass fit is chosen at random.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0MC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0MC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0MC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0MC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0MC}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0Data}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0Data}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0Data}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0Data}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(d)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.19]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0Data}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(e)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{Distributions of the input variables to the second stage BDT for
+the $D^* \rightarrow D\pi^0$ decay mode. The top and bottom rows show plots for
+simulation and data, respectively. The variables are labelled by letters: (a)
+shows the product of the confident level, CL, of the two daughter photons, (b)
+the product of the photon IsNotE, (c) the average photon $p_T$, (d) the photon
+asymmetry and (e) the $D^*$ meson $p_T$. The red points show the distributions
+before the cut on BDT2, and the blue points show the distributions after.}}
+\label{fig:Pi0BDT2Variables}
+\end{figure}
 
 \afterpage{ \clearpage % Flush earlier floats (otherwise order might not be
 \begin{landscape}
@@ -863,138 +983,20 @@ $\pi^0$.}}
 \end{table}
 \end{landscape}
 }
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(d)};
-\end{scope}
-\end{tikzpicture}
-\caption{\small{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\gamma$ decay mode. The top and bottom rows show plots for
-simulation and data, respectively. The variables are labelled by letters: (a)
-shows the confident level, CL, of the photon, (b) the photon IsNotE, (c) the
-photon $p_T$ and (d) the $D^*$ meson $p_T$. The red points show the
-distributions before the cut on BDT2, and the blue points show the distributions
-after.}} \label{fig:GammaBDT2Variables}
-\end{figure}
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(d)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(e)};
-\end{scope}
-\end{tikzpicture}
-\caption{\small{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\pi^0$ decay mode. The top and bottom rows show plots for
-simulation and data, respectively. The variables are labelled by letters: (a)
-shows the product of the confident level, CL, of the two daughter photons, (b)
-the product of the photon IsNotE, (c) the average photon $p_T$, (d) the photon
-asymmetry and (e) the $D^*$ meson $p_T$. The red points show the distributions
-before the cut on BDT2, and the blue points show the distributions after.}}
-\label{fig:Pi0BDT2Variables}
-\end{figure}
 
 \section{2D Mass Fit} \label{massfit}
 
 2D maximum likelihood fits to the $m[D^*h]$ and $\Delta_M$ mass spectrums are
 performed to Cabibbo-favoured $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)\pi^{\pm}/K^{\pm}$ decays, in order to
-understand the background composition. The fitting region lies within the
-ranges 5050 $<$ $m[D^*h]$ $<$ 5800 MeV/$c^2$ and 50 (135) $<$ $\Delta_M$ $<$ 210
-MeV/$c^2$ for the $D\gamma$ ($D\pi^0$) final states. 
+[K^{\pm}\pi^{\mp}]_D\pi^0)h^{\pm}$ and $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\gamma)h^{\pm}$ decays, in order to understand the
+background compositions. Here, $h$ represents a pion or kaon, and these two
+cases are fitted simultaneously. The fitting regions lies within the ranges 5050
+$<$ $m[D^*h]$ $<$ 5800 MeV/$c^2$ and 50 (135) $<$ $\Delta_M$ $<$ 210 MeV/$c^2$
+for the $D\gamma$ ($D\pi^0$) final states.
 
 The physics backgrounds that fall within this region are given in table ??. They
-can be split into three categories (as labelled in the table):
+can be split into three categories:
 \begin{enumerate}
   \item Partially reconstructed backgrounds of the form $D^{*0}h+X$, where the
   particle $X$ is missed. These components peak in the $\Delta_M$ signal region,
@@ -1010,6 +1012,9 @@ can be split into three categories (as labelled in the table):
   phase space.
 \end{enumerate}
 
+There are also fit components within each neutral mode to account for
+cross-feed from the alternative $D^*$ final state. 
+
 Originally, a 1D maximum likelihood fit to the $m[D^*h]$ mass spectrum was
 pursued, but this suffered from the presence of the mis-reconstructed
 backgrounds sitting under the signal peak. These have the potential to display
@@ -1021,19 +1026,13 @@ extra constraint on the signal yield to protect against CP violating
 backgrounds.
 
 \begin{itemize}
-\item List backgrounds known to contaminate signal.
-\item Backgrounds have unknown/unpredictable charge asymmetries. 1D fit didn't
-work as suffered from fit instabilities with shapes and asymmetries floating, or
-large systematics with backgrounds fixed from simulation.
-\item Backgrounds fall into 5 categories: partially reconstructed, partially
-reconstructed cross-feed, cross-feed, mis-reconstructed, over-reconstructed.
-\item Signal is the only component that peaks in both B and Delta mass - hope
-this will constrain the signal yield to protect against unpredictable charge
-asymmetries.
-\\
-\item Describe correlation with 2D (1D) polynomial.
 \item Describe shapes and parameters: fixed from simulation for now. Why chosen
 shapes? Model radiative tail to right -> why to the right?
+\item Describe correlation with 2D (1D) polynomial. Mean and width of b mass
+quadratically depend on delta mass.
+\item Describe simultaneous aspect.
+\item Mathematical expression for PDF in terms of components - how to express
+this in 2D?
 \item Show fits to pi0 and gamma MC in 2D?
 \\
 \item Display data fits
@@ -1041,7 +1040,9 @@ shapes? Model radiative tail to right -> why to the right?
 
 \section{Conclusions and Ongoing Work} \label{conclusion}
 \begin{itemize}
-\item Table of yields and expected yields from MC efficiencies
+\item Table with yields and expected yields from MC efficiencies. Make it
+obvious what is signal and background for reference in previous section. Label
+background categories
 \item Confident we understand the background?
 \item Extrapolation to signal modes
 \end{itemize}
