@@ -505,7 +505,7 @@ and mass fit for this analysis, however the value of $r_B$ for $D^*\pi$ final
 states is $\sim 5\%$ that of $D^*K$ final states, therefore decays of this
 type are less sensitive to $\phi_3$.
 
-\section{The LHCb Detector and Neutral Particle Reconstruction} \label{detector}
+\section{The LHCb Detector and Neutral Particle Reconstruction} \label{sec:detector}
 The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
 27 km circular $pp$ collider located at CERN. LHCb has been designed to study
 $b$ and $c$ quarks, which are predominantly produced in the forward/backward
@@ -600,7 +600,7 @@ section~\cite{PDG2018}, which, when combined with improvements in the online
 selection, caused the rate of selected signal candidates per integrated
 luminosity to increase by approximately a factor of 2.
 
-\section{Selection of $B^{\pm}\rightarrow D^*h^{\pm}$ Candidates} \label{selections}
+\section{Selection of $B^{\pm}\rightarrow D^*h^{\pm}$ Candidates} \label{sec:selections}
 
 Signal candidates are initially identified by selecting combinations of $D^0$
 candidates and a charged track ($h^{\pm}$) within the invariant mass range 4700
@@ -984,7 +984,7 @@ $\pi^0$.}}
 \end{landscape}
 }
 
-\section{2D Mass Fit} \label{massfit}
+\section{2D Mass Fit} \label{sec:massfit}
 
 2D maximum likelihood fits to the $m[D^*h]$ and $\Delta_M$ mass spectrums are
 performed to Cabibbo-favoured $B^{\pm}\rightarrow (D^*\rightarrow
@@ -1025,8 +1025,32 @@ that peaks in both $m[D^*h]$ and $\Delta_M$, and so the 2D method provides an
 extra constraint on the signal yield to protect against CP violating
 backgrounds.
 
+Background and signal simulation samples are processed using the same selection
+procedure as descibed in Sec.~\ref{sec:selections}. The shape of these
+post-selection samples are then parameterised by separate 1D PDFs in bins of
+$\Delta_M$ and $m[D^*h]$. The signal components in both mass spectrums are
+described by the sum of two Crystal Ball (CB) functions, which are asymmetric
+Gaussian-like functions. One of the CB functions has a small radiative tail
+extending to lower invariant mass, and the second has a tail extending to higher
+invariant mass in order to describe the reconstruction and resolution effects of
+neutral particles. In the $m[D^*h]$ mass spectrum, all other fit components are
+also modelled by single or sums of CB functions. In $\Delta_M$ phase space,
+crossfeed, over-reconstructed and mis-reconstructed backgrounds are modelled
+using a PDF describing combinatoric backgrounds for $D^{*}\rightarrow D^{0}X$
+decays in bins of $m[D^*]-m[D^0]$. The functional form of this, where $m_0$
+represents the kinematic threshold, is:
+\begin{equation}
+f(m)=(1-e^{-\frac{m-m_0}{C}})\times(\frac{m}{m_0})^A+B\times(\frac{m}{m_0}-1)
+\label{eq:DstD0BG}
+\end{equation}
+Partially reconstructed components are modelled by the sum of two CB
+functions and a $D^*$ decaying to $D^0X$ background shape. The former describes
+the peak in delta mass due to the presence of a true $D^{*0}$ meson, and its
+parameters are fixed to those obtained from fitting to the signal sample.
 
-Simulated backgrounds are reconstructed as signal in order to find the shapes. 
+In the 2D fits to the simulation samples, the $\Delta_M$ shape
+parameters are fixed to these values and the $m[D^*h]$ 
+
 \begin{itemize}
 \item Describe shapes and parameters: fixed from simulation for now. Why chosen
 shapes? Model radiative tail to right -> why to the right?
@@ -1040,7 +1064,7 @@ this in 2D?
 \item Display data fits
 \end{itemize}
 
-\section{Conclusions and Ongoing Work} \label{conclusion}
+\section{Conclusions and Ongoing Work} \label{sec:conclusion}
 \begin{itemize}
 \item Table with yields and expected yields from MC efficiencies. Make it
 obvious what is signal and background for reference in previous section. Label
