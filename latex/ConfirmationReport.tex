@@ -1037,7 +1037,7 @@ neutral particles. In the $m[D^*h]$ mass spectrum, all other fit components are
 also modelled by single or sums of CB functions. In $\Delta_M$ phase space,
 crossfeed, over-reconstructed and mis-reconstructed backgrounds are modelled
 using a PDF describing combinatoric backgrounds for $D^{*}\rightarrow D^{0}X$
-decays in bins of $m[D^*]-m[D^0]$. The functional form of this, where $m_0$
+decays in bins of $m[D^*]-m[D^0]$. The functional form of this shape, where $m_0$
 represents the kinematic threshold, is:
 \begin{equation}
 f(m)=(1-e^{-\frac{m-m_0}{C}})\times(\frac{m}{m_0})^A+B\times(\frac{m}{m_0}-1)
@@ -1048,17 +1048,26 @@ functions and a $D^*$ decaying to $D^0X$ background shape. The former describes
 the peak in delta mass due to the presence of a true $D^{*0}$ meson, and its
 parameters are fixed to those obtained from fitting to the signal sample.
 
-In the 2D fits to the simulation samples, the $\Delta_M$ shape
-parameters are fixed to these values and the $m[D^*h]$ 
+When incorporating these PDFs into a 2D model, the $\Delta_M$ shape parameters
+are fixed to the values obtained from the 1D fits. The tail parameters of the CB
+functions in $m[D^*h]$ invariant mass are also fixed, but the means and widths
+are constructed from polynomial functions of $\Delta_M$:  
+\begin{equation}
+x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
+\label{eq:2dPolynomial}
+\end{equation}
+Here, $x$ represents the mean or width of a CB shape as a function of $m[D^*h]$.
+The correlation between the two invariant mass spectrums is modelled in the fit
+using these polynomial coefficients. Looking at the 2D plots of the
+data/simulation samples shown in Fig. ??, it can be seen that these variables
+exhibit greater correlation in the $D\gamma$ final state than in the $D\pi^0$
+final state. This is due to the extra constraint on the $\pi^0$ mass in
+calculating the re-fitted $m[D^*h]$ mass variable during reconstruction, as
+described at the beginning of Sec.~\ref{sec:selections}. In the 2D fits to
+simulation for the $D^*\rightarrow D\pi^0$ mode, a linear polynomial is found to
+be sufficient to model this correlation.
 
 \begin{itemize}
-\item Describe shapes and parameters: fixed from simulation for now. Why chosen
-shapes? Model radiative tail to right -> why to the right?
-\item Describe correlation with 2D (1D) polynomial. Mean and width of b mass
-quadratically depend on delta mass.
-\item Describe simultaneous aspect.
-\item Mathematical expression for PDF in terms of components - how to express
-this in 2D?
 \item Show fits to pi0 and gamma MC in 2D?
 \\
 \item Display data fits
