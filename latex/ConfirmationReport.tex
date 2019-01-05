@@ -176,7 +176,7 @@ known angle was $\phi_3=\arg(-V_{ud}V^{*}_{ub}/V_{cd}V^{*}_{cb})$ (more commonly
 referred to as $\gamma$), but recently its precision now rivals that of
 $\phi_2$. $\phi_3$ can be thought of as the Standard Candle of the UT, as it can
 be accessed via tree-level decays of $B$ mesons with very low theoretical
-uncertainty, $\frac{\delta\gamma}{\gamma}\sim 10^{-7}$. The current World
+uncertainty, $\frac{\delta\phi_3}{\phi_3}\sim 10^{-7}$. The current World
 average value using a combination of tree-level measurements is
 $\phi_3=(74.0^{+5.0}_{-5.8})$\degree~\cite{LatestGamma}.
 
@@ -1065,11 +1065,249 @@ described at the beginning of Sec.~\ref{sec:selections}. In the 2D fits to
 simulation for the $D^*\rightarrow D\pi^0$ mode, a linear polynomial is found to
 be sufficient to model this correlation.
 
-\begin{itemize}
-\item Show fits to pi0 and gamma MC in 2D?
-\\
-\item Display data fits
-\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dData.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dPDF.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dResiduals.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dData.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dPDF.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dResiduals.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:2dFitsPi0Run1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:ProjectionsPi0Run1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dData.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dPDF.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dResiduals.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dData.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dPDF.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dResiduals.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:2dFitsGammaRun1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:ProjectionsGammaRun1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dData.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dPDF.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dResiduals.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dData.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dPDF.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dResiduals.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:2dFitsPi0Total}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:ProjectionsPi0Total}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dData.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dPDF.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dResiduals.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dData.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(a)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dPDF.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(b)};
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.32]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dResiduals.pdf}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+\node[] at (0.5, -0.1) {(c)};
+\end{scope}
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:2dFitsGammaTotal}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_buMass.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.48]
+\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_deltaMass.pdf}};
+\end{tikzpicture}
+\caption{\small{2D PDFs.}}
+\label{fig:ProjectionsGammaTotal}
+\end{figure}
 
 \section{Conclusions and Ongoing Work} \label{sec:conclusion}
 \begin{itemize}
