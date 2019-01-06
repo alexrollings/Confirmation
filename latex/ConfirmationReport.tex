@@ -1010,7 +1010,7 @@ categories:
   phase space.
 \end{enumerate}
 
-There are also fit components within each neutral mode to account for
+The physics decays that fall within these categories are listed in Table ??. There are also fit components within each neutral mode to account for
 cross-feed from the alternative $D^*$ final state. 
 
 Decays involving $B^{\pm}$ mesons have the potential to CP violate. This
@@ -1041,29 +1041,47 @@ represents the kinematic threshold, is:
 f(m)=(1-e^{-\frac{m-m_0}{C}})\times(\frac{m}{m_0})^A+B\times(\frac{m}{m_0}-1)
 \label{eq:DstD0BG}
 \end{equation}
-Partially reconstructed components are modelled by the sum of two CB
-functions and a $D^*$ decaying to $D^0X$ background shape. The former describes
-the peak in delta mass due to the presence of a true $D^{*0}$ meson, and its
-parameters are fixed to those obtained from fitting to the signal sample.
+Partially reconstructed components are modelled by the sum of two CB functions
+and a $D^*$ decaying to $D^0X$ background shape. The former describes the peak
+in delta mass due to the presence of a true $D^{*0}$ meson. Mis-reconstructed
+components are formed from the sum of the individual 2D PDFs describing
+$B^{\pm}\rightarrow D^0\rho$ and
+$B^{0}\rightarrow[D^0\pi^{\pm}]_{D^{*\pm}}\pi^{\mp}$ decays.
+
+It should be noted that to obtain the PDFs of the signal components, Run1, 2015 and 2016 simulation samples are used. Currently, the background components are modelled using Run1 simulation only. 
 
 When incorporating these PDFs into a 2D model, the $\Delta_M$ shape parameters
 are fixed to the values obtained from the 1D fits. The tail parameters of the CB
 functions in $m[D^*h]$ invariant mass are also fixed, but the means and widths
-are constructed from polynomial functions of $\Delta_M$:  
+are constructed as polynomial functions of $\Delta_M$:  
 \begin{equation}
 x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
 \label{eq:2dPolynomial}
 \end{equation}
 Here, $x$ represents the mean or width of a CB shape as a function of $m[D^*h]$.
 The correlation between the two invariant mass spectrums is modelled in the fit
-using these polynomial coefficients. Looking at the 2D plots of the
-data/simulation samples shown in Fig. ??, it can be seen that these variables
-exhibit greater correlation in the $D\gamma$ final state than in the $D\pi^0$
-final state. This is due to the extra constraint on the $\pi^0$ mass in
-calculating the re-fitted $m[D^*h]$ mass variable during reconstruction, as
-described at the beginning of Sec.~\ref{sec:selections}. In the 2D fits to
-simulation for the $D^*\rightarrow D\pi^0$ mode, a linear polynomial is found to
-be sufficient to model this correlation.
+using these polynomial coefficients. Comparing the 2D plots of the data samples
+shown in Fig.~\ref{fig:2dFitsPi0Run1} and Fig.~\ref{fig:2dFitsGammaRun1}, it can
+be seen that these variables exhibit greater correlation in the $D\gamma$ final
+state than in the $D\pi^0$ final state. This is due to the extra constraint on
+the $\pi^0$ mass in calculating the re-fitted $m[D^*h]$ mass variable during
+reconstruction, as described at the beginning of Sec.~\ref{sec:selections}. In
+the 2D fits to simulation for the $D^*\rightarrow D\pi^0$ mode, a linear
+polynomial is found to be sufficient to model this correlation, and so the $a_2$
+parameter is set to zero.
+
+The data, PDF and residuals in 2D for Run1 (Run1 and Run2) are shown in
+Fig.~\ref{fig:2dFitsPi0Run1} (Fig.~\ref{fig:2dFitsPi0Total}) and
+Fig.~\ref{fig:2dFitsGammaRun1} (Fig.~\ref{fig:2dFitsGammaTotal}), and the
+corresponding projections on the $m[D^*h]$ and $\Delta_M$ axes in
+Fig.~\ref{fig:ProjectionsPi0Run1} (Fig.~\ref{fig:ProjectionsPi0Total}) and
+Fig.~\ref{fig:ProjectionsGammaRun1} (Fig.~\ref{fig:ProjectionsGammaTotal}), for
+the $D\pi^0$ and $D\gamma$ final states, respectively. All PDF parameters are
+fixed from simulation except the $a_0$ values of the widths describing the
+mis-reconstructed components in $m[D^{*}h]$, which are allowed to vary over a
+given range. The threshold parameters of the $D^{*}\rightarrow D^0X$ backgrounds
+in the $D\pi^0$ final state are also given the freedom to float. The yields
+taken from these fits are listed in Table ??.
 
 \begin{figure}[H]
 \centering
@@ -1100,7 +1118,10 @@ be sufficient to model this correlation.
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
 \label{fig:2dFitsPi0Run1}
 \end{figure}
 
@@ -1122,7 +1143,10 @@ be sufficient to model this correlation.
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
 \label{fig:ProjectionsPi0Run1}
 \end{figure}
 
@@ -1161,7 +1185,10 @@ be sufficient to model this correlation.
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
 \label{fig:2dFitsGammaRun1}
 \end{figure}
 
@@ -1183,7 +1210,10 @@ be sufficient to model this correlation.
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
 \label{fig:ProjectionsGammaRun1}
 \end{figure}
 
@@ -1222,8 +1252,11 @@ be sufficient to model this correlation.
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
-\label{fig:2dFitsPi0Total}
+\caption{\small{$\Delta_M$ vs. $m[D^*h]$
+distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
+$B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top)
+and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
+(bottom) decays.}}
 \end{figure}
 
 \begin{figure}[H]
@@ -1244,7 +1277,10 @@ be sufficient to model this correlation.
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
 \label{fig:ProjectionsPi0Total}
 \end{figure}
 
@@ -1283,7 +1319,11 @@ be sufficient to model this correlation.
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{$\Delta_M$ vs. $m[D^*h]$
+distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
+$B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top)
+and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
+(bottom) decays.}}
 \label{fig:2dFitsGammaTotal}
 \end{figure}
 
@@ -1305,16 +1345,18 @@ be sufficient to model this correlation.
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{2D PDFs.}}
+\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
 \label{fig:ProjectionsGammaTotal}
 \end{figure}
 
-\section{Conclusions and Ongoing Work} \label{sec:conclusion}
+\section{Results and Ongoing Work} \label{sec:results}
 \begin{itemize}
-\item Table with yields and expected yields from MC efficiencies. Make it
-obvious what is signal and background for reference in previous section. Label
-background categories
-\item Confident we understand the background?
+\item Table with yields. Label background categories
+\item Confident we understand the background - explain looking at Run1?
+\item Give R D*K/D*pi and show consistent with part reco and PDG. 
 \item Extrapolation to signal modes
 \end{itemize}
 
