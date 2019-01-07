@@ -202,7 +202,7 @@ anomalies have appeared in measurements of $\mathcal{B} (B^{0}_{s}\rightarrow
 \phi \mu \mu)$~\cite{B2phimumu}, $\mathcal{B} (B^{0}\rightarrow K^{*0} \mu
 \mu)$~\cite{B2Kstmumu}, $R_{K}$~\cite{Rk}, $R_{K^{*0}}$~\cite{Rkst} and
 $R_{D^{(*)-}}$~\cite{RDst}. Though none have reached a significance level to
-justify a discovery, some combinations have ???. These anomalies, and the
+justify a discovery, some combinations have. These anomalies, and the
 contention in the measurements of $\phi_3$, could be explained by the presence
 of new, heavy particles. It is therefore motivating to reduce the uncertainty
 on $\phi_{3}$ using tree-level measurements to a size comparable to that
@@ -408,6 +408,7 @@ ratios. The physics observables that will be measured in this analysis are:
     ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
     ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
     ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})}
+	\label{eq:R_DstK_Dstpi}
   \end{equation}
   \item The $CP$ asymmetries between $B^{-}$ and $B^{+}$ mesons decaying to $CP$
   eigenstates, where $hh=\pi \pi /KK$:
@@ -1097,9 +1098,59 @@ fixed from simulation except the $a_0$ values of the widths describing the
 mis-reconstructed components in $m[D^{*}h]$, which are allowed to vary over a
 given range. The threshold parameters of the $D^{*}\rightarrow D^0X$
 backgrounds in the $D\pi^0$ final state are also given the freedom to float.
-The yields taken from these fits are listed in Table~\ref{table:yieldsPi0} for
-the $D^*\rightarrow D\pi^0$ mode and Table~\ref{table:yieldsGamma} for the
-$D^*\rightarrow D\gamma$ mode.
+
+\section{Results} \label{sec:results}
+
+The signal yields taken from these fits are listed in Table~\ref{table:yields}.
+It should be noted that this is using a preliminary optimisation, and the
+working points for the BDTs and the mass window of the $\pi^0$ meson will be
+re-optimised with respect to a more appropriate figure of merit, for example to
+
+minimise the error on the physics observables.
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Decay Mode}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3 fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{Run1 and Run2 Yield (6.6 fb$^{-1}$)}} \\ \cline{2-5} 
+ & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} \\ \hline
+$B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0)\pi^{\pm}$ & 2372 $\pm$ 60 & 121 $\pm$ 13 & 8696 $\pm$ 112 & 478 $\pm$ 26 \\ \hline
+$B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \gamma)\pi^{\pm}$ & 10862 $\pm$ 132 & 604 $\pm$ 30 & 40102 $\pm$ 252 & 2125 $\pm$ 17 \\ \hline
+\end{tabular}%
+} \caption{\small{Signal yields and errors extracted from the 2D fit results for Run1, then Run1 and
+Run2 data.}} \label{table:yields}
+\end{table}
+
+Focus will now be paid to the Run1 mass fit results, which are more reliable at
+this stage due to the lack of Run2 background simulation samples.
+
+% Yield extrapolation
+
+Measurements have also been made of the physics observables $R^{K\pi , \pi^0
+/\gamma}_{K/\pi}$, defined by Eq.~\ref{eq:R_DstK_Dstpi}. The results are give
+below:
+\begin{align*}
+R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
+R^{K\pi , \gamma}_{K/\pi} &= (8.689 \pm 0.447) \times 10^{-2} 
+\end{align*} 
+The errors given are statistical and taken straight from the fit result.
+$R^{K\pi , \pi^0}_{K/\pi}$ and $R^{K\pi , \gamma}_{K/\pi}$ are consistent with
+the PDG value of $R^{K\pi}_{K/\pi} = (8.10 \pm 0.15) \times 10^{-2}$ within
+1$\sigma$ and 2$\sigma$, respectively. The partially reconstructed analysis of
+these modes, ~\cite{PartReco}, gave the combined measurement ($R^{K\pi}_{K/\pi}
+= 7.768 \pm 0.038$ (stat) $\pm 0.066$ (syst)) $\times 10^{-2}$, which these
+results are also consistent with. 
+
+
+\begin{itemize}
+\item Extrapolation to signal modes to give expected number in CP modes and ADS mode.
+% \item Confident we understand the background - relative yields are in line with
+% what we expect looking at simulation reconstruction and selection efficiencies.
+% Compare to part reco study. 
+% \item Fit stability problems with floating parameters - interellation of
+% parameters in both dimensions and correlation coefficients. Still trying to
+% understand with toy study.
+% \item Mis-reco shape needs to be brought more under control.
+\end{itemize}
 
 \begin{figure}[H]
 \centering
@@ -1370,45 +1421,6 @@ axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
 \label{fig:ProjectionsGammaTotal}
 \end{figure}
-
-\section{Results and Ongoing Work} \label{sec:results}
-
-
-\begin{table}[]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Decay Mode}}} & \multirow{2}{*}{\textbf{Category}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3 fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{Run1 and Run2 Yield (6.6 fb$^{-1}$)}} \\ \cline{3-6} 
-\multicolumn{1}{|c|}{} &  & \multicolumn{1}{c|}{$B^{\pm}\rightarrow D^*\pi^{\pm}$} &
-\multicolumn{1}{c|}{$B^{\pm}\rightarrow D^*K^{\pm}$} &
-\multicolumn{1}{c|}{$B^{\pm}\rightarrow D^*\pi^{\pm}$} &
-\multicolumn{1}{c|}{$B^{\pm}\rightarrow D^*K^{\pm}$} \\ \hline
-$B^{\pm}\rightarrow (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D^0 \pi^0)\pi^{\pm}$ & 4 &  &  &  &  \\ \hline
-$B^{\pm}\rightarrow (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D^0 \gamma)\pi^{\pm}$ & 0 &  &  &  &  \\ \hline
-$B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_D^0\pi^{\pm}$ & 2 &  &  &  &  \\ \hline
-$B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_D^0\rho^{\pm}$ \& & \multirow{2}{*}{3} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{} \\ 
-$B^{0}\rightarrow (D^{*\pm}\rightarrow [K^{\pm}\pi^{\mp}]_D^0 \pi^{\pm})\pi^{\mp}$ &  &  &  &  &  \\ \hline
-$B^{\pm}\rightarrow (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D^0 \pi^0)\rho^{\pm}$ & 1 &  &  &  &  \\ \hline
-$B^{\pm}\rightarrow (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D^0 \gamma)\rho^{\pm}$ & 1 &  &  &  &  \\ \hline
-\end{tabular}%
-} \caption{\small{Yields for the $D\gamma$ final state, extracted from 2D fits
-for Run1, then Run1 and Run2 data for all components. Categories are as
-follows: 0 for signal, 1 for partially-reconstructed backgrounds, 2 for
-over-reconstructed backgrounds, 3 for mis-reconstructed backgrounds and 4 for
-cross-feed from the $D\pi^0$ signal.}} \label{table:yieldsGamma}
-\end{table}
-
-\begin{itemize}
-\item Confident we understand the background - relative yields are in line with
-what we expect looking at simulation reconstruction and selection efficiencies.
-Compare to part reco study. 
-\item Fit stability problems with floating parameters - interellation of
-parameters in both dimensions and correlation coefficients. Still trying to
-understand with toy study.
-\item Mis-reco shape needs to be brought more under control.
-\item Validation: give R D*K/D*pi and show consistent with part reco and PDG. 
-\item Extrapolation to signal modes to give expected number in CP modes and ADS mode.
-\end{itemize}
 
 \section{Thesis Outline} \label{sec:thesis}
 Proposed thesis title:
