@@ -1128,8 +1128,10 @@ The fit is set up to measure the physics observable $R^{K\pi , \pi^0
 /\gamma}_{K/\pi}$, defined by Eq.~\ref{eq:R_DstK_Dstpi}. The results are give
 below:
 \begin{align*}
+\vspace{-5pt}
 R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
 R^{K\pi , \gamma}_{K/\pi} &= (8.689 \pm 0.447) \times 10^{-2} 
+\vspace{-5pt}
 \end{align*} 
 The errors given are statistical and taken straight from the fit result.
 $R^{K\pi , \pi^0}_{K/\pi}$ and $R^{K\pi , \gamma}_{K/\pi}$ are consistent with
@@ -1173,6 +1175,7 @@ The number of ADS mode events measure by the BaBar Collaboration in
 2) and ADS (column 3) decay modes, sensitive to $\phi_3$. The number of ADS
 mode events previously measured by the BaBar collaboration is given for
 comparison.}} \label{table:extrapolatedYields}
+
 \end{table}
 
 % \begin{itemize}
@@ -1186,7 +1189,16 @@ comparison.}} \label{table:extrapolatedYields}
 % \end{itemize}
 
 \section{Conclusion} \label{sec:conclusion}
-
+By studying $B^{\pm}\rightarrow D^*\pi^{\pm}$ decays, a selection procedure has
+been finalised for both $D^*$ final states, $D\pi^0$ and $D\gamma$. Due to the
+lack of success from pursuing a 1D mass fit to the $m[D^*h]$ spectrum, a 2D fit
+is now under development in order to further constrain the signal yields using
+the extra information in the $\Delta_M$ distribution. Improvements to this fit
+will be implemented in the immediate future, aided by the generation of Run2
+simulation samples of physics backgrounds and fit stability studies.
+Currently, measurements of the physics observable $R^{K\pi ,
+\pi^0/\gamma}_{K/\pi}$ are consistent with previous studies and expected
+sensitivity to events in the channels sensitive to $\phi_3$ are promising. 
 
 
 \begin{figure}[H]
@@ -1229,10 +1241,7 @@ comparison.}} \label{table:extrapolatedYields}
 [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
 \label{fig:2dFitsPi0Run1}
-\end{figure}
-
-\begin{figure}[H]
-\centering
+\vspace*{\floatsep}
 \begin{tikzpicture}[scale=0.48]
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_buMass.pdf}};
@@ -1296,10 +1305,7 @@ axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
 \label{fig:2dFitsGammaRun1}
-\end{figure}
-
-\begin{figure}[H]
-\centering
+\vspace*{\floatsep}
 \begin{tikzpicture}[scale=0.48]
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_buMass.pdf}};
@@ -1364,10 +1370,7 @@ $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top)
 and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
 (bottom) decays.}}
 \label{fig:2dFitsPi0Total}
-\end{figure}
-
-\begin{figure}[H]
-\centering
+\vspace*{\floatsep}
 \begin{tikzpicture}[scale=0.48]
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_buMass.pdf}};
@@ -1432,10 +1435,7 @@ $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top)
 and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
 (bottom) decays.}}
 \label{fig:2dFitsGammaTotal}
-\end{figure}
-
-\begin{figure}[H]
-\centering
+\vspace*{\floatsep}
 \begin{tikzpicture}[scale=0.48]
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_buMass.pdf}};
@@ -1466,27 +1466,78 @@ Proposed thesis title:
 
 \noindent Suggested thesis outline including chapter and section headings:
 \begin{enumerate}
-\item Introduction
+\item Introduction \\
+
+A general overview of what will be presented in the thesis. \\
+
 \item Theoretical Background \\
-			Section headings: The Standard Model, $CP$ violation in $B$ decays (CKM
-matrix, direct $CP$ violation, in mixing, in mixing and decay), Introduction to
-$\phi_3$, Derivation of Physics Observables (extended ADS and GLW methods)
+
+The relevant theoretical background will be presented, which will follow the
+same structure as Section~\ref{sec:theory}, but be covered much more
+thoroughly. \\ 
+
+Section headings: The Standard Model, $CP$ violation in $B$ decays
+(CKM matrix, direct $CP$ violation, in mixing, in mixing and decay),
+Introduction to $\phi_3$, Derivation of Physics Observables (extended ADS and
+GLW methods)
+
 \item The LHCb Experiment \\
-			Section headings: The LHC, The LHCb Detector (VELO, Tracking, RICH,
+
+A brief overview of the accelerator and collision properties. Each sub-detector
+of LHCb, trigger and analysis software will be described.  Particular focus
+will be given to neutral particle reconstruction. \\
+
+Section headings: The LHC, The LHCb Detector (VELO, Tracking, RICH,
 Calorimeters, Muon Systems, Trigger, Software), Neutral Particle Reconstruction 
-\item Selection and 2D mass fit of $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)K^{\pm}$ events \\
-			Section headings: Pre-selection, Charged Particle Selection (stage 1
-multivariate analysis), Neutral Selection (stage 2 multivariate analysis),
-Backgrounds, 2D Mass Fit \\
-			Status: 2D mass fit under development, plan to
-conduct toy studies within the next month. The selection and mass fit will also
-be updated with 2018 data by Easter. 
-\item $CP$ fit for $B^{\pm}\rightarrow (D^*\rightarrow [h^{\pm}h^{\mp}]_D\pi^0/\gamma)K^{\pm}$ decays \\
-			Section headings: Fit Setup, Asymmetry and Efficiency Corrections,
+
+\item Selection of $B^{\pm}\rightarrow (D^*\rightarrow
+[K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)K^{\pm}$ events \\
+	
+A detailed description of the selection of the Cabbibo favoured $D$ decay
+events and evidence of further investigations into the event topology will be
+provided, with the most attention paid to the neutral part of the decay. \\
+
+Section headings: Pre-selection, Charged Particle Selection (stage 1
+multivariate analysis), Neutral Selection (stage 2 multivariate analysis) \\
+
+Status: The work for this chapter is completed. It will be updated with 2018
+data by Easter and new working points when the 2D fit is extended to the modes with
+sensitivity to $\phi_3$.
+
+\item 2D Mass Fit \\
+
+The relevant backgrounds will be described. Failures of the 1D fit and reasons
+for moving to a 2D method will be given. The 2D method will then be explained
+and a fit to the high statistics mode shown. \\
+
+Section headings: Backgrounds, 2D Mass Fit \\
+
+Status: Run2 background simulations will be processed within the next couple of
+weeks. The mass fit is under development and the plan is to conduct fit
+stability studies within the next month. 2018 data will be added to the fit by
+Easter. 
+
+\item $CP$ fit for $B^{\pm}\rightarrow (D^*\rightarrow
+[h^{\pm}h^{\mp}]_D\pi^0/\gamma)K^{\pm}$ decays \\
+
+Description of the simultaneous fit to all two-body $D$ modes, including any
+asymmetry and efficiency corrections. The fit results will be given here and a
+discussion of systematic uncertainties. \\
+
+Section headings: Fit Setup, Asymmetry and Efficiency Corrections,
 Optimisation, Fit Results, Systematics \\
-		Status: Fit extension to GLW and ADS modes still needs to be done, aim to achieve this by Easter 2018. Plan to evaluate the corrections, optimisation and systematics by summer 2018.
-\item Extraction of Physics Parameters
+
+Status: Fit extension to GLW and ADS modes still needs to be done, aim to
+achieve this by Easter 2018. Plan to apply corrections, carry out the
+optimisation and evaluate systematics by summer 2018.
+
+\item Interpretation 
+
+An interpretation of the results in terms of the parameters of interest: $r_B$,
+$\delta_B$ and $\phi_3$.
+
 \item Conclusions
+
 \end{enumerate}
 
 \printbibliography[heading=bibintoc,{title=References}]
