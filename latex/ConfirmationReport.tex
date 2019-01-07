@@ -1099,15 +1099,14 @@ mis-reconstructed components in $m[D^{*}h]$, which are allowed to vary over a
 given range. The threshold parameters of the $D^{*}\rightarrow D^0X$
 backgrounds in the $D\pi^0$ final state are also given the freedom to float.
 
-\section{Results} \label{sec:results}
-
 The signal yields taken from these fits are listed in Table~\ref{table:yields}.
 It should be noted that this is using a preliminary optimisation, and the
 working points for the BDTs and the mass window of the $\pi^0$ meson will be
 re-optimised with respect to a more appropriate figure of merit, for example to
 minimise the error on the physics observables.
 
-\begin{table}[H]
+\section{Results} \label{sec:results}
+\begin{table}[]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -1120,10 +1119,8 @@ $B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \gamma)\pi^{\pm}$ & 1
 Run2 data.}} \label{table:yields}
 \end{table}
 
-Focus will now be paid to the Run1 mass fit results, which are more reliable at
+Focus will be paid to the Run1 mass fit results, which are more reliable at
 this stage due to the lack of Run2 background simulation samples.
-
-% Yield extrapolation
 
 The fit is set up to measure the physics observables $R^{K\pi , \pi^0
 /\gamma}_{K/\pi}$, defined by Eq.~\ref{eq:R_DstK_Dstpi}. The results are give
@@ -1136,7 +1133,7 @@ The errors given are statistical and taken straight from the fit result.
 $R^{K\pi , \pi^0}_{K/\pi}$ and $R^{K\pi , \gamma}_{K/\pi}$ are consistent with
 the PDG value of $R^{K\pi}_{K/\pi} = (8.10 \pm 0.15) \times 10^{-2}$ within
 1$\sigma$ and 2$\sigma$, respectively. The partially reconstructed analysis of
-these modes, ~\cite{PartReco}, gave the combined measurement ($R^{K\pi}_{K/\pi}
+these modes,~\cite{PartReco}, gave the combined measurement ($R^{K\pi}_{K/\pi}
 = 7.768 \pm 0.038$ (stat) $\pm 0.066$ (syst)) $\times 10^{-2}$, which these
 results are also consistent with. 
 
@@ -1146,9 +1143,19 @@ kaon is taken to be 64\%, from the studies of partially reconstructed decays.
 This efficiency will be updated with a value calibrated to the data used in
 this analysis, but is not expected to change significantly.
 
+An extrapolation of the yields listed in the second column of
+Table~\ref{table:yields} to the decay modes sensitive to $\phi_3$ has been
+performed, and the results are shown in Table ??. The number of GLW mode
+candidates were estimated by multiplying by the branching ratio $\mathcal{BR} =
+\frac{\mathcal{BF}(D^0 \rightarrow h^- h^+)}{\mathcal{BF}(D^0 \rightarrow K^+
+\pi^-)}$, $h=\pi/K$, where the branching fractions were taken from the
+PDG,~\cite{PDG2018}. The scale factor used to calculate event numbers in the ADS mode is
+$R_{ADS}\approx 0.015$, which contains the phase information needed for
+transforming from the Cabibbo favoured to the doubly-Cabibbo suppressed mode.
+The number of ADS mode events measure by the BaBar Collabortation in
+2004,~\cite{BaBarADS}, is also given.
 
-\begin{itemize}
-\item Extrapolation to signal modes to give expected number in CP modes and ADS mode.
+% \begin{itemize}
 % \item Confident we understand the background - relative yields are in line with
 % what we expect looking at simulation reconstruction and selection efficiencies.
 % Compare to part reco study. 
@@ -1156,7 +1163,7 @@ this analysis, but is not expected to change significantly.
 % parameters in both dimensions and correlation coefficients. Still trying to
 % understand with toy study.
 % \item Mis-reco shape needs to be brought more under control.
-\end{itemize}
+% \end{itemize}
 
 \begin{figure}[H]
 \centering
