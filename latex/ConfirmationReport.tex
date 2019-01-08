@@ -104,7 +104,7 @@ Decays of the type $B^{\pm} \rightarrow D^{*}h^{\pm}$, where $D^{*} \rightarrow
 [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$ and $h=\pi/K$, are studied using
 6.6 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb
 experiment. This dataset consists of 3 fb${^{-1}}$ taken at center-of-mass
-energies of 7 TeV, 8 TeV, and 3.6 fb${^{-1}}$ at 13 TeV. The techniques for
+energies of 7 TeV and 8 TeV, and 3.6 fb${^{-1}}$ at 13 TeV. The techniques for
 discriminating against combinatorial backgrounds are detailed and the physics
 backgrounds are identified. A novel method to extract yields using a 2D maximum
 likelihood fit is described and using a preliminary optimisation, the number of
@@ -132,25 +132,24 @@ is presented.
 % number violation, II) C and $CP$ violation, III) deviation from thermal
 % equilibrium~\cite{Sakharov}.
 The Standard Model (SM) of particle physics, the quantum field theory describing
-three of the four fundamental forces, allows for $CP$ violating processes, but the
+three of the four fundamental forces, allows for $CP$ violating processes. The
 level at which these processes occur would need to be several orders of
-magnitude larger to account for the Universal matter-antimatter asymmetry. This
-suggest that new physics, beyond the SM, is needed to fully describe this
-asymmetry. The LHCb experiment at CERN has been designed to collect
-unprecedented samples of decays of $B$ mesons and study many $CP$-violating
-processes of the SM. This report will describe an ongoing measurement of a SM
-parameter critical to this endeavour.
+magnitude larger to account for the observed matter-antimatter asymmetry in the
+Universe. This suggests that new physics, beyond the SM, is needed to fully
+describe this asymmetry. The LHCb experiment at CERN has been designed to
+collect unprecedented samples of decays of $B$ mesons and study many
+$CP$-violating processes of the SM. This report will describe an ongoing
+measurement of a SM parameter critical to this endeavour.
 
 This document gives an overview of the theoretical background and derivation of
 physics observables in Sections~\ref{sec:theory} and~\ref{sec:observables}.
 Section~\ref{sec:detector} contains a brief description of the LHCb detector and
 neutral particle reconstruction. The selection of $B^{\pm}\rightarrow
 (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)h^{\pm}$ events is described
-in Section~\ref{sec:selections}. Sections~\ref{sec:massfit}
-and~\ref{sec:results} give a description of the 2D fit to the invariant mass
-distributions that will be used to extract the desired observables, and discuss
-the results and current status of the fit, respectively. Lastly, a thesis
-outline is then presented in Section~\ref{sec:thesis}. 
+in Section~\ref{sec:selections}. Section~\ref{sec:massfit} gives a description
+of the 2D mass fit that will be used to extract the desired observables, and
+Section~\ref{sec:results} discusses the results and current status of this fit.
+Lastly, a thesis outline is then presented in Section~\ref{sec:thesis}. 
 
 \vspace{-3mm}
 \section{\normalsize Theoretical Background} \label{sec:theory}
@@ -202,14 +201,13 @@ great interest in the current climate. Over the past few years, flavour
 anomalies have appeared in measurements of $\mathcal{B} (B^{0}_{s}\rightarrow
 \phi \mu \mu)$~\cite{B2phimumu}, $\mathcal{B} (B^{0}\rightarrow K^{*0} \mu
 \mu)$~\cite{B2Kstmumu}, $R_{K}$~\cite{Rk}, $R_{K^{*0}}$~\cite{Rkst} and
-$R_{D^{(*)-}}$~\cite{RDst}. Though none have reached a significance level to
-justify a discovery, some combinations have. These anomalies, and the
+$R_{D^{(*)-}}$~\cite{RDst}. These anomalies, and the
 contention in the measurements of $\phi_3$, could be explained by the presence
 of new, heavy particles. It is therefore motivating to reduce the uncertainty
 on $\phi_{3}$ using tree-level measurements to a size comparable to that
 extracted from the indirect measurements.
 \begin{figure}[htp]
-\vspace*{-5mm}
+\vspace*{-4mm}
 	\centering \includegraphics[width=1\textwidth]{figures/CKMIndirectFit.eps}
 \caption{{Diagram to show current measurements of the Unitarity Triangle
 using only constraints from `loop' quantities in the ($\rho$-bar, $\eta$-bar)
@@ -217,7 +215,7 @@ plane. The black line represents the fit obtained by CKM fitter.}}
 \label{fig:CKMIndirectFit} \vspace{-10pt}
 \end{figure}
 A significant contribution to this effort comes from studying tree-level
-processes of the type $B^{\pm}\rightarrow D^{0(*)}K^{\pm (*)}$~\cite{B2DKD2hh,
+processes of the type $B^{\pm}\rightarrow D^{(*)}K^{\pm (*)}$~\cite{B2DKD2hh,
 DalitzRun1, DalitzRun2, B2DKstD2hh, B2DstKD2hh}. The ADS~\cite{ADSRef} and
 GLW~\cite{GLWRef} methods can be employed to access $\phi_3$, the relative weak
 phase between the $b\rightarrow c\overbar{u}s$ and $b\rightarrow u\overbar{c}s$
@@ -259,7 +257,11 @@ $\phi_3$.}
 	\vspace{-10pt}
 \end{figure}
 
-\noindent The amplitude for producing a neutral ${D}^*$ meson in the decay $B^-\rightarrow \tilde{D^*}K^-$ can be expressed as:
+\noindent Defining $r_B=\frac{|A(B^{-}\rightarrow
+\overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow {D}^{*0}K^-)|}$ and $\delta_{B}$ as 
+the relative strong phase between these $B^-$ decays, the amplitude for
+producing a neutral ${D}^*$ meson in the decay $B^-\rightarrow \tilde{D^*}K^-$
+can be expressed as:
   \begin{equation}
     \tilde{D}^*=D^{*0}+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^{*0}
     \label{eq:DstTilde}
@@ -271,11 +273,7 @@ $D^{*}_{-}=\frac{D^{*0}-\overbar{D}^{*0}}{\sqrt{2}}$:
     \tilde{D}^*=\frac{D^{*}_{+}+D^{*}_{-}}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{D^{*}_{+}-D^{*}_{-}}{\sqrt{2}}
     \label{eq:DstTildeCP}
   \end{equation}
-\noindent Here, $r_B=\frac{|A(B^{-}\rightarrow
-\overbar{D}^{*0}K^-)|}{|A(B^{-}\rightarrow {D}^{*0}K^-)|}$ and $\delta_{B}$ is
-the relative strong phase between these $B^-$ decays.
- 
-The $CP$ eigenvalue of the $D^*$ state is given by the product
+\noindent The $CP$ eigenvalue of the $D^*$ state is given by the product
 $\lambda_{D^*}=\lambda_D\times \lambda_{\pi^0\text{/}\gamma} \times(-1)^l$. In
 the case of the strong $D^*$ decay via $\pi^0$ emission, $\lambda_{\pi^0}=-1$
 and $l=1$ therefore $\lambda_{D^*}=\lambda_D$ and $D^*_{\pm}\rightarrow
@@ -291,27 +289,10 @@ shown in~\cite{ADSDstar}.
 		\tilde{D^*}\rightarrow \tilde{D}\gamma &:
 \tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
   \end{align}
-\begin{figure}[htp]
-  \centering
-	\begin{tikzpicture}[scale=1.0]
-	\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-		{\includegraphics[width=1.0\textwidth]{figures/B2DstKDiagram.png}};
-	\begin{scope}[x={(image.south east)},y={(image.north west)}]
-	% \node[] at (0.25,0.5) {(a)};
-	% \node[] at (0.75,0.5) {(b)};
-	\end{scope}
-	\end{tikzpicture}
-  \caption{{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to
-  a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay.
-  These decays proceed via 2 interfering amplitudes, $D^{*}$ or 
-  $\overbar{D}^{*}$ states.}}
-\label{fig:B2DstKDiagram} \vspace{-10pt}
-\end{figure}
-Labelling the amplitude of the diagram displayed in Fig.~\ref{fig:B2DstarKstar} (a)
-as $A_{B}=A(B^{-}\rightarrow
-D^{*0}K^{-})=A(B^{+}\rightarrow \overbar{D}^{*0}K^{+})$, as shown in Fig.~\ref{fig:B2DstKDiagram}, we can construct 4
-equations for the decay amplitudes of $B^{-}$ mesons to final states
-$f(\accentset{\brobor}{D}\phantom{})$:
+Labelling the amplitude of the diagram displayed in Fig.~\ref{fig:B2DstarKstar}
+(a) as $A_{B}=A(B^{-}\rightarrow D^{*0}K^{-})=A(B^{+}\rightarrow
+\overbar{D}^{*0}K^{+})$, we can construct 4 equations for the decay amplitudes
+of $B^{-}$ mesons to final states $f(\accentset{\brobor}{D}\phantom{})$:
 \begin{align}
     A_{Bf}^{\pi^{0}}&=A(B^{-}\rightarrow
     [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
@@ -335,10 +316,28 @@ $A_{D}=A(\overbar{D}^{0}\rightarrow f(\overbar{D}))=A(D^{0}\rightarrow f(D))$.
 $\delta_D$ is the relative strong phase difference between the $D$ and
 $\overbar{D}$ mesons decaying to the same final state. 4 analogous charge
 conjugate equations can be written for the $B^{+}$ meson. 
+\begin{figure}[H]
+  \centering
+	\begin{tikzpicture}[scale=1.0]
+	\node[anchor=south west,inner sep=0] (image) at (0.5,0)
+		{\includegraphics[width=1.0\textwidth]{figures/B2DstKDiagram.png}};
+	\begin{scope}[x={(image.south east)},y={(image.north west)}]
+	% \node[] at (0.25,0.5) {(a)};
+	% \node[] at (0.75,0.5) {(b)};
+	\end{scope}
+	\end{tikzpicture}
+  \caption{{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to
+  a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay.
+  These decays proceed via 2 interfering amplitudes, $D^{*}$ or 
+  $\overbar{D}^{*}$ states.}}
+\label{fig:B2DstKDiagram} \vspace{-10pt}
+\end{figure}
 
-When applying GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in the
-$CP$-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$, therefore
-$\delta_D=0$ and $A_{D}=\overbar{A}_{D}$ can also be factorised out. Time integrated decay rates are proportional to the squared magnitude of the amplitudes, therefore we can construct the following equations for $B^{\pm}$ mesons:
+When applying the GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in
+the $CP$-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$,
+therefore $\delta_D=0$ and $A_{D}=\overbar{A}_{D}$. Time integrated decay rates
+are proportional to the squared magnitude of the amplitudes, therefore we can
+construct the following equations for $B^{\pm}$ mesons:
   \begin{align}
 		\Gamma_{CP+}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
 [hh]_D\pi^{0}))&\propto |A^{\pi^0}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} +
@@ -423,10 +422,10 @@ ratios. The physics observables that will be measured in this analysis are:
       ([h^{+}h^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})} \times \frac{1}{R^{K\pi ,
       \pi^0 /\gamma}_{K/\pi}}
 		\end{equation}
-  \item The ratios of the ADS to the favoured mode, for $B^{\pm}$ decays. We
-  measure $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
-  statistically correlated. It should be noted that this constitutes 4
-  independent equations.
+  \item The ratios of the ADS to the favoured mode, for $B^{\pm}$ decays. It
+  should be noted that this constitutes 4 independent equations. We measure
+  $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
+  statistically correlated. 
 		\begin{equation}
 			R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow
 			[[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow
@@ -550,16 +549,16 @@ side of the magnet, to provide direct discrimination between kaons, pions and
 protons.
 
 The reconstruction of neutrals involves the calorimeter system, consisting of
-the electromagnetic (ECAL) and hadronic (HCAL) calorimeters preceded by the
+the electromagnetic (ECAL) and hadronic (HCAL) calorimeters preceded, by the
 Silicon Pad Detector (SPD) and Preshower (PS), separated by a lead wall. The
 ECAL consists of alternating scintillating tiles and lead plates, and the HCAL
 iron plates interspaced with scintillating tiles aligned parallel to the beam
 pipe. The SPD identifies whether incident particles are charged or neutral,
 whilst the PS determines whether they are electrons (if charged) or photons (if
-neutral), by looking at the longitudinal segmentation of the electromagnetic
-shower, in order to discriminate against pions. Both the SPD and PS consist of
-scintillating pads and all light produced in the system is sent down
-wavelength-shifting fibres and transmitted to photomultiplier tubes.
+neutral). This is achieved by looking at the longitudinal segmentation of the
+electromagnetic shower, in order to discriminate against pions. Both the SPD and
+PS consist of scintillating pads and all light produced in the system is sent
+down wavelength-shifting fibres and transmitted to photomultiplier tubes.
 
 Once a candidate has been identified as a $\gamma$ or $\pi^0$ from its energy
 deposition sequence in the calorimeter system, reconstruction is performed using
@@ -570,8 +569,8 @@ is applied that redistributes the cell energy between the clusters
 proportionally to the total cluster energies.
 
 Photon candidates are identified to be neutral clusters without any associated
-extrapolated track. This means that they must have a $\chi^2_{2D}$, defined
-below, of at least 4 for every track in the event.
+extrapolated track. This means that they must have a $\chi^2_{2D}$ of at least 4
+for every track in the event:
 \begin{equation}
   \chi^2_{2D}=(\vec{r}_{tr}-\vec{r}_{cl})^T(C_{tr}+S_{cl})^{-1}(\vec{r}_{tr}-\vec{r}_{cl})
   \label{Chi2}
@@ -623,7 +622,7 @@ Candidates must fulfil the hardware trigger, meaning that decay products of the
 signal candidate detected by the HCAL, or events containing at least one
 candidate from elsewhere in the event, must lie above a fixed threshold in
 transverse energy.  The software trigger must also be passed. This places
-requirements on the quality of tracks, which are then combined one-by-one, and
+requirements on the quality of tracks, which are then combined one-by-one and
 identified as having either 2-, 3-, or 4-body topology depending on their
 distance of closest approach. 
 
@@ -634,8 +633,8 @@ window of $110 < m[\pi^0] < 185$ MeV/$c^2$. In order to remove combinatorial
 backgrounds from low energy photons in the event, transverse momentum
 requirements are placed on the neutral particles. In the $D^*\rightarrow
 D\gamma$ final state, $\gamma_{P_T}>350$ MeV/$c^2$. In the $D^*\rightarrow
-D\pi^0$ mode, $\pi^0_{P_T}>350$ MeV/$c^2$, and the $\pi^0$ secondary photons are
-required to have $P_T>200$ MeV/$c^2$.
+D\pi^0$ final state, $\pi^0_{P_T}>350$ MeV/$c^2$, and the $\pi^0$ secondary
+photons are required to have $P_T>200$ MeV/$c^2$.
 
 Particle identification (PID) information is obtained from the RICH detector.
 The charged pion and kaon from the $B^{\pm}$ decay vertex are required to occupy
@@ -703,8 +702,8 @@ background sample for the BDT. Here, side-bands constitutes data that falls in
 the range 5800 $ < m[D\pi] <$ 6800 MeV/$c^2$, as shown in
 Fig.~\ref{fig:trainingData}, where $\Delta_M=m[D^{*}] - m[D]- (m[\pi^0] +
 m[\pi^0]_{PDG})$ (the part in brackets refers to the definition for the
-$D^*\rightarrow D\pi^0$ decay mode). The signal sample consists of simulated
-events of the same decay mode. The training variables used are related to the
+$D^*\rightarrow D\pi^0$ mode). The signal sample consists of simulated
+events of the same decay. The training variables used are related to the
 decay kinematics and topology of tracks, and are displayed in
 Table~\ref{table:bdt1TrainingVar}. 
 
@@ -719,6 +718,7 @@ and background yields, respectively.
 \sigma = \frac{S}{S \times B}
 \label{D_branching_ratio}
 \end{align}
+
 BDTs are also employed in the second stage MVA, designed to select the true
 neutral and $D^*$ candidate. Separate BDTs are trained for the two $D^*$ final
 states, $D\pi^0$ and $D\gamma$. The signal samples provided are made up of
@@ -859,12 +859,12 @@ the distributions after.}} \label{fig:Pi0BDT2Variables}
 The input variables have been studied before and after this BDT cut, and their
 distributions, whose integrals are normalised to one, are show in
 Fig.~\ref{fig:GammaBDT2Variables} and Fig.~\ref{fig:Pi0BDT2Variables} for the
-$D\gamma$ and $D\pi^0$ $D^*$ final states, respectively. It can be seen that the
-effect of the BDT it to bring the data distributions closer to those of
-simulated signal.  The $p_T$ variables, higher momenta neutrals are favoured due
-to the increased combinatorics at low $p_T$.
+$D\gamma$ and $D\pi^0$ final states, respectively. It can be seen that the
+effect of the BDT is to bring the data distributions closer to those of
+simulated signal. For the $p_T$ variables, higher momenta neutrals are favoured due
+to increased combinatorics at low $p_T$.
 
-Events reconstructed in both $D^{*}$ decay modes modes are kept in the $D\pi^0$
+Events reconstructed in both $D^{*}$ decay modes are kept in the $D\pi^0$
 and removed from the $D\gamma$ sample. This is motivated by the reduced
 statistics in the $D\pi^0$ final state and an increase in purity of signal data
 in the $D\gamma$ sample. Multiple candidates occur at a rate of $\sim 1.5$ in
@@ -1013,11 +1013,12 @@ meson, but sit lower than signal in $m[D^*h]$ mass.
 These backgrounds are flat in $\Delta_M$ phase space and sit higher than the
 signal component in $m[D^*h]$ mass.
   \item Mis-reconstructed backgrounds, where a pion in the true decay has been missed and
-	a $\pi^0$ or $\gamma$ added to the $D^0$ meson to form a $D^{*0}$ candidate.
-$B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_Dh^{*\pm}$ and $B^{0}\rightarrow
-(D^{*\pm}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^{\pm})h^{\mp}$ decays fall within
-this category, and peak within the $m[D^*h]$ mass signal region, but are flat
-in $\Delta_M$ phase space.
+  a $\pi^0$ or $\gamma$ added to the $D^0$ meson to form a $D^{*0}$ candidate.
+  $B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_Dh^{*\pm}$ and
+  $\accentset{\brobor}{B}\phantom{}^{0}\rightarrow (D^{*\pm}\rightarrow
+  [K^{\pm}\pi^{\mp}]_D \pi^{\pm})h^{\mp}$ decays fall within this category, and
+  peak within the $m[D^*h]$ mass signal region, but are flat in $\Delta_M$ phase
+  space.
 \end{enumerate}
 
 There are also fit components within each neutral mode to account for
@@ -1061,7 +1062,9 @@ components are formed from the sum of the individual 2D PDFs describing
 $B^{\pm}\rightarrow D^0\rho$ and
 $B^{0}\rightarrow[D^0\pi^{\pm}]_{D^{*\pm}}\pi^{\mp}$ decays.
 
-It should be noted that to obtain the PDFs of the signal components, Run1, 2015 and 2016 simulation samples are used. Currently, the background components are modelled using Run1 simulation only. 
+It should be noted that to obtain the PDFs of the signal components, Run1, 2015
+and 2016 simulation samples are used. Currently, the background components are
+modelled using Run1 simulation only. 
 
 When incorporating these PDFs into a 2D model, the $\Delta_M$ shape parameters
 are fixed to the values obtained from the 1D fits. The tail parameters of the CB
@@ -1140,11 +1143,11 @@ these modes,~\cite{PartReco}, gave the combined measurement $R^{K\pi}_{K/\pi}
 =$ ($7.768 \pm 0.038$ (stat) $\pm 0.066$ (syst)) $\times 10^{-2}$, which these
 results are also consistent with. 
 
-In calculating these values for Run1 data, the percentage of
-$B^{\pm}\rightarrow D^*K^{\pm}$ decays that pass the PID requirement on the
-kaon is taken to be 64\%, from the studies of partially reconstructed decays.
-This efficiency will be updated with a value calibrated to the data used in
-this analysis, but is not expected to change significantly.
+In calculating these values for Run1 data, the percentage of $B^{\pm}\rightarrow
+D^*K^{\pm}$ decays that pass the PID requirement on the kaon is taken to be
+64\%, which is calibrated using $B^{\pm}\rightarrow Dh^{\pm}$ data.  This
+efficiency will be updated with a value calibrated using $B^{\pm}\rightarrow
+D^*K^{\pm}$ simulation, but is not expected to change significantly.
 
 An extrapolation of the yields listed in the second column of
 Table~\ref{table:yields}, to the full dataset (including 2.2 fb$^{-1}$ of 2018
