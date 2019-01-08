@@ -1060,7 +1060,7 @@ and a $D^*$ decaying to $D^0X$ background shape. The former describes the peak
 in delta mass due to the presence of a true $D^{*0}$ meson. Mis-reconstructed
 components are formed from the sum of the individual 2D PDFs describing
 $B^{\pm}\rightarrow D^0\rho$ and
-$B^{0}\rightarrow[D^0\pi^{\pm}]_{D^{*\pm}}\pi^{\mp}$ decays.
+$\accentset{\brobor}{B}\phantom{}^{0}\rightarrow[D^0\pi^{\pm}]_{D^{*\pm}}\pi^{\mp}$ decays.
 
 It should be noted that to obtain the PDFs of the signal components, Run1, 2015
 and 2016 simulation samples are used. Currently, the background components are
@@ -1075,10 +1075,11 @@ x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
 \label{eq:2dPolynomial}
 \end{equation}
 Here, $x$ represents the mean or width of a CB shape as a function of $m[D^*h]$.
-For every point in $\Delta_M$, there is a corresponding PDF in $m[D^*h]$ with
-means and widths calculated using Equation~\ref{eq:2dPolynomial}. The
-correlation between the two invariant mass spectrums is therefore modelled in
-the fit using the polynomial coefficients.
+For every point in $\Delta_M$, there is a corresponding PDF in $m[D^*h]$, with
+means and widths calculated using Eq.~\eqref{eq:2dPolynomial}, for each fit
+component. The correlation between the two invariant mass spectrums is therefore
+modelled in the fit using these polynomial coefficients, which are fixed in the
+fit to data to the values obtained from simulation.
 
 Comparing the 2D plots of the data samples shown in Fig.~\ref{fig:2dFitsPi0Run1}
 and Fig.~\ref{fig:2dFitsGammaRun1}, it can be seen that these variables exhibit
@@ -1086,8 +1087,8 @@ greater correlation in the $D\gamma$ final state than in the $D\pi^0$ final
 state. This is due to the extra constraint on the $\pi^0$ mass in calculating
 the re-fitted $m[D^*h]$ mass variable during reconstruction, as described at the
 beginning of Sec.~\ref{sec:selections}. In the 2D fits to simulation for the
-$D^*\rightarrow D\pi^0$ mode, a linear polynomial is therefore found to be
-sufficient to model this correlation, and so the $a_2$ parameter is set to zero.
+$D^*\rightarrow D\pi^0$ mode, a linear polynomial is found to be
+sufficient to model this correlation, and the $a_2$ parameter is set to zero.
 
 The data, PDF and residuals in 2D for Run1, then 2011-2017 data, are shown in
 Fig.~\ref{fig:2dFitsPi0Run1} (Fig.~\ref{fig:2dFitsGammaRun1}) and
@@ -1129,7 +1130,7 @@ Focus will be paid to the Run1 mass fit results, which are more reliable at
 this stage due to the lack of Run2 background simulation samples.
 
 The fit is set up to measure the physics observable $R^{K\pi , \pi^0
-/\gamma}_{K/\pi}$, defined by Eq.~\ref{eq:R_DstK_Dstpi}. The results are give
+/\gamma}_{K/\pi}$, defined by Eq.~\eqref{eq:R_DstK_Dstpi}. The results are give
 below:
 \begin{align*}
 R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
@@ -1462,7 +1463,8 @@ axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 \section{Thesis Outline} \label{sec:thesis}
 Proposed thesis title:
 
-\noindent Study of $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays using the full LHCb dataset.
+\noindent Study of $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays using the full LHCb
+dataset. \\
 
 \noindent Suggested thesis outline including chapter and section headings:
 \begin{enumerate}
@@ -1520,16 +1522,14 @@ Easter.
 \item $CP$ fit for $B^{\pm}\rightarrow (D^*\rightarrow
 [h^{\pm}h^{\mp}]_D\pi^0/\gamma)K^{\pm}$ decays \\
 
-Description of the simultaneous fit to all two-body $D$ modes, including any
-asymmetry and efficiency corrections. The fit results will be given here and a
-discussion of systematic uncertainties. \\
+Description of the simultaneous fit to all two-body $D$ modes. The fit results
+will be given here and a discussion of systematic uncertainties. \\
 
-Section headings: Fit Setup, Asymmetry and Efficiency Corrections,
-Optimisation, Fit Results, Systematics \\
+Section headings: Fit Setup, Optimisation, Fit Results, Systematics \\
 
 Status: Fit extension to GLW and ADS modes still needs to be done, aim to
-achieve this by Easter 2018. Plan to apply corrections, carry out the
-optimisation and evaluate systematics by summer 2018.
+achieve this by Easter 2018. Plan to carry out the optimisation and evaluate
+systematics by summer 2018.
 
 \item Interpretation 
 
