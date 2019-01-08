@@ -1,6 +1,6 @@
 \documentclass[oneside,12pt]{article} 
 
-\usepackage[margin=2.5cm]{geometry} 
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2.4cm]{geometry} 
 \usepackage{sidecap}
 \usepackage{fullpage}
 \geometry{a4paper}
@@ -145,14 +145,14 @@ This document gives an overview of the theoretical background and derivation of
 physics observables in Sections~\ref{sec:theory} and~\ref{sec:observables}.
 Section~\ref{sec:detector} contains a brief description of the LHCb detector and
 neutral particle reconstruction. The selection of $B^{\pm}\rightarrow
-(D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)h^{\pm}$ events is
-described in Section~\ref{sec:selections}. Sections~\ref{sec:massfit}
+(D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)h^{\pm}$ events is described
+in Section~\ref{sec:selections}. Sections~\ref{sec:massfit}
 and~\ref{sec:results} give a description of the 2D fit to the invariant mass
-distributions that will be used to extract the desired observables, and discuss the
-results and current status of the fit, respectively. Conclusions are drawn in
-Section~\ref{sec:conclusion} and, lastly, a thesis outline is then presented in
-Section~\ref{sec:thesis}. 
+distributions that will be used to extract the desired observables, and discuss
+the results and current status of the fit, respectively. Lastly, a thesis
+outline is then presented in Section~\ref{sec:thesis}. 
 
+\vspace{-3mm}
 \section{\normalsize Theoretical Background} \label{sec:theory}
 In the SM, the charged-current, weak interactions of quarks are described by the
 SM Lagrangian term given in Eq.~\eqref{eq:CCLagrangian}.
@@ -164,7 +164,7 @@ SM Lagrangian term given in Eq.~\eqref{eq:CCLagrangian}.
 \noindent Here, $W_{\mu}^{+}$ is the W-boson field, which couples to the
 left-handed quark triplets, $\overbar{q}_{L}^{i}$ and $q_{L}^{j}$, where
 $i,j=1,2,3$ are the generation numbers, and $V_{CKM}$ are elements of the
-$3\times 3$ Cabbibo-Kobayashi-Maskawa (CKM) matrix~\cite{CKMTheory}. These
+$3\times 3$ Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{CKMTheory}. These
 elements are coupling constants quantifying the strength of iter- and
 intra-generational mixing, and can be represented by complex numbers with arbitrary phases.
 
@@ -208,9 +208,10 @@ contention in the measurements of $\phi_3$, could be explained by the presence
 of new, heavy particles. It is therefore motivating to reduce the uncertainty
 on $\phi_{3}$ using tree-level measurements to a size comparable to that
 extracted from the indirect measurements.
-\begin{figure}[H]
+\begin{figure}[htp]
+\vspace*{-5mm}
 	\centering \includegraphics[width=1\textwidth]{figures/CKMIndirectFit.eps}
-\caption{\small{Diagram to show current measurements of the Unitarity Triangle
+\caption{{Diagram to show current measurements of the Unitarity Triangle
 using only constraints from `loop' quantities in the ($\rho$-bar, $\eta$-bar)
 plane. The black line represents the fit obtained by CKM fitter.}}
 \label{fig:CKMIndirectFit} \vspace{-10pt}
@@ -224,7 +225,7 @@ transitions, as seen in the Feynman diagrams in Fig.~\ref{fig:B2DstarKstar}.
 This report will study one variant, $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays,
 where the neutral D$^{*}$ meson represents $D^{*0}$ or $\overbar{D}^{*0}$ and
 is reconstructed as either $D\pi^{0}$ or $D\gamma$. 
-% \begin{figure}[H]
+% \begin{figure}[htp]
 % 	\centering
 % 	\includegraphics[width=0.8\textwidth]{figures/B2DstarKstar}
 % 	\caption{\small{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}.
@@ -237,7 +238,8 @@ is reconstructed as either $D\pi^{0}$ or $D\gamma$.
 % 	\vspace{-10pt}
 % \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htp]
+\vspace*{-7mm}
 \centering
 \begin{tikzpicture}[scale=0.8]
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
@@ -247,7 +249,7 @@ is reconstructed as either $D\pi^{0}$ or $D\gamma$.
 \node[] at (0.71,1) {(b)};
 \end{scope}
 \end{tikzpicture}
-	\caption{\small{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}.
+	\caption{{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}.
 The decay to $\overbar{{D}}^{(*)0}$ is CKM
 $|V_{ub}V^{*}_{cs}/V_{cb}V^{*}_{us}|\approx0.4$ and colour ${F}_{CS}\approx1/3$
 suppressed with respect to (w.r.t.) the ${D}^{(*)0}$ final state. The
@@ -283,15 +285,13 @@ $D^*_{\pm}\rightarrow D_{\mp}\gamma$.  This introduces a phase shift of $\pi$
 ($e^{i\pi}=-1$) between the two neutral $D$ mesons produced in the decay
 $B^-\rightarrow \tilde{D}^*K^-$ in the $D\gamma$ mode. This logic was first
 shown in~\cite{ADSDstar}.
-  \begin{equation}
-		\tilde{D^*}\rightarrow \tilde{D}\pi^0 :
-\tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0 \label{eq:DTildePi0}
-  \end{equation}
-  \begin{equation}
-		\tilde{D^*}\rightarrow \tilde{D}\gamma :
-\tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0 \label{eq:DTildeGamma}
-  \end{equation}
-\begin{figure}[H]
+  \begin{align}
+		\tilde{D^*}\rightarrow \tilde{D}\pi^0 &:
+\tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0 \\
+		\tilde{D^*}\rightarrow \tilde{D}\gamma &:
+\tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
+  \end{align}
+\begin{figure}[htp]
   \centering
 	\begin{tikzpicture}[scale=1.0]
 	\node[anchor=south west,inner sep=0] (image) at (0.5,0)
@@ -301,7 +301,7 @@ shown in~\cite{ADSDstar}.
 	% \node[] at (0.75,0.5) {(b)};
 	\end{scope}
 	\end{tikzpicture}
-  \caption{\small{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to
+  \caption{{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to
   a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay.
   These decays proceed via 2 interfering amplitudes, $D^{*}$ or 
   $\overbar{D}^{*}$ states.}}
@@ -312,26 +312,19 @@ as $A_{B}=A(B^{-}\rightarrow
 D^{*0}K^{-})=A(B^{+}\rightarrow \overbar{D}^{*0}K^{+})$, as shown in Fig.~\ref{fig:B2DstKDiagram}, we can construct 4
 equations for the decay amplitudes of $B^{-}$ mesons to final states
 $f(\accentset{\brobor}{D}\phantom{})$:
-\begin{equation}
-    A_{Bf}^{\pi^{0}}=A(B^{-}\rightarrow
+\begin{align}
+    A_{Bf}^{\pi^{0}}&=A(B^{-}\rightarrow
     [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
-    \label{eq:A(Bf)pi0}
-  \end{equation}
-  \begin{equation}
-		A_{B\overbar{f}}^{\pi^{0}}=A(B^{-}\rightarrow
+    \\
+		A_{B\overbar{f}}^{\pi^{0}}&=A(B^{-}\rightarrow
 [f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}e^{-i\delta_D}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
-\label{eq:A(Bfbar)pi0}
-  \end{equation}
-  \begin{equation}
-    A_{Bf}^{\gamma}=A(B^{-}\rightarrow
+\\
+    A_{Bf}^{\gamma}&=A(B^{-}\rightarrow
     [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
-    \label{eq:A(Bf)gamma}
-  \end{equation}
-  \begin{equation}
-		A_{B\overbar{f}}^{\gamma}=A(B^{-}\rightarrow
+    \\
+		A_{B\overbar{f}}^{\gamma}&=A(B^{-}\rightarrow
 [f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}e^{-i\delta_D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
-\label{eq:A(Bfbar)gamma}
-  \end{equation}
+  \end{align}
 \noindent Compared to Fig.~\ref{fig:B2DstKDiagram}, in these equations we have
 replaced $\accentset{\brobor}{A}\phantom{}_{D^{*}}$ with
 $A_{\pi^{0}}\accentset{\brobor}{A}\phantom{}_{D}$ or
@@ -346,16 +339,14 @@ conjugate equations can be written for the $B^{+}$ meson.
 When applying GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in the
 $CP$-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$, therefore
 $\delta_D=0$ and $A_{D}=\overbar{A}_{D}$ can also be factorised out. Time integrated decay rates are proportional to the squared magnitude of the amplitudes, therefore we can construct the following equations for $B^{\pm}$ mesons:
-  \begin{equation}
+  \begin{align}
 		\Gamma_{CP+}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[hh]_D\pi^{0}))\propto |A^{\pi^0}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} +
-2r_{B}\cos(\delta_{B}\mp \phi_{3}) \label{eq:DecayRateGLWpi0}
-  \end{equation}
-  \begin{equation}
+[hh]_D\pi^{0}))&\propto |A^{\pi^0}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} +
+2r_{B}\cos(\delta_{B}\mp \phi_{3}) \\
 		\Gamma_{CP-}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[hh]_D\gamma))\propto |A^{\gamma}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} -
-2r_{B}\cos(\delta_{B}\mp \phi_{3}) \label{eq:DecayRateGLWgamma}
-  \end{equation}
+[hh]_D\gamma))&\propto |A^{\gamma}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} -
+2r_{B}\cos(\delta_{B}\mp \phi_{3})
+  \end{align}
 \noindent The strong phase shift of $\pi$ from the
 $D^{*}\rightarrow D\gamma$ decay converts the $CP+$ eigenstate from even to odd
 in the context of $B^{\pm}\rightarrow D^{(*)0}K^{\pm}$ decays. This provides a
@@ -363,7 +354,7 @@ useful extra constraint in the extraction of $\phi_3$.
 
 In the ADS method~\cite{ADSRef}, the $D$ meson is reconstructed as
 $D^{0}\rightarrow K^{+}\pi^{-}$, $D^{0}\rightarrow K^{-}\pi^{+}$ and their
-charge conjugates. The former is doubly Cabbibo suppressed with respect to the
+charge conjugates. The former is doubly Cabibbo suppressed with respect to the
 latter, therefore we label these as the suppressed (SUP) and favoured (FAV)
 modes. Defining $A_{D}=A(D^{0}\rightarrow
 K^{-}\pi^{+})=A(\overbar{D}^{0}\rightarrow K^{+}\pi^{-})$ and $\overbar{A}_{D}=
@@ -396,6 +387,7 @@ $B^{\pm}\rightarrow D^{*}K^{\pm}$ decays results in four independent equations. 
 enhanced ADS method therefore has the potential to measure $\phi_3$ without
 information from other modes.
 
+\vspace{-3mm}
 \section{\normalsize $CP$ Observables} \label{sec:observables}
 We create observables that do not depend on absolute efficiencies by taking
 ratios. The physics observables that will be measured in this analysis are:
@@ -519,6 +511,7 @@ and mass fit for this analysis, however the value of $r_B$ for $D^*\pi$ final
 states is $\sim 5\%$ that of $D^*K$ final states, therefore decays of this
 type are less sensitive to $\phi_3$.
 
+\vspace{-3mm}
 \section{The LHCb Detector and Neutral Particle Reconstruction} \label{sec:detector}
 The LHCb~\cite{LHCbDetector} detector is located at the Large Hadron Collider, a
 27 km circular $pp$ collider located at CERN. LHCb has been designed to study
@@ -614,6 +607,7 @@ section~\cite{PDG2018}, which, when combined with improvements in the online
 selection, caused the rate of selected signal candidates per integrated
 luminosity to increase by approximately a factor of 2.
 
+\vspace{-3mm}
 \section{Selection of $B^{\pm}\rightarrow D^*h^{\pm}$ Candidates} \label{sec:selections}
 
 Signal candidates are initially identified by selecting combinations of $D^0$
@@ -652,7 +646,7 @@ the charged meson from the $B^{\pm}$ decay vertex and $D$ meson candidates from
 appearing in more than one category. Cross feed between the final states
 $D^{0}\rightarrow K^-\pi^+, K^-K^+, \pi^-\pi^+$ is negligible. When both $D$
 secondaries are misidentified, however, there is some contamination of
-Cabbibo-favoured $D^0\rightarrow K^-\pi^+$ decays in the $D^0\rightarrow
+Cabibbo-favoured $D^0\rightarrow K^-\pi^+$ decays in the $D^0\rightarrow
 K^+\pi^-$ sample, due to its relatively large branching fraction. To suppress
 this crossfeed, a veto is applied to $D$ final states containing a pion and
 kaon.  The $D$ candidate is reconstructed with the mass hypothesis of the
@@ -669,7 +663,7 @@ meson plus a random track, are targeted.  The use of Boosted Decision Trees
 ADS/GLW analysis of this mode~\cite{B2DKD2hh}. A similar strategy is employed
 here. 
 
-\begin{figure}[H]
+\begin{figure}[htp]
 \centering
 \begin{tikzpicture}[scale=0.48]
 \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
@@ -696,7 +690,7 @@ here.
 \node[red,ultra thick] at (0.295,0.7) {BDT2};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{2D histogram of $\Delta_M$ plotted against $m[D\pi]$. The
+\caption{{2D histogram of $\Delta_M$ plotted against $m[D\pi]$. The
 training regions in $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (left) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (right) data for both
@@ -716,16 +710,15 @@ Table~\ref{table:bdt1TrainingVar}.
 
 The working point of BDT1 $>$ 0.05 is chosen by performing fits to the $D$ mass
 distribution of the high statistics mode, in BDT steps of 0.05. The extracted
-signal yield is then scaled to the ADS mode using the branching ratio
+signal yield is then scaled to the doubly-Cabibbo suppressed mode using the branching ratio
 $\mathcal{BR} = \frac{\mathcal{BF}(D^0 \rightarrow K^- \pi^+)}{\mathcal{BF}(D^0
 \rightarrow K^+ \pi^-)}$. The optimisation was performed using the significance
 figure of merit, $\sigma$, defined below, where $S$ and $B$ represent the signal
 and background yields, respectively.
-\begin{equation}
+\begin{align}
 \sigma = \frac{S}{S \times B}
 \label{D_branching_ratio}
-\end{equation}
-
+\end{align}
 BDTs are also employed in the second stage MVA, designed to select the true
 neutral and $D^*$ candidate. Separate BDTs are trained for the two $D^*$ final
 states, $D\pi^0$ and $D\gamma$. The signal samples provided are made up of
@@ -788,31 +781,14 @@ respectively.
 \node[] at (0.5, -0.1) {(d)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\gamma$ decay mode. The top and bottom rows show plots for
-simulation and data, respectively. The variables are labelled by letters: (a)
-shows the confident level, CL, of the photon, (b) the photon IsNotE, (c) the
-photon $p_T$ and (d) the $D^*$ meson $p_T$. The red points show the
-distributions before the cut on BDT2, and the blue points show the distributions
-after.}} \label{fig:GammaBDT2Variables}
+\caption{{Distributions of the input variables to the second stage BDT for
+the $D^* \rightarrow D\gamma$ decay mode, normalised to an area of one. The top
+and bottom rows show plots for simulation and data, respectively. The variables
+are labelled by letters: (a) shows the confident level, CL, of the photon, (b)
+the photon IsNotE, (c) the photon $p_T$ and (d) the $D^*$ meson $p_T$. The red
+points show the distributions before the cut on BDT2, and the blue points show
+the distributions after.}} \label{fig:GammaBDT2Variables}
 \end{figure}
-
-The input variables have been studied before and after this BDT cut, and their
-normalised distributions are show in Fig.~\ref{fig:GammaBDT2Variables} and
-Fig.~\ref{fig:Pi0BDT2Variables} for the $D\gamma$ and $D\pi^0$ $D^*$ final
-states, respectively. It can be seen that the effect of the BDT it to bring the
-data distributions closer to those of simulated signal.  The $p_T$ variables,
-higher momenta neutrals are favoured due to the increased combinatorics at low
-$p_T$.
-
-Events reconstructed in both $D^{*}$ decay modes modes are kept in the $D\pi^0$
-and removed from the $D\gamma$ sample. This is motivated by the reduced
-statistics in the $D\pi^0$ final state and an increase in purity of signal data
-in the $D\gamma$ sample. Multiple candidates occur at a rate of $\sim 1.5$ in
-the $D\pi^0$ mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the
-$D\gamma$ mode is due to the tighter transverse momentum cut on the photons in
-the event, removing combinatoric background from low energy photons. The
-selected candidate to be used in the mass fit is chosen at random.
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=0.19]
@@ -870,15 +846,32 @@ selected candidate to be used in the mass fit is chosen at random.
 \node[] at (0.5, -0.1) {(e)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\pi^0$ decay mode. The top and bottom rows show plots for
-simulation and data, respectively. The variables are labelled by letters: (a)
-shows the product of the confident level, CL, of the two daughter photons, (b)
-the product of the photon IsNotE, (c) the average photon $p_T$, (d) the photon
-asymmetry and (e) the $D^*$ meson $p_T$. The red points show the distributions
-before the cut on BDT2, and the blue points show the distributions after.}}
-\label{fig:Pi0BDT2Variables}
+\caption{{Distributions of the input variables to the second stage BDT for
+the $D^* \rightarrow D\pi^0$ decay mode, normalised to an area of one. The top
+and bottom rows show plots for simulation and data, respectively. The variables
+are labelled by letters: (a) shows the product of the confident level, CL, of
+the two daughter photons, (b) the product of the photon IsNotE, (c) the average
+photon $p_T$, (d) the photon asymmetry and (e) the $D^*$ meson $p_T$. The red
+points show the distributions before the cut on BDT2, and the blue points show
+the distributions after.}} \label{fig:Pi0BDT2Variables}
 \end{figure}
+
+The input variables have been studied before and after this BDT cut, and their
+distributions, whose integrals are normalised to one, are show in
+Fig.~\ref{fig:GammaBDT2Variables} and Fig.~\ref{fig:Pi0BDT2Variables} for the
+$D\gamma$ and $D\pi^0$ $D^*$ final states, respectively. It can be seen that the
+effect of the BDT it to bring the data distributions closer to those of
+simulated signal.  The $p_T$ variables, higher momenta neutrals are favoured due
+to the increased combinatorics at low $p_T$.
+
+Events reconstructed in both $D^{*}$ decay modes modes are kept in the $D\pi^0$
+and removed from the $D\gamma$ sample. This is motivated by the reduced
+statistics in the $D\pi^0$ final state and an increase in purity of signal data
+in the $D\gamma$ sample. Multiple candidates occur at a rate of $\sim 1.5$ in
+the $D\pi^0$ mode and $\sim 1.1$ in the $D\gamma$ mode. This reduced rate in the
+$D\gamma$ mode is due to the tighter transverse momentum cut on the photons in
+the event, removing combinatoric background from low energy photons. The
+selected candidate to be used in the mass fit is chosen at random.
 
 \afterpage{ \clearpage % Flush earlier floats (otherwise order might not be
 \begin{landscape}
@@ -951,7 +944,7 @@ D0\_LT\_BPV                 & $D$ lifetime (laboratory frame) with respect to
 the primary vertex          & 3.41
                             \\ \hline
 \end{tabular}
-} \caption{\small{Variables used in the training of the first stage BDT, ranked
+} \caption{{Variables used in the training of the first stage BDT, ranked
 by importance. The name Bu refers to the $B$, bach to the $\pi/K$ from the
 $B^{\pm}$ decay vertex, and D0 to the $D$.}}
 \label{table:bdt1TrainingVar}
@@ -988,22 +981,22 @@ Asymmetry of transverse energy of photons
 & 1.716 & - \\ \hline
 \end{tabular}
 }
-\caption{\small{Variables used in the training of the second stage BDT, ranked
+\caption{{Variables used in the training of the second stage BDT, ranked
 by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
 $\pi^0$.}}
 \label{table:bdt2TrainingVar}
 \end{table}
 \end{landscape}
 }
-
+\vspace{-3mm}
 \section{2D Mass Fit} \label{sec:massfit}
 
 2D maximum likelihood fits to the $m[D^*h]$ and $\Delta_M$ mass spectrums are
-performed to Cabbibo-favoured $B^{\pm}\rightarrow (D^*\rightarrow
+performed to Cabibbo-favoured $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0)h^{\pm}$ and $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\gamma)h^{\pm}$ decays, in order to understand the
 background compositions. Here, $h$ represents a pion or kaon, and these two
-cases are fitted simultaneously. The fitting regions lie within the ranges 5050
+cases are fitted simultaneously. The fitting regions lie within the area 5050
 $<$ $m[D^*h]$ $<$ 5800 MeV/$c^2$ and 50 (135) $<$ $\Delta_M$ $<$ 210 MeV/$c^2$
 for the $D\gamma$ ($D\pi^0$) final states.
 
@@ -1028,7 +1021,9 @@ in $\Delta_M$ phase space.
 \end{enumerate}
 
 There are also fit components within each neutral mode to account for
-cross-feed from the alternative $D^*$ final state. 
+crossfeed from the alternative $D^*$ final state. Decays where the pion/kaon
+associated with the $B$ decay vertex has been assigned the wrong ID have not yet
+been accounted for.
 
 Decays involving $B^{\pm}$ mesons have the potential to $CP$ violate. This
 rendered the original 1D maximum likelihood fit to the $m[D^*h]$ mass spectrum
@@ -1055,7 +1050,7 @@ using a PDF describing combinatoric backgrounds for $D^{*}\rightarrow D^{0}X$
 decays in bins of $m[D^*]-m[D^0]$. The functional form of this shape, where $m_0$
 represents the kinematic threshold, is:
 \begin{equation}
-f(m)=(1-e^{-\frac{m-m_0}{C}})\times(\frac{m}{m_0})^A+B\times(\frac{m}{m_0}-1)
+f(m)=\left(  1-e^{-\frac{m-m_0}{C}}\right) \times\left(  \frac{m}{m_0}\right) ^A+B\times\left(  \frac{m}{m_0}-1\right) 
 \label{eq:DstD0BG}
 \end{equation}
 
@@ -1076,30 +1071,32 @@ are constructed as polynomial functions of $\Delta_M$:
 x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
 \label{eq:2dPolynomial}
 \end{equation}
-Here, $x$ represents the mean or width of a CB shape as a function of
-$m[D^*h]$.  The correlation between the two invariant mass spectrums is
-modelled in the fit using these polynomial coefficients. Comparing the 2D plots
-of the data samples shown in Fig.~\ref{fig:2dFitsPi0Run1} and
-Fig.~\ref{fig:2dFitsGammaRun1}, it can be seen that these variables exhibit
+Here, $x$ represents the mean or width of a CB shape as a function of $m[D^*h]$.
+For every point in $\Delta_M$, there is a corresponding PDF in $m[D^*h]$ with
+means and widths calculated using Equation~\ref{eq:2dPolynomial}. The
+correlation between the two invariant mass spectrums is therefore modelled in
+the fit using the polynomial coefficients.
+
+Comparing the 2D plots of the data samples shown in Fig.~\ref{fig:2dFitsPi0Run1}
+and Fig.~\ref{fig:2dFitsGammaRun1}, it can be seen that these variables exhibit
 greater correlation in the $D\gamma$ final state than in the $D\pi^0$ final
 state. This is due to the extra constraint on the $\pi^0$ mass in calculating
-the re-fitted $m[D^*h]$ mass variable during reconstruction, as described at
-the beginning of Sec.~\ref{sec:selections}. In the 2D fits to simulation for
-the $D^*\rightarrow D\pi^0$ mode, a linear polynomial is therefore found to be
-sufficient to model this correlation, and so the $a_2$ parameter is set to
-zero.
+the re-fitted $m[D^*h]$ mass variable during reconstruction, as described at the
+beginning of Sec.~\ref{sec:selections}. In the 2D fits to simulation for the
+$D^*\rightarrow D\pi^0$ mode, a linear polynomial is therefore found to be
+sufficient to model this correlation, and so the $a_2$ parameter is set to zero.
 
-The data, PDF and residuals in 2D for Run1 (Run1 and Run2) are shown in
-Fig.~\ref{fig:2dFitsPi0Run1} (Fig.~\ref{fig:2dFitsPi0Total}) and
-Fig.~\ref{fig:2dFitsGammaRun1} (Fig.~\ref{fig:2dFitsGammaTotal}), and the
+The data, PDF and residuals in 2D for Run1, then 2011-2017 data, are shown in
+Fig.~\ref{fig:2dFitsPi0Run1} (Fig.~\ref{fig:2dFitsGammaRun1}) and
+Fig.~\ref{fig:2dFitsPi0Total} (Fig.~\ref{fig:2dFitsGammaTotal}), and the
 corresponding projections on the $m[D^*h]$ and $\Delta_M$ axes in
-Fig.~\ref{fig:ProjectionsPi0Run1} (Fig.~\ref{fig:ProjectionsPi0Total}) and
-Fig.~\ref{fig:ProjectionsGammaRun1} (Fig.~\ref{fig:ProjectionsGammaTotal}), for
-the $D\pi^0$ and $D\gamma$ final states, respectively. All PDF parameters are
-fixed from simulation except the $a_0$ values of the widths describing the
+Fig.~\ref{fig:ProjectionsPi0Run1} (Fig.~\ref{fig:ProjectionsGammaRun1}) and
+Fig.~\ref{fig:ProjectionsPi0Total} (Fig.~\ref{fig:ProjectionsGammaTotal}), for
+the $D\pi^0$ ($D\gamma$) final state. All PDF parameters are fixed from
+simulation except the $a_0$ values of the widths describing the
 mis-reconstructed components in $m[D^{*}h]$, which are allowed to vary over a
-given range. The threshold parameters of the $D^{*}\rightarrow D^0X$
-backgrounds in the $D\pi^0$ final state are also given the freedom to float.
+given range. The threshold parameters of the $D^{*}\rightarrow D^0X$ backgrounds
+in the $D\pi^0$ final state are also given the freedom to vary.
 
 The signal yields taken from these fits are listed in Table~\ref{table:yields}.
 It should be noted that this is using a preliminary optimisation, and the
@@ -1107,18 +1104,22 @@ working points for the BDTs and the mass window of the $\pi^0$ meson will be
 re-optimised with respect to a more appropriate figure of merit, for example to
 minimise the error on the asymmetry in the ADS mode.
 
+\vspace{-3mm}
 \section{Results} \label{sec:results}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{3pt}
 \begin{table}[]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\multirow{2}{*}{\textbf{Decay Mode}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3 fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{Run1 and Run2 Yield (6.6 fb$^{-1}$)}} \\ \cline{2-5} 
+\multirow{2}{*}{\textbf{Decay Mode}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3
+fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{2011-2017 Yield (6.6 fb$^{-1}$)}} \\ \cline{2-5} 
  & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} \\ \hline
 $B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0)\pi^{\pm}$ & 2372 $\pm$ 60 & 121 $\pm$ 13 & 8696 $\pm$ 112 & 478 $\pm$ 26 \\ \hline
 $B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \gamma)\pi^{\pm}$ & 10862 $\pm$ 132 & 604 $\pm$ 30 & 40102 $\pm$ 252 & 2125 $\pm$ 17 \\ \hline
 \end{tabular}%
-} \caption{\small{Signal yields and errors extracted from the 2D fit results for Run1, then Run1 and
-Run2 data.}} \label{table:yields}
+} \caption{{Signal yields and errors extracted from the 2D fit results for Run1,
+then 2011-2017 data.}} \label{table:yields}
 \end{table}
 
 Focus will be paid to the Run1 mass fit results, which are more reliable at
@@ -1128,10 +1129,8 @@ The fit is set up to measure the physics observable $R^{K\pi , \pi^0
 /\gamma}_{K/\pi}$, defined by Eq.~\ref{eq:R_DstK_Dstpi}. The results are give
 below:
 \begin{align*}
-\vspace{-5pt}
 R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
 R^{K\pi , \gamma}_{K/\pi} &= (8.689 \pm 0.447) \times 10^{-2} 
-\vspace{-5pt}
 \end{align*} 
 The errors given are statistical and taken straight from the fit result.
 $R^{K\pi , \pi^0}_{K/\pi}$ and $R^{K\pi , \gamma}_{K/\pi}$ are consistent with
@@ -1151,31 +1150,29 @@ An extrapolation of the yields listed in the second column of
 Table~\ref{table:yields}, to the full dataset (including 2.2 fb$^{-1}$ of 2018
 data) and then to the decay modes sensitive to $\phi_3$ has been performed, and
 the expected yields are shown in Table~\ref{table:extrapolatedYields}. The
-increased number of signal events per fb$^{-1}$ in Run2, which is $\sim$2.2 times
-larger than in Run1, is also taken into account. The number of GLW mode
+increased number of signal events per fb$^{-1}$ in Run2, which is $\sim$2.2
+times larger than in Run1, is also taken into account. The number of GLW mode
 candidates were estimated by multiplying by the branching ratio $\mathcal{BR} =
 \frac{\mathcal{BF}(D^0 \rightarrow h^- h^+)}{\mathcal{BF}(D^0 \rightarrow K^+
 \pi^-)}$, $h=\pi/K$, where the branching fractions were taken from the
 PDG~\cite{PDG2018}. The scale factor used to calculate event numbers in the ADS
 mode is $R_{ADS}\approx 0.015$, which contains the phase information needed for
-transforming from the Cabbibo favoured to the doubly-Cabbibo suppressed mode.
-The number of ADS mode events measure by the BaBar Collaboration in
-2004,~\cite{BaBarADS}, are also given.
+transforming from the Cabibbo favoured to the suppressed mode.  The number of
+ADS mode events measure by the BaBar Collaboration in 2004,~\cite{BaBarADS}, are
+also given.
 
-\begin{table}[]
+\begin{table}[H]
   \centering
-  \small
   \begin{tabular}{| c | c | c | c | c |}
     \hline
     & $N_{[kk]_{D}}$ & $N_{[\pi\pi]_{D}}$ & $N_{[\pi k]_D}$ & $N_{[\pi k]_D}^{BaBar}$ \\ \hline
     $B^{\pm}\rightarrow(D^*\rightarrow [hh]_D\pi^0)K^{\pm}$ & 65 & 23  & 10 & 8.5 \\ \hline
     $B^{\pm}\rightarrow(D^*\rightarrow [hh]_D\gamma)K^{\pm}$ & 324 & 115 & 48 & 6.8 \\ \hline
   \end{tabular}
-	\caption{\small{Estimates of the expected event yields in the GLW (columns 1,
-2) and ADS (column 3) decay modes, sensitive to $\phi_3$. The number of ADS
-mode events previously measured by the BaBar collaboration is given for
-comparison.}} \label{table:extrapolatedYields}
-
+  \caption{{Estimates of the expected event yields for the full LHCb
+  dataset in the GLW (columns 1, 2) and ADS (column 3) decay modes, sensitive to
+  $\phi_3$. The number of ADS mode events previously measured by the BaBar
+  collaboration is given for comparison.}} \label{table:extrapolatedYields}
 \end{table}
 
 % \begin{itemize}
@@ -1188,17 +1185,17 @@ comparison.}} \label{table:extrapolatedYields}
 % \item Mis-reco shape needs to be brought more under control.
 % \end{itemize}
 
-\section{Conclusion} \label{sec:conclusion}
-By studying $B^{\pm}\rightarrow D^*\pi^{\pm}$ decays, a selection procedure has
-been finalised for both $D^*$ final states, $D\pi^0$ and $D\gamma$. Due to the
-lack of success from pursuing a 1D mass fit to the $m[D^*h]$ spectrum, a 2D fit
-is now under development in order to further constrain the signal yields using
-the extra information in the $\Delta_M$ distribution. Improvements to this fit
-will be implemented in the immediate future, aided by the generation of Run2
-simulation samples of physics backgrounds and fit stability studies.
-Currently, measurements of the physics observable $R^{K\pi ,
-\pi^0/\gamma}_{K/\pi}$ are consistent with previous studies and expected
-sensitivity to events in the channels sensitive to $\phi_3$ are promising. 
+% \section{Conclusion} \label{sec:conclusion}
+% By studying $B^{\pm}\rightarrow D^*\pi^{\pm}$ decays, a selection procedure has
+% been finalised for both $D^*$ final states, $D\pi^0$ and $D\gamma$. Due to the
+% lack of success from pursuing a 1D mass fit to the $m[D^*h]$ spectrum, a 2D fit
+% is now under development in order to further constrain the signal yields using
+% the extra information in the $\Delta_M$ distribution. Improvements to this fit
+% will be implemented in the immediate future, aided by the generation of Run2
+% simulation samples of physics backgrounds and fit stability studies.
+% Currently, measurements of the physics observable $R^{K\pi ,
+% \pi^0/\gamma}_{K/\pi}$ are consistent with previous studies and expected
+% sensitivity to events in the channels sensitive to $\phi_3$ are promising. 
 
 
 \begin{figure}[H]
@@ -1236,7 +1233,7 @@ sensitivity to events in the channels sensitive to $\phi_3$ are promising.
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+\caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
 2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
@@ -1258,7 +1255,7 @@ sensitivity to events in the channels sensitive to $\phi_3$ are promising.
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
 axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
@@ -1300,7 +1297,7 @@ axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+\caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
 2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
@@ -1322,7 +1319,7 @@ axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
 axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
@@ -1364,7 +1361,7 @@ axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{$\Delta_M$ vs. $m[D^*h]$
+\caption{{$\Delta_M$ vs. $m[D^*h]$
 distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
 $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top)
 and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
@@ -1387,7 +1384,7 @@ and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
 axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
@@ -1429,7 +1426,7 @@ axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 \node[] at (0.5, -0.1) {(c)};
 \end{scope}
 \end{tikzpicture}
-\caption{\small{$\Delta_M$ vs. $m[D^*h]$
+\caption{{$\Delta_M$ vs. $m[D^*h]$
 distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
 $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top)
 and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
@@ -1452,7 +1449,7 @@ and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
 \node[anchor=south west,inner sep=0] (image) at (0.5,0)
   {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_deltaMass.pdf}};
 \end{tikzpicture}
-\caption{\small{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
 axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
 (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
@@ -1493,7 +1490,7 @@ Calorimeters, Muon Systems, Trigger, Software), Neutral Particle Reconstruction
 \item Selection of $B^{\pm}\rightarrow (D^*\rightarrow
 [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)K^{\pm}$ events \\
 	
-A detailed description of the selection of the Cabbibo favoured $D$ decay
+A detailed description of the selection of the Cabibbo favoured $D$ decay
 events and evidence of further investigations into the event topology will be
 provided, with the most attention paid to the neutral part of the decay. \\
 
