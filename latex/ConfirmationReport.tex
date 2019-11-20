@@ -39,7 +39,7 @@
 % \linenumbers
 
 \titleformat{\section}
-  {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+{\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
 
 % \graphicspath{{/Users/alexandrarollings/Analysis/Confirmation/latex/figures/}}
 
@@ -58,62 +58,62 @@
 
 \makeatletter                            % Title
 \def\printtitle{%                       
-  {\centering \@title\par}}
+{\centering \@title\par}}
 \makeatother                                    
 
 \makeatletter                            % Author
 \def\printauthor{%                    
-  {\centering \large \@author}}                
+{\centering \large \@author}}                
 \makeatother                
 
 \title{ \LARGE \textbf{Study of $B^{\pm} \rightarrow D^{*}h^{\pm}$ decays in the
 interest of obtaining a direct measurement of $\phi_3$} \\ }
 
 \author{
-		Alexandra Rollings\\	
-		Supervisor: Dr M. John\\	
+  Alexandra Rollings\\	
+  Supervisor: Dr M. John\\	
 }
 
 \begin{document}
 \begin{titlepage}
-\begin{nolinenumbers}
-\thispagestyle{empty} 
+  \begin{nolinenumbers}
+    \thispagestyle{empty} 
 
-\begin{minipage}[c]{.15\linewidth}
-  \includegraphics[width=\linewidth]{figures/Oxford}
-\end{minipage}\hfill
-\begin{minipage}[c]{.75\linewidth}
-  \begin{flushright}
-  \normalsize {Confirmation Report} 	% Subtitle
-  \\ \normalsize \today			% Todays date
-  \end{flushright}
-\end{minipage}
+    \begin{minipage}[c]{.15\linewidth}
+      \includegraphics[width=\linewidth]{figures/Oxford}
+    \end{minipage}\hfill
+    \begin{minipage}[c]{.75\linewidth}
+      \begin{flushright}
+        \normalsize {Confirmation Report} 	% Subtitle
+        \\ \normalsize \today			% Todays date
+      \end{flushright}
+    \end{minipage}
 
 
 
-\HRule{0.5pt} \\						% Upper rule
-[2.0cm]
-\printtitle 
-\vspace{75pt}
-\printauthor
-\vfill
-\begin{abstract}
-\noindent
-\\
-Decays of the type $B^{\pm} \rightarrow D^{*}h^{\pm}$, where $D^{*} \rightarrow
-[K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$ and $h=\pi/K$, are studied using
-6.6 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb
-experiment. This dataset consists of 3 fb${^{-1}}$ taken at center-of-mass
-energies of 7 TeV and 8 TeV, and 3.6 fb${^{-1}}$ at 13 TeV. The techniques for
-discriminating against combinatorial backgrounds are detailed and the physics
-backgrounds are identified. A novel method to extract yields using a 2D maximum
-likelihood fit is described and using a preliminary optimisation, the number of
-events are reported. An extrapolation of event yields to the modes sensitive to
-$\phi_3$ is then performed and the initial measurement of a physics observable
-is presented.
-\end{abstract}
-\vfill
-\end{nolinenumbers}
+    \HRule{0.5pt} \\						% Upper rule
+    [2.0cm]
+    \printtitle 
+    \vspace{75pt}
+    \printauthor
+    \vfill
+    \begin{abstract}
+      \noindent
+      \\
+      Decays of the type $B^{\pm} \rightarrow D^{*}h^{\pm}$, where $D^{*} \rightarrow
+      [K^{\pm}\pi^{\pm}]_D$ $\pi^{0}\text{/}\gamma$ and $h=\pi/K$, are studied using
+      6.6 fb$^{-1}$ integrated luminosity in $pp$ collisions taken at the LHCb
+      experiment. This dataset consists of 3 fb${^{-1}}$ taken at center-of-mass
+      energies of 7 TeV and 8 TeV, and 3.6 fb${^{-1}}$ at 13 TeV. The techniques for
+      discriminating against combinatorial backgrounds are detailed and the physics
+      backgrounds are identified. A novel method to extract yields using a 2D maximum
+      likelihood fit is described and using a preliminary optimisation, the number of
+      events are reported. An extrapolation of event yields to the modes sensitive to
+      $\phi_3$ is then performed and the initial measurement of a physics observable
+      is presented.
+    \end{abstract}
+    \vfill
+  \end{nolinenumbers}
 \end{titlepage}
 \setcounter{page}{1}
 \section{\normalsize Introduction}
@@ -207,12 +207,12 @@ of new, heavy particles. It is therefore motivating to reduce the uncertainty
 on $\phi_{3}$ using tree-level measurements to a size comparable to that
 extracted from the indirect measurements.
 \begin{figure}[htp]
-\vspace*{-4mm}
-	\centering \includegraphics[width=1\textwidth]{figures/CKMIndirectFit.eps}
-\caption{{Diagram to show current measurements of the Unitarity Triangle
-using only constraints from `loop' quantities in the ($\rho$-bar, $\eta$-bar)
-plane. The black line represents the fit obtained by CKM fitter.}}
-\label{fig:CKMIndirectFit} \vspace{-10pt}
+  \vspace*{-4mm}
+  \centering \includegraphics[width=1\textwidth]{figures/CKMIndirectFit.eps}
+  \caption{{Diagram to show current measurements of the Unitarity Triangle
+      using only constraints from `loop' quantities in the ($\rho$-bar, $\eta$-bar)
+  plane. The black line represents the fit obtained by CKM fitter.}}
+  \label{fig:CKMIndirectFit} \vspace{-10pt}
 \end{figure}
 A significant contribution to this effort comes from studying tree-level
 processes of the type $B^{\pm}\rightarrow D^{(*)}K^{\pm (*)}$~\cite{B2DKD2hh,
@@ -237,24 +237,24 @@ is reconstructed as either $D\pi^{0}$ or $D\gamma$.
 % \end{figure}
 
 \begin{figure}[htp]
-\vspace*{-7mm}
-\centering
-\begin{tikzpicture}[scale=0.8]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.8\textwidth]{figures/B2DstarKstar}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.21,1) {(a)};
-\node[] at (0.71,1) {(b)};
-\end{scope}
-\end{tikzpicture}
-	\caption{{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}.
-The decay to $\overbar{{D}}^{(*)0}$ is CKM
-$|V_{ub}V^{*}_{cs}/V_{cb}V^{*}_{us}|\approx0.4$ and colour ${F}_{CS}\approx1/3$
-suppressed with respect to (w.r.t.) the ${D}^{(*)0}$ final state. The
-interference of these two diagrams is the common mechanism for accessing
-$\phi_3$.}
-	\label{fig:B2DstarKstar}
-	\vspace{-10pt}
+  \vspace*{-7mm}
+  \centering
+  \begin{tikzpicture}[scale=0.8]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.8\textwidth]{figures/B2DstarKstar}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.21,1) {(a)};
+      \node[] at (0.71,1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{Feynman diagrams for ${B}^{-}\rightarrow{D}^{(*)}{K}^{(*)-}$}.
+    The decay to $\overbar{{D}}^{(*)0}$ is CKM
+    $|V_{ub}V^{*}_{cs}/V_{cb}V^{*}_{us}|\approx0.4$ and colour ${F}_{CS}\approx1/3$
+    suppressed with respect to (w.r.t.) the ${D}^{(*)0}$ final state. The
+    interference of these two diagrams is the common mechanism for accessing
+  $\phi_3$.}
+  \label{fig:B2DstarKstar}
+  \vspace{-10pt}
 \end{figure}
 
 \noindent Defining $r_B=\frac{|A(B^{-}\rightarrow
@@ -262,17 +262,17 @@ $\phi_3$.}
 the relative strong phase between these $B^-$ decays, the amplitude for
 producing a neutral ${D}^*$ meson in the decay $B^-\rightarrow \tilde{D^*}K^-$
 can be expressed as:
-  \begin{equation}
-    \tilde{D}^*=D^{*0}+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^{*0}
-    \label{eq:DstTilde}
-  \end{equation}
+\begin{equation}
+  \tilde{D}^*=D^{*0}+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^{*0}
+  \label{eq:DstTilde}
+\end{equation}
 \noindent Writing this in terms of odd and even $CP$ eigenstates, where
 $D^{*}_{+}=\frac{D^{*0}+\overbar{D}^{*0}}{\sqrt{2}}$ and
 $D^{*}_{-}=\frac{D^{*0}-\overbar{D}^{*0}}{\sqrt{2}}$:
-  \begin{equation}
-    \tilde{D}^*=\frac{D^{*}_{+}+D^{*}_{-}}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{D^{*}_{+}-D^{*}_{-}}{\sqrt{2}}
-    \label{eq:DstTildeCP}
-  \end{equation}
+\begin{equation}
+  \tilde{D}^*=\frac{D^{*}_{+}+D^{*}_{-}}{\sqrt{2}}+r_Be^{i(\delta_B-\phi_3)}\frac{D^{*}_{+}-D^{*}_{-}}{\sqrt{2}}
+  \label{eq:DstTildeCP}
+\end{equation}
 \noindent The $CP$ eigenvalue of the $D^*$ state is given by the product
 $\lambda_{D^*}=\lambda_D\times \lambda_{\pi^0\text{/}\gamma} \times(-1)^l$. In
 the case of the strong $D^*$ decay via $\pi^0$ emission, $\lambda_{\pi^0}=-1$
@@ -283,29 +283,29 @@ $D^*_{\pm}\rightarrow D_{\mp}\gamma$.  This introduces a phase shift of $\pi$
 ($e^{i\pi}=-1$) between the two neutral $D$ mesons produced in the decay
 $B^-\rightarrow \tilde{D}^*K^-$ in the $D\gamma$ mode. This logic was first
 shown in~\cite{ADSDstar}.
-  \begin{align}
-		\tilde{D^*}\rightarrow \tilde{D}\pi^0 &:
-\tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0 \\
-		\tilde{D^*}\rightarrow \tilde{D}\gamma &:
-\tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
-  \end{align}
+\begin{align}
+  \tilde{D^*}\rightarrow \tilde{D}\pi^0 &:
+  \tilde{D}=D^0+r_Be^{i(\delta_B-\phi_3)}\overbar{D}^0 \\
+  \tilde{D^*}\rightarrow \tilde{D}\gamma &:
+  \tilde{D}=D^0+r_Be^{i(\delta_B+\pi-\phi_3)}\overbar{D}^0
+\end{align}
 Labelling the amplitude of the diagram displayed in Fig.~\ref{fig:B2DstarKstar}
 (a) as $A_{B}=A(B^{-}\rightarrow D^{*0}K^{-})=A(B^{+}\rightarrow
 \overbar{D}^{*0}K^{+})$, we can construct 4 equations for the decay amplitudes
 of $B^{-}$ mesons to final states $f(\accentset{\brobor}{D}\phantom{})$:
 \begin{align}
-    A_{Bf}^{\pi^{0}}&=A(B^{-}\rightarrow
-    [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
-    \\
-		A_{B\overbar{f}}^{\pi^{0}}&=A(B^{-}\rightarrow
-[f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}e^{-i\delta_D}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
-\\
-    A_{Bf}^{\gamma}&=A(B^{-}\rightarrow
-    [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
-    \\
-		A_{B\overbar{f}}^{\gamma}&=A(B^{-}\rightarrow
-[f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}e^{-i\delta_D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
-  \end{align}
+  A_{Bf}^{\pi^{0}}&=A(B^{-}\rightarrow
+  [f(D)\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+  \\
+  A_{B\overbar{f}}^{\pi^{0}}&=A(B^{-}\rightarrow
+  [f(\overbar{D})\pi^{0}]_{D^{*}}K^{-})=A_{B}A_{\pi^{0}}(\overbar{A}e^{-i\delta_D}_{D}+A_{D}r_{B}e^{(i(\delta_{B}-\phi_{3}))})
+  \\
+  A_{Bf}^{\gamma}&=A(B^{-}\rightarrow
+  [f(D)\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(A_{D}+\overbar{A}_{D}e^{-i\delta_D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
+  \\
+  A_{B\overbar{f}}^{\gamma}&=A(B^{-}\rightarrow
+  [f(\overbar{D})\gamma]_{D^{*}}K^{-})=A_{B}A_{\gamma}(\overbar{A}_{D}e^{-i\delta_D}+A_{D}r_{B}e^{(i(\delta_{B}+\pi-\phi_{3}))})
+\end{align}
 \noindent Compared to Fig.~\ref{fig:B2DstKDiagram}, in these equations we have
 replaced $\accentset{\brobor}{A}\phantom{}_{D^{*}}$ with
 $A_{\pi^{0}}\accentset{\brobor}{A}\phantom{}_{D}$ or
@@ -318,19 +318,19 @@ $\overbar{D}$ mesons decaying to the same final state. 4 analogous charge
 conjugate equations can be written for the $B^{+}$ meson. 
 \begin{figure}[H]
   \centering
-	\begin{tikzpicture}[scale=1.0]
-	\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-		{\includegraphics[width=1.0\textwidth]{figures/B2DstKDiagram.png}};
-	\begin{scope}[x={(image.south east)},y={(image.north west)}]
-	% \node[] at (0.25,0.5) {(a)};
-	% \node[] at (0.75,0.5) {(b)};
-	\end{scope}
-	\end{tikzpicture}
+  \begin{tikzpicture}[scale=1.0]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=1.0\textwidth]{figures/B2DstKDiagram.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+  % \node[] at (0.25,0.5) {(a)};
+  % \node[] at (0.75,0.5) {(b)};
+    \end{scope}
+  \end{tikzpicture}
   \caption{{Decay diagram depicting ${B}^{-}\rightarrow{D}^{*}{K}^{-}$ to
-  a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay.
-  These decays proceed via 2 interfering amplitudes, $D^{*}$ or 
+      a general $D^{*}$ final state, $f(D^{*})$, and the complex conjugate decay.
+      These decays proceed via 2 interfering amplitudes, $D^{*}$ or 
   $\overbar{D}^{*}$ states.}}
-\label{fig:B2DstKDiagram} \vspace{-10pt}
+  \label{fig:B2DstKDiagram} \vspace{-10pt}
 \end{figure}
 
 When applying the GLW method~\cite{GLWRef}, the $D$ meson is reconstructed in
@@ -338,14 +338,14 @@ the $CP$-even final states $D\rightarrow KK$ and $D\rightarrow \pi \pi$,
 therefore $\delta_D=0$ and $A_{D}=\overbar{A}_{D}$. Time integrated decay rates
 are proportional to the squared magnitude of the amplitudes, therefore we can
 construct the following equations for $B^{\pm}$ mesons:
-  \begin{align}
-		\Gamma_{CP+}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[hh]_D\pi^{0}))&\propto |A^{\pi^0}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} +
-2r_{B}\cos(\delta_{B}\mp \phi_{3}) \\
-		\Gamma_{CP-}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[hh]_D\gamma))&\propto |A^{\gamma}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} -
-2r_{B}\cos(\delta_{B}\mp \phi_{3})
-  \end{align}
+\begin{align}
+  \Gamma_{CP+}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [hh]_D\pi^{0}))&\propto |A^{\pi^0}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} +
+  2r_{B}\cos(\delta_{B}\mp \phi_{3}) \\
+  \Gamma_{CP-}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [hh]_D\gamma))&\propto |A^{\gamma}_{Bf_{CP}}|^2 \propto 1 + r_{B}^{2} -
+  2r_{B}\cos(\delta_{B}\mp \phi_{3})
+\end{align}
 \noindent The strong phase shift of $\pi$ from the
 $D^{*}\rightarrow D\gamma$ decay converts the $CP+$ eigenstate from even to odd
 in the context of $B^{\pm}\rightarrow D^{(*)0}K^{\pm}$ decays. This provides a
@@ -362,20 +362,20 @@ K^{-}\pi^{+})=A_{D}r_{D}e^{-i\delta_{D}}$, where $r_{D}$ is the amplitude ratio
 of the SUP with respect to the FAV $D$ decay mode and $\delta_{D}$ is their
 relative phase, we can construct the following decay rate equations for
 $B^{\pm}$ mesons:
-  \begin{align*}
-		\Gamma_{SUP}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[K^{\mp}\pi^{\pm}]_D\pi^{0})) &\propto |A^{\pi^0}_{Bf_{SUP}}|^2 \propto r_{B}^{2}
-+ r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3}) \\
-		\Gamma_{SUP}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[K^{\mp}\pi^{\pm}]_D\gamma)) &\propto |A^{\gamma}_{Bf_{SUP}}|^2 \propto r_{B}^{2}
-+ r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3}) \\
-		\Gamma_{FAV}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^{0})) &\propto |A^{\pi^0}_{Bf_{FAV}}|^2 \propto 1 +
-r_{B}^{2}r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3}) \\
-		\Gamma_{FAV}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
-[K^{\pm}\pi^{\mp}]_D\gamma)) &\propto |A^{\gamma}_{Bf_{FAV}}|^2 \propto 1 +
-r_{B}^{2}r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
-  \end{align*}
+\begin{align*}
+  \Gamma_{SUP}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [K^{\mp}\pi^{\pm}]_D\pi^{0})) &\propto |A^{\pi^0}_{Bf_{SUP}}|^2 \propto r_{B}^{2}
+  + r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3}) \\
+  \Gamma_{SUP}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [K^{\mp}\pi^{\pm}]_D\gamma)) &\propto |A^{\gamma}_{Bf_{SUP}}|^2 \propto r_{B}^{2}
+  + r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} - \delta_{D} \mp \phi_{3}) \\
+  \Gamma_{FAV}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [K^{\pm}\pi^{\mp}]_D\pi^{0})) &\propto |A^{\pi^0}_{Bf_{FAV}}|^2 \propto 1 +
+  r_{B}^{2}r_{D}^{2} + 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3}) \\
+  \Gamma_{FAV}^{\pm}(B^{\pm}\rightarrow (D^{*}\rightarrow
+  [K^{\pm}\pi^{\mp}]_D\gamma)) &\propto |A^{\gamma}_{Bf_{FAV}}|^2 \propto 1 +
+  r_{B}^{2}r_{D}^{2} - 2r_{B}r_{D}\cos(\delta_{B} + \delta_{D} \mp \phi_{3})
+\end{align*}
 \noindent The SUP mode is known as the ADS mode. $r_{D}$ and $r_{B}$ are of
 similar magnitudes so the ADS mode possesses particularly high sensitivity to
 $\phi_3$ as the relative size of the interference term is large. In the usual
@@ -393,44 +393,44 @@ ratios. The physics observables that will be measured in this analysis are:
 
 \begin{enumerate}
   \item The ratio of $B^{\pm} \rightarrow D^* K^{\pm}$ to $B^{\pm} \rightarrow
-  D^* \pi^{\pm}$ decays for the favoured $D$ decay mode:
-  \begin{equation}
-    R^{K\pi , \pi^0 /\gamma}_{K/\pi}=\frac{\Gamma(B^{-}\rightarrow
-    ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
-    ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
-    ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
-    ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})}
-	\label{eq:R_DstK_Dstpi}
-  \end{equation}
+    D^* \pi^{\pm}$ decays for the favoured $D$ decay mode:
+    \begin{equation}
+      R^{K\pi , \pi^0 /\gamma}_{K/\pi}=\frac{\Gamma(B^{-}\rightarrow
+        ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
+      ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
+        ([K^{-}\pi^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
+      ([K^{+}\pi^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})}
+      \label{eq:R_DstK_Dstpi}
+    \end{equation}
   \item The $CP$ asymmetries between $B^{-}$ and $B^{+}$ mesons decaying to $CP$
-  eigenstates, where $hh=\pi \pi /KK$:
-		\begin{equation}
+    eigenstates, where $hh=\pi \pi /KK$:
+    \begin{equation}
       A_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
-      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
+        [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})-\Gamma(B^{+}\rightarrow
       [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})}{\Gamma(B^{-}\rightarrow
-      [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
+        [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{-})+\Gamma(B^{+}\rightarrow
       [[h^{+}h^{-}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{+})} \label{eq:Aglw}
-		\end{equation}
+    \end{equation}
   \item The ratio of $B^{\pm} \rightarrow D^* K^{\pm}$ to $B^{\pm} \rightarrow
-  D^* \pi^{\pm}$ decays for $D\rightarrow hh$, where $hh=\pi \pi /KK$, divided
-  by $R^{K\pi , \pi^0 /\gamma}_{K/\pi}$:
-		\begin{equation}
+    D^* \pi^{\pm}$ decays for $D\rightarrow hh$, where $hh=\pi \pi /KK$, divided
+    by $R^{K\pi , \pi^0 /\gamma}_{K/\pi}$:
+    \begin{equation}
       R_{hh}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{-}\rightarrow
-      ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
+        ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}K^{-})+\Gamma(B^{+}\rightarrow
       ([h^{+}h^{-}]_D\pi^0 /\gamma)_{D^*}K^{+})}{\Gamma(B^{-}\rightarrow
-      ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
+        ([h^{-}h^{+}]_D\pi^0 /\gamma)_{D^*}\pi^{-})+\Gamma(B^{+}\rightarrow
       ([h^{+}h^{-}]_D\pi^0 /\gamma)_{D^*}\pi^{+})} \times \frac{1}{R^{K\pi ,
       \pi^0 /\gamma}_{K/\pi}}
-		\end{equation}
+    \end{equation}
   \item The ratios of the ADS to the favoured mode, for $B^{\pm}$ decays. It
-  should be noted that this constitutes 4 independent equations. We measure
-  $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
-  statistically correlated. 
-		\begin{equation}
-			R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow
-			[[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow
-			[[K^{\pm}\pi^{\mp}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})} \label{eq:Rads}
-		\end{equation}
+    should be noted that this constitutes 4 independent equations. We measure
+    $R_{\pm}$ as opposed to $A_{ADS}$ and $R_{ADS}$ because the latter are
+    statistically correlated. 
+    \begin{equation}
+      R_{\pm}^{\pi^{0}/\gamma}=\frac{\Gamma(B^{\pm}\rightarrow
+      [[K^{\mp}\pi^{\pm}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})}{\Gamma(B^{\pm}\rightarrow
+      [[K^{\pm}\pi^{\mp}]_{D}\pi^{0}/\gamma]_{D^{*}}K^{\pm})} \label{eq:Rads}
+    \end{equation}
 \end{enumerate}
 \noindent Direct $CP$ violation in $D$ decays is considered negligible, therefore
 $A_{KK}^{\pi^{0}}=A_{\pi\pi}^{\pi^{0}}=A_{CP+}$,
@@ -439,47 +439,47 @@ $R_{KK}^{\pi^{0}}=R_{\pi\pi}^{\pi^{0}}=R_{CP+}$ and
 $R_{KK}^{\gamma}=R_{\pi\pi}^{\gamma}=R_{CP-}$.
 
 We can express these ratios in terms of the parameters of interest:
-  \begin{equation}
-    R^{K\pi,
-    \pi^0}_{K/\pi}=R\frac{1+(r_Br_D)^2+2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2+2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
-    \label{eq:Rkpipi0}
-  \end{equation}
-  \begin{equation}
-    R^{K\pi,
-    \gamma}_{K/\pi}=R\frac{1+(r_Br_D)^2-2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2-2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
-    \label{eq:Rkpigamma}
-  \end{equation}
-  \begin{equation}
-    A_{CP\pm}=\frac{\pm 2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}\pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
-    \label{eq:ACP}
-  \end{equation}
-  \begin{align}
-    R_{CP\pm} &=R\frac{1 + r_{B}^{2} \pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1 +
-    r_{B}^{\pi^2} \pm 2r_{B}^{\pi}\cos(\delta_{B}^{\pi})\cos(\phi_{3})} \times
-    \frac{1}{R^{K\pi,\pi^0 /\gamma}_{K/\pi}} \nonumber \\
-    &= 1 + r_B^2 + 2r_B\cos(\delta_B)\cos(\phi_3) 
-    \label{eq:RCP}
-  \end{align}
-  \begin{equation}
-    A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
-    \label{eq:AfavPi0}
-  \end{equation}
-  \begin{equation}
-    R_{\pm}^{\pi^{0}}=\frac{r_{B}^{2} + r_{D}^{2} +
+\begin{equation}
+  R^{K\pi,
+  \pi^0}_{K/\pi}=R\frac{1+(r_Br_D)^2+2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2+2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
+  \label{eq:Rkpipi0}
+\end{equation}
+\begin{equation}
+  R^{K\pi,
+  \gamma}_{K/\pi}=R\frac{1+(r_Br_D)^2-2r_Br_D\cos(\delta_B-\delta_D)\cos(\phi_3)}{1+(r_B^{\pi}r_D)^2-2r_B^{\pi}r_D\cos(\delta_B^{\pi}-\delta_D)\cos(\phi_3)}
+  \label{eq:Rkpigamma}
+\end{equation}
+\begin{equation}
+  A_{CP\pm}=\frac{\pm 2r_{B}\sin(\delta_{B})\sin(\phi_{3})}{1+r_{B}^{2}\pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}
+  \label{eq:ACP}
+\end{equation}
+\begin{align}
+  R_{CP\pm} &=R\frac{1 + r_{B}^{2} \pm 2r_{B}\cos(\delta_{B})\cos(\phi_{3})}{1 +
+  r_{B}^{\pi^2} \pm 2r_{B}^{\pi}\cos(\delta_{B}^{\pi})\cos(\phi_{3})} \times
+  \frac{1}{R^{K\pi,\pi^0 /\gamma}_{K/\pi}} \nonumber \\
+  &= 1 + r_B^2 + 2r_B\cos(\delta_B)\cos(\phi_3) 
+  \label{eq:RCP}
+\end{align}
+\begin{equation}
+  A_{K\pi}^{\pi^{0}}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+  \label{eq:AfavPi0}
+\end{equation}
+\begin{equation}
+  R_{\pm}^{\pi^{0}}=\frac{r_{B}^{2} + r_{D}^{2} +
     2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp
-    \phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
-    \phi_{3})} \label{eq:RPlusMinusPi0}
-  \end{equation}
-  \begin{equation}
-    A_{K\pi}^{\gamma}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
-    \label{eq:AfavGamma}
-  \end{equation}
-  \begin{equation}
-    R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} -
+  \phi_{3})}{1+r_{B}^{2}r_{D}^{2}+2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
+  \phi_{3})} \label{eq:RPlusMinusPi0}
+\end{equation}
+\begin{equation}
+  A_{K\pi}^{\gamma}=\frac{2r_{B}\sin(\delta_{B}+\delta_{D})\sin(\phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D})\cos(\phi_{3})}
+  \label{eq:AfavGamma}
+\end{equation}
+\begin{equation}
+  R_{\pm}^{\gamma}=\frac{r_{B}^{2} + r_{D}^{2} -
     2r_{B}r_{D}\cos(\delta_{B}-\delta_{D}\mp
-    \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
-    \phi_{3})} \label{eq:RPlusMinusGamma}
-  \end{equation}
+  \phi_{3})}{1+r_{B}^{2}r_{D}^{2}-2r_{B}r_{D}\cos(\delta_{B}+\delta_{D}\mp
+  \phi_{3})} \label{eq:RPlusMinusGamma}
+\end{equation}
 
 \noindent In Eq.~\eqref{eq:Rkpipi0}, \eqref{eq:Rkpigamma} and \eqref{eq:RCP},
 $R=\frac{B^{\pm}\rightarrow D^* K^{\pm}}{B^{\pm}\rightarrow D^* \pi^{\pm}}$,
@@ -663,37 +663,37 @@ ADS/GLW analysis of this mode~\cite{B2DKD2hh}. A similar strategy is employed
 here. 
 
 \begin{figure}[htp]
-\centering
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
+  \centering
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMpi0}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
 % \draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
 % \foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
 % \foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
-\draw[green,ultra thick] (0.533,0.0899) rectangle (0.84,0.899);
-\node[green,ultra thick] at (0.7,0.5) {BDT1};
-\draw[red,ultra thick] (0.2,0.355) rectangle (0.39,0.899);
-\node[red,ultra thick] at (0.295,0.62) {BDT2};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMgamma}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \draw[green,ultra thick] (0.533,0.0899) rectangle (0.84,0.899);
+      \node[green,ultra thick] at (0.7,0.5) {BDT1};
+      \draw[red,ultra thick] (0.2,0.355) rectangle (0.39,0.899);
+      \node[red,ultra thick] at (0.295,0.62) {BDT2};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{figures/D0hMvsDeltaMgamma}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
 % \draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
 % \foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
 % \foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
-\draw[green,ultra thick] (0.533,0.12) rectangle (0.84,0.899);
-\node[green,ultra thick] at (0.7,0.55) {BDT1};
-\draw[red,ultra thick] (0.2,0.499) rectangle (0.39,0.899);
-\node[red,ultra thick] at (0.295,0.7) {BDT2};
-\end{scope}
-\end{tikzpicture}
-\caption{{2D histogram of $\Delta_M$ plotted against $m[D\pi]$. The
-training regions in $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (left) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (right) data for both
-stages of MVA are shown by the labelled boxes.}} \label{fig:trainingData}
+      \draw[green,ultra thick] (0.533,0.12) rectangle (0.84,0.899);
+      \node[green,ultra thick] at (0.7,0.55) {BDT1};
+      \draw[red,ultra thick] (0.2,0.499) rectangle (0.39,0.899);
+      \node[red,ultra thick] at (0.295,0.7) {BDT2};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{2D histogram of $\Delta_M$ plotted against $m[D\pi]$. The
+      training regions in $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (left) and $B^{\pm}\rightarrow
+      (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (right) data for both
+  stages of MVA are shown by the labelled boxes.}} \label{fig:trainingData}
 \end{figure}
 
 Data side-bands for the high statistics modes $B^{\pm}\rightarrow(D^{*}
@@ -715,8 +715,8 @@ $\mathcal{BR} = \frac{\mathcal{BF}(D^0 \rightarrow K^- \pi^+)}{\mathcal{BF}(D^0
 figure of merit, $\sigma$, defined below, where $S$ and $B$ represent the signal
 and background yields, respectively.
 \begin{align}
-\sigma = \frac{S}{S + B}
-\label{D_branching_ratio}
+  \sigma = \frac{S}{S + B}
+  \label{D_branching_ratio}
 \end{align}
 
 BDTs are also employed in the second stage MVA, designed to select the true
@@ -736,124 +736,124 @@ working point chosen to optimise $\sigma$ is BDT2 $>0.05$ for both $D\pi^0$ and
 $D\gamma$ final states, which has a signal efficiency of 40\% and 50\%,
 respectively.
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaMC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.24]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaData}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(d)};
-\end{scope}
-\end{tikzpicture}
-\caption{{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\gamma$ decay mode, normalised to an area of one. The top
-and bottom rows show plots for simulation and data, respectively. The variables
-are labelled by letters: (a) shows the confident level, CL, of the photon, (b)
-the photon IsNotE, (c) the photon $p_T$ and (d) the $D^*$ meson $p_T$. The red
-points show the distributions before the cut on BDT2, and the blue points show
-the distributions after.}} \label{fig:GammaBDT2Variables}
+  \centering
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaMC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaMC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaMC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaMC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutCLGammaData}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutIsNotEGammaData}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/DstNeutPTGammaData}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.24]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.24\textwidth]{figures/Dstar0PTGammaData}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(d)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{Distributions of the input variables to the second stage BDT for
+      the $D^* \rightarrow D\gamma$ decay mode, normalised to an area of one. The top
+      and bottom rows show plots for simulation and data, respectively. The variables
+      are labelled by letters: (a) shows the confident level, CL, of the photon, (b)
+      the photon IsNotE, (c) the photon $p_T$ and (d) the $D^*$ meson $p_T$. The red
+      points show the distributions before the cut on BDT2, and the blue points show
+  the distributions after.}} \label{fig:GammaBDT2Variables}
 \end{figure}
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0MC}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(d)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.19]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0Data}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(e)};
-\end{scope}
-\end{tikzpicture}
-\caption{{Distributions of the input variables to the second stage BDT for
-the $D^* \rightarrow D\pi^0$ decay mode, normalised to an area of one. The top
-and bottom rows show plots for simulation and data, respectively. The variables
-are labelled by letters: (a) shows the product of the confident level, CL, of
-the two daughter photons, (b) the product of the photon IsNotE, (c) the average
-photon $p_T$, (d) the photon asymmetry and (e) the $D^*$ meson $p_T$. The red
-points show the distributions before the cut on BDT2, and the blue points show
-the distributions after.}} \label{fig:Pi0BDT2Variables}
+  \centering
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0MC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0MC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0MC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0MC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0MC}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutCLPi0Data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutIsNotEPi0Data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTtotPi0Data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/DstNeutPTasymPi0Data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(d)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.19]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.19\textwidth]{figures/Dstar0PTPi0Data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(e)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{Distributions of the input variables to the second stage BDT for
+      the $D^* \rightarrow D\pi^0$ decay mode, normalised to an area of one. The top
+      and bottom rows show plots for simulation and data, respectively. The variables
+      are labelled by letters: (a) shows the product of the confident level, CL, of
+      the two daughter photons, (b) the product of the photon IsNotE, (c) the average
+      photon $p_T$, (d) the photon asymmetry and (e) the $D^*$ meson $p_T$. The red
+      points show the distributions before the cut on BDT2, and the blue points show
+  the distributions after.}} \label{fig:Pi0BDT2Variables}
 \end{figure}
 
 The input variables have been studied before and after this BDT cut, and their
@@ -874,119 +874,119 @@ the event, removing combinatoric background from low energy photons. The
 selected candidate to be used in the mass fit is chosen at random.
 
 \afterpage{ \clearpage % Flush earlier floats (otherwise order might not be
-\begin{landscape}
-\begin{table}[]
-\centering
-\resizebox{.82\paperheight}{!}{ % with resizebox only specify one of {width}{height} as text is not scaled proportionally.
-\begin{tabular}{lll}
-\hline
-Variable                    & Description
-                            & BDT Importance ($\times 10^{-2}$)
-                            \\ \hline
-log$_{10}$(Bu\_RHO\_BPV)    & $\Delta (\rho )$ (cylindrical coordinates) between
-the end vertex of the $B$ and the best primary vertex
-                            & 9.01
-                            \\
-bach\_PT                    & Bachelor transverse momentum
-                            & 7.52                              
-                            \\
-log$_{10}$(D0\_RHO\_BPV)    & $\Delta(\rho )$ (cylindrical coordinates) between 
-the end vertex of the $D$ and the best primary vertex         
-                            & 7.41
-                            \\
-log(1-D0\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $D$
-momentum and the vector from the primary to the secondary vertex 
-                            & 6.96
-                            \\
-log(1-Bu\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $B$
-momentum and the vector from the primary to the secondary vertex     
-                            & 6.96
-                            \\
-bach\_P                     & Bachelor momentum
-                            & 6.59                              
-                            \\
-log(Bu\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $B$ with respect to 
-the primary vertex
-                            & 6.32
-                            \\
-Bu\_ptasy\_1.50             & $P_{T}$ asymmetry of the $B$ candidate using a cone 
-radius of 1.50
-                            & 6.31                              
-                            \\
-log$_{10}$(Bu\_MIPCHI2\_PV) & Minimal $\chi^2$ for the impact parameter of the $B$ 
-with respect to the primary vertex
-                            & 5.89
-                            \\
-log$_{10}$(Bu\_FD\_BPV)     & Flight  distance of the $B$ with respect to the 
-primary vertex
-                            & 5.42
-                            \\
-log(D0\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $D$ with respect to
-the primary vertex          & 5.40
-                            \\
-log(D0\_MIPCHI2\_PV)        & Minimal $\chi^2$ for the impact parameter of the $D$
-with respect to the primary vertex
-                            & 5.34
-                            \\
-D0\_AMAXDOCA                & Distance of closest approach of the $D$ daughters
-                            & 5.03
-                            \\
-Bu\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $B$
-                            & 4.96
-                            \\
-log$_{10}$(D0\_FD\_OWNPV)   & Flight distance of the $D$ with respect to the
-primary vertex              & 3.76
-                            \\
-D0\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $D$
-                            & 3.73
-                            \\
-D0\_LT\_BPV                 & $D$ lifetime (laboratory frame) with respect to 
-the primary vertex          & 3.41
-                            \\ \hline
-\end{tabular}
-} \caption{{Variables used in the training of the first stage BDT, ranked
-by importance. The name Bu refers to the $B$, bach to the $\pi/K$ from the
-$B^{\pm}$ decay vertex, and D0 to the $D$.}}
-\label{table:bdt1TrainingVar}
-\end{table}
+  \begin{landscape}
+    \begin{table}[]
+      \centering
+      \resizebox{.82\paperheight}{!}{ % with resizebox only specify one of {width}{height} as text is not scaled proportionally.
+        \begin{tabular}{lll}
+          \hline
+          Variable                    & Description
+          & BDT Importance ($\times 10^{-2}$)
+          \\ \hline
+          log$_{10}$(Bu\_RHO\_BPV)    & $\Delta (\rho )$ (cylindrical coordinates) between
+          the end vertex of the $B$ and the best primary vertex
+          & 9.01
+          \\
+          bach\_PT                    & Bachelor transverse momentum
+          & 7.52                              
+          \\
+          log$_{10}$(D0\_RHO\_BPV)    & $\Delta(\rho )$ (cylindrical coordinates) between 
+          the end vertex of the $D$ and the best primary vertex         
+          & 7.41
+          \\
+          log(1-D0\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $D$
+          momentum and the vector from the primary to the secondary vertex 
+          & 6.96
+          \\
+          log(1-Bu\_DIRA\_BPV)        & DIRA is the cosine of the angle between the $B$
+          momentum and the vector from the primary to the secondary vertex     
+          & 6.96
+          \\
+          bach\_P                     & Bachelor momentum
+          & 6.59                              
+          \\
+          log(Bu\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $B$ with respect to 
+          the primary vertex
+          & 6.32
+          \\
+          Bu\_ptasy\_1.50             & $P_{T}$ asymmetry of the $B$ candidate using a cone 
+          radius of 1.50
+          & 6.31                              
+          \\
+          log$_{10}$(Bu\_MIPCHI2\_PV) & Minimal $\chi^2$ for the impact parameter of the $B$ 
+          with respect to the primary vertex
+          & 5.89
+          \\
+          log$_{10}$(Bu\_FD\_BPV)     & Flight  distance of the $B$ with respect to the 
+          primary vertex
+          & 5.42
+          \\
+          log(D0\_FDCHI2\_OWNPV)      & Flight distance $\chi^2$ of the $D$ with respect to
+          the primary vertex          & 5.40
+          \\
+          log(D0\_MIPCHI2\_PV)        & Minimal $\chi^2$ for the impact parameter of the $D$
+          with respect to the primary vertex
+          & 5.34
+          \\
+          D0\_AMAXDOCA                & Distance of closest approach of the $D$ daughters
+          & 5.03
+          \\
+          Bu\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $B$
+          & 4.96
+          \\
+          log$_{10}$(D0\_FD\_OWNPV)   & Flight distance of the $D$ with respect to the
+          primary vertex              & 3.76
+          \\
+          D0\_VTXCHI2DOF              & Vertex $\chi^2$ per degree of freedom of the $D$
+          & 3.73
+          \\
+          D0\_LT\_BPV                 & $D$ lifetime (laboratory frame) with respect to 
+          the primary vertex          & 3.41
+          \\ \hline
+        \end{tabular}
+      } \caption{{Variables used in the training of the first stage BDT, ranked
+          by importance. The name Bu refers to the $B$, bach to the $\pi/K$ from the
+      $B^{\pm}$ decay vertex, and D0 to the $D$.}}
+      \label{table:bdt1TrainingVar}
+    \end{table}
 
-\begin{table}[]
-\centering
-\resizebox{.82\paperheight}{!}{
-\begin{tabular}{lllll}
-\hline
-\multicolumn{2}{l}{Variable} &
-Description &
-\multicolumn{2}{l}{BDT Importance$(\times 10^{-2})$} \\
-$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ &
- &
-$D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ \\ \hline
-$D^{*}_{P_{T}}$ & $D^{*}_{P_{T}}$ & 
-Transverse momentum of $D^*$ & 
-2.117 & 2.828 \\
-$\gamma^{1}_{CL} \times \gamma^{2}_{CL}$ & $\gamma_{CL}$ & 
-Discriminates against non-EM deposits & 
-2.098 & 2.572 \\
-$\gamma^{1}_{IsNotE} \times \gamma^{2}_{IsNotE}$ & $\gamma_{IsNotE}$ & 
-Discriminates against electrons & 
-2.078 & 2.406 \\
-- & $\gamma_{P_{T}}$ & 
-Transverse energy of photon & 
-- & 2.194 \\
-$(\gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})/2$ & - & 
-Average transverse energy of photons & 
-1.991 & - \\
-$(\gamma^{1}_{P_{T}} - \gamma^{2}_{P_{T}})/( \gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})$ & - & 
-Asymmetry of transverse energy of photons 
-& 1.716 & - \\ \hline
-\end{tabular}
-}
-\caption{{Variables used in the training of the second stage BDT, ranked
-by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
-$\pi^0$.}}
-\label{table:bdt2TrainingVar}
-\end{table}
-\end{landscape}
+    \begin{table}[]
+      \centering
+      \resizebox{.82\paperheight}{!}{
+        \begin{tabular}{lllll}
+          \hline
+          \multicolumn{2}{l}{Variable} &
+          Description &
+          \multicolumn{2}{l}{BDT Importance$(\times 10^{-2})$} \\
+          $D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ &
+          &
+          $D^*\rightarrow D\pi^0$ & $D^*\rightarrow D\gamma$ \\ \hline
+          $D^{*}_{P_{T}}$ & $D^{*}_{P_{T}}$ & 
+          Transverse momentum of $D^*$ & 
+          2.117 & 2.828 \\
+          $\gamma^{1}_{CL} \times \gamma^{2}_{CL}$ & $\gamma_{CL}$ & 
+          Discriminates against non-EM deposits & 
+          2.098 & 2.572 \\
+          $\gamma^{1}_{IsNotE} \times \gamma^{2}_{IsNotE}$ & $\gamma_{IsNotE}$ & 
+          Discriminates against electrons & 
+          2.078 & 2.406 \\
+          - & $\gamma_{P_{T}}$ & 
+          Transverse energy of photon & 
+          - & 2.194 \\
+          $(\gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})/2$ & - & 
+          Average transverse energy of photons & 
+          1.991 & - \\
+          $(\gamma^{1}_{P_{T}} - \gamma^{2}_{P_{T}})/( \gamma^{1}_{P_{T}} + \gamma^{2}_{P_{T}})$ & - & 
+          Asymmetry of transverse energy of photons 
+          & 1.716 & - \\ \hline
+        \end{tabular}
+      }
+      \caption{{Variables used in the training of the second stage BDT, ranked
+          by importance. $\gamma^{1}$ and $\gamma^{2}$ refer to the two daughter photons of the
+      $\pi^0$.}}
+      \label{table:bdt2TrainingVar}
+    \end{table}
+  \end{landscape}
 }
 \vspace{-3mm}
 \section{2D Mass Fit} \label{sec:massfit}
@@ -1002,23 +1002,23 @@ for the $D\gamma$ ($D\pi^0$) final states.
 
 Physics backgrounds can be split into three categories:
 \begin{enumerate}
-	\item Partially reconstructed backgrounds of the form $D^{*0}h+X$, where the
-particle $X$ is missed. These components, $B^{\pm}\rightarrow
-(D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0/\gamma)h^{*\pm}$, $h^*=\rho/K^*$,
-peak in the $\Delta_M$ signal region, due to the presence of a true $D^{*0}$
-meson, but sit lower than signal in $m[D^*h]$ mass.
+  \item Partially reconstructed backgrounds of the form $D^{*0}h+X$, where the
+    particle $X$ is missed. These components, $B^{\pm}\rightarrow
+    (D^{*0}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0/\gamma)h^{*\pm}$, $h^*=\rho/K^*$,
+    peak in the $\Delta_M$ signal region, due to the presence of a true $D^{*0}$
+    meson, but sit lower than signal in $m[D^*h]$ mass.
   \item Over-reconstructed backgrounds formed by the combination of a fully
-	reconstructed $D^0h$ candidate, from $B^{\pm}\rightarrow
-[K^{\pm}\pi^{\mp}]_Dh^{\pm}$ decays, and a neutral particle in the event.
-These backgrounds are flat in $\Delta_M$ phase space and sit higher than the
-signal component in $m[D^*h]$ mass.
+    reconstructed $D^0h$ candidate, from $B^{\pm}\rightarrow
+    [K^{\pm}\pi^{\mp}]_Dh^{\pm}$ decays, and a neutral particle in the event.
+    These backgrounds are flat in $\Delta_M$ phase space and sit higher than the
+    signal component in $m[D^*h]$ mass.
   \item Mis-reconstructed backgrounds, where a pion in the true decay has been missed and
-  a $\pi^0$ or $\gamma$ added to the $D^0$ meson to form a $D^{*0}$ candidate.
-  $B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_Dh^{*\pm}$ and
-  $\accentset{\brobor}{B}\phantom{}^{0}\rightarrow (D^{*\pm}\rightarrow
-  [K^{\pm}\pi^{\mp}]_D \pi^{\pm})h^{\mp}$ decays fall within this category, and
-  peak within the $m[D^*h]$ mass signal region, but are flat in $\Delta_M$ phase
-  space.
+    a $\pi^0$ or $\gamma$ added to the $D^0$ meson to form a $D^{*0}$ candidate.
+    $B^{\pm}\rightarrow [K^{\pm}\pi^{\mp}]_Dh^{*\pm}$ and
+    $\accentset{\brobor}{B}\phantom{}^{0}\rightarrow (D^{*\pm}\rightarrow
+    [K^{\pm}\pi^{\mp}]_D \pi^{\pm})h^{\mp}$ decays fall within this category, and
+    peak within the $m[D^*h]$ mass signal region, but are flat in $\Delta_M$ phase
+    space.
 \end{enumerate}
 
 There are also fit components within each neutral mode to account for
@@ -1051,8 +1051,8 @@ using a PDF describing combinatoric backgrounds for $D^{*}\rightarrow D^{0}X$
 decays in bins of $m[D^*]-m[D^0]$. The functional form of this shape, where $m_0$
 represents the kinematic threshold, is:
 \begin{equation}
-f(m)=\left(  1-e^{-\frac{m-m_0}{C}}\right) \times\left(  \frac{m}{m_0}\right) ^A+B\times\left(  \frac{m}{m_0}-1\right) 
-\label{eq:DstD0BG}
+  f(m)=\left(  1-e^{-\frac{m-m_0}{C}}\right) \times\left(  \frac{m}{m_0}\right) ^A+B\times\left(  \frac{m}{m_0}-1\right) 
+  \label{eq:DstD0BG}
 \end{equation}
 
 Partially reconstructed components are modelled by the sum of two CB functions
@@ -1071,8 +1071,8 @@ are fixed to the values obtained from the 1D fits. The tail parameters of the CB
 functions in $m[D^*h]$ invariant mass are also fixed, but the means and widths
 are constructed as polynomial functions of $\Delta_M$:  
 \begin{equation}
-x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
-\label{eq:2dPolynomial}
+  x = a_0 + a_1 \Delta_M + a_2 \Delta_M^2
+  \label{eq:2dPolynomial}
 \end{equation}
 Here, $x$ represents the mean or width of a CB shape as a function of $m[D^*h]$.
 For every point in $\Delta_M$, there is a corresponding PDF in $m[D^*h]$, with
@@ -1113,17 +1113,17 @@ minimise the error on the asymmetry in the ADS mode.
 \setlength{\abovedisplayskip}{2pt}
 \setlength{\belowdisplayskip}{3pt}
 \begin{table}[]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multirow{2}{*}{\textbf{Decay Mode}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3
-fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{2011-2017 Yield (6.6 fb$^{-1}$)}} \\ \cline{2-5} 
- & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} \\ \hline
-$B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0)\pi^{\pm}$ & 2372 $\pm$ 60 & 121 $\pm$ 13 & 8696 $\pm$ 112 & 478 $\pm$ 26 \\ \hline
-$B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \gamma)\pi^{\pm}$ & 10862 $\pm$ 132 & 604 $\pm$ 30 & 40102 $\pm$ 252 & 2125 $\pm$ 17 \\ \hline
-\end{tabular}%
-} \caption{{Signal yields and errors extracted from the 2D fit results for Run1,
-then 2011-2017 data.}} \label{table:yields}
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      \multirow{2}{*}{\textbf{Decay Mode}} & \multicolumn{2}{c|}{\textbf{Run1 Yield (3
+      fb$^{-1}$)}} & \multicolumn{2}{c|}{\textbf{2011-2017 Yield (6.6 fb$^{-1}$)}} \\ \cline{2-5} 
+      & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*\pi^{\pm}$} & \textbf{$B^{\pm}\rightarrow D^*K^{\pm}$} \\ \hline
+      $B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \pi^0)\pi^{\pm}$ & 2372 $\pm$ 60 & 121 $\pm$ 13 & 8696 $\pm$ 112 & 478 $\pm$ 26 \\ \hline
+      $B^{\pm}\rightarrow (D^{*}\rightarrow [K^{\pm}\pi^{\mp}]_D \gamma)\pi^{\pm}$ & 10862 $\pm$ 132 & 604 $\pm$ 30 & 40102 $\pm$ 252 & 2125 $\pm$ 17 \\ \hline
+    \end{tabular}%
+  } \caption{{Signal yields and errors extracted from the 2D fit results for Run1,
+  then 2011-2017 data.}} \label{table:yields}
 \end{table}
 
 Focus will be paid to the Run1 mass fit results, which are more reliable at
@@ -1133,8 +1133,8 @@ The fit is set up to measure the physics observable $R^{K\pi , \pi^0
 /\gamma}_{K/\pi}$, defined by Eq.~\eqref{eq:R_DstK_Dstpi}. The results are give
 below:
 \begin{align*}
-R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
-R^{K\pi , \gamma}_{K/\pi} &= (8.689 \pm 0.447) \times 10^{-2} 
+  R^{K\pi , \pi^0}_{K/\pi} &= (8.003 \pm 0.886) \times 10^{-2} \\
+  R^{K\pi , \gamma}_{K/\pi} &= (8.689 \pm 0.447) \times 10^{-2} 
 \end{align*} 
 The errors given are statistical and taken straight from the fit result.
 $R^{K\pi , \pi^0}_{K/\pi}$ and $R^{K\pi , \gamma}_{K/\pi}$ are consistent with
@@ -1174,8 +1174,8 @@ also given.
     $B^{\pm}\rightarrow(D^*\rightarrow [hh]_D\gamma)K^{\pm}$ & 324 & 115 & 48 & 6.8 \\ \hline
   \end{tabular}
   \caption{{Estimates of the expected event yields for the full LHCb
-  dataset in the GLW (columns 1, 2) and ADS (column 3) decay modes, sensitive to
-  $\phi_3$. The number of ADS mode events previously measured by the BaBar
+      dataset in the GLW (columns 1, 2) and ADS (column 3) decay modes, sensitive to
+      $\phi_3$. The number of ADS mode events previously measured by the BaBar
   collaboration is given for comparison.}} \label{table:extrapolatedYields}
 \end{table}
 
@@ -1203,261 +1203,261 @@ also given.
 
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dData.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dPDF.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dResiduals.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dData.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dPDF.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dResiduals.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
-2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
-\label{fig:2dFitsPi0Run1}
-\vspace*{\floatsep}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
-axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
-\label{fig:ProjectionsPi0Run1}
+  \centering
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dData.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dPDF.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_2dResiduals.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dData.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dPDF.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_2dResiduals.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+      2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
+  \label{fig:2dFitsPi0Run1}
+  \vspace*{\floatsep}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_pi_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/pi0_k_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+      axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
+  \label{fig:ProjectionsPi0Run1}
 \end{figure}
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dData.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dPDF.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dResiduals.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dData.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dPDF.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dResiduals.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
-2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
-\label{fig:2dFitsGammaRun1}
-\vspace*{\floatsep}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
-axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
-\label{fig:ProjectionsGammaRun1}
+  \centering
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dData.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dPDF.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_2dResiduals.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dData.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dPDF.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_2dResiduals.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{$\Delta_M$ vs. $m[D^*h]$ distributions of (a) Run1 data, (b)
+      2D PDFs, (c) 2D residuals for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
+  \label{fig:2dFitsGammaRun1}
+  \vspace*{\floatsep}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_pi_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/data_Run1/gamma_k_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+      axes for Run1 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
+  \label{fig:ProjectionsGammaRun1}
 \end{figure}
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dData.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dPDF.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dResiduals.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dData.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dPDF.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dResiduals.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\caption{{$\Delta_M$ vs. $m[D^*h]$
-distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
-$B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top)
-and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
-(bottom) decays.}}
-\label{fig:2dFitsPi0Total}
-\vspace*{\floatsep}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
-axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
-\label{fig:ProjectionsPi0Total}
+  \centering
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dData.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dPDF.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_2dResiduals.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dData.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dPDF.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_2dResiduals.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{$\Delta_M$ vs. $m[D^*h]$
+      distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
+      $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top)
+      and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$
+  (bottom) decays.}}
+  \label{fig:2dFitsPi0Total}
+  \vspace*{\floatsep}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_pi_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/pi0_k_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+      axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\pi^0)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\pi^0)K^{\pm}$ (bottom) decays.}}
+  \label{fig:ProjectionsPi0Total}
 \end{figure}
 
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dData.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dPDF.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dResiduals.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dData.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(a)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dPDF.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(b)};
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.32]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dResiduals.pdf}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node[] at (0.5, -0.1) {(c)};
-\end{scope}
-\end{tikzpicture}
-\caption{{$\Delta_M$ vs. $m[D^*h]$
-distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
-$B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top)
-and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
-(bottom) decays.}}
-\label{fig:2dFitsGammaTotal}
-\vspace*{\floatsep}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_buMass.pdf}};
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.48]
-\node[anchor=south west,inner sep=0] (image) at (0.5,0)
-  {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_deltaMass.pdf}};
-\end{tikzpicture}
-\caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
-axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
-(D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
-\label{fig:ProjectionsGammaTotal}
+  \centering
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dData.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dPDF.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_2dResiduals.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dData.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(a)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dPDF.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(b)};
+    \end{scope}
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.32]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.32\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_2dResiduals.pdf}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+      \node[] at (0.5, -0.1) {(c)};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{{$\Delta_M$ vs. $m[D^*h]$
+      distributions of (a) Run1, Run2 data, (b) 2D PDFs, (c) 2D residuals for
+      $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top)
+      and $B^{\pm}\rightarrow (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$
+  (bottom) decays.}}
+  \label{fig:2dFitsGammaTotal}
+  \vspace*{\floatsep}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_pi_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_buMass.pdf}};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=0.48]
+    \node[anchor=south west,inner sep=0] (image) at (0.5,0)
+    {\includegraphics[width=0.48\textwidth]{/Users/alexandra/Analysis/Bu2Dst0h_2d/FittingProgramme/build/all_data/gamma_k_kpi_total_0_deltaMass.pdf}};
+  \end{tikzpicture}
+  \caption{{1D projections onto the $m[D^*h]$ (left) and $\Delta_M$ (right)
+      axes for Run1, Run2 data, for $B^{\pm}\rightarrow (D^*\rightarrow
+      [K^{\pm}\pi^{\mp}]_D\gamma)\pi^{\pm}$ (top) and $B^{\pm}\rightarrow
+  (D^*\rightarrow [K^{\pm}\pi^{\mp}]_D\gamma)K^{\pm}$ (bottom) decays.}}
+  \label{fig:ProjectionsGammaTotal}
 \end{figure}
 
 \section{Thesis Outline} \label{sec:thesis}
@@ -1468,75 +1468,75 @@ dataset. \\
 
 \noindent Suggested thesis outline including chapter and section headings:
 \begin{enumerate}
-\item Introduction \\
+  \item Introduction \\
 
-A general overview of what will be presented in the thesis. \\
+    A general overview of what will be presented in the thesis. \\
 
-\item Theoretical Background \\
+  \item Theoretical Background \\
 
-The relevant theoretical background will be presented, which will follow the
-same structure as Section~\ref{sec:theory}, but be covered much more
-thoroughly. \\ 
+    The relevant theoretical background will be presented, which will follow the
+    same structure as Section~\ref{sec:theory}, but be covered much more
+    thoroughly. \\ 
 
-Section headings: The Standard Model, $CP$ violation in $B$ decays
-(CKM matrix, direct $CP$ violation, in mixing, in mixing and decay),
-Introduction to $\phi_3$, Derivation of Physics Observables (extended ADS and
-GLW methods)
+    Section headings: The Standard Model, $CP$ violation in $B$ decays
+    (CKM matrix, direct $CP$ violation, in mixing, in mixing and decay),
+    Introduction to $\phi_3$, Derivation of Physics Observables (extended ADS and
+    GLW methods)
 
-\item The LHCb Experiment \\
+  \item The LHCb Experiment \\
 
-A brief overview of the accelerator and collision properties. Each sub-detector
-of LHCb, trigger and analysis software will be described.  Particular focus
-will be given to neutral particle reconstruction. \\
+    A brief overview of the accelerator and collision properties. Each sub-detector
+    of LHCb, trigger and analysis software will be described.  Particular focus
+    will be given to neutral particle reconstruction. \\
 
-Section headings: The LHC, The LHCb Detector (VELO, Tracking, RICH,
-Calorimeters, Muon Systems, Trigger, Software), Neutral Particle Reconstruction 
+    Section headings: The LHC, The LHCb Detector (VELO, Tracking, RICH,
+    Calorimeters, Muon Systems, Trigger, Software), Neutral Particle Reconstruction 
 
-\item Selection of $B^{\pm}\rightarrow (D^*\rightarrow
-[K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)K^{\pm}$ events \\
-	
-A detailed description of the selection of the Cabibbo favoured $D$ decay
-events and evidence of further investigations into the event topology will be
-provided, with the most attention paid to the neutral part of the decay. \\
+  \item Selection of $B^{\pm}\rightarrow (D^*\rightarrow
+    [K^{\pm}\pi^{\mp}]_D\pi^0/\gamma)K^{\pm}$ events \\
 
-Section headings: Pre-selection, Charged Particle Selection (stage 1
-multivariate analysis), Neutral Selection (stage 2 multivariate analysis) \\
+    A detailed description of the selection of the Cabibbo favoured $D$ decay
+    events and evidence of further investigations into the event topology will be
+    provided, with the most attention paid to the neutral part of the decay. \\
 
-Status: The work for this chapter is completed. It will be updated with 2019
-data by Easter and new working points when the 2D fit is extended to the modes with
-sensitivity to $\phi_3$.
+    Section headings: Pre-selection, Charged Particle Selection (stage 1
+    multivariate analysis), Neutral Selection (stage 2 multivariate analysis) \\
 
-\item 2D Mass Fit \\
+    Status: The work for this chapter is completed. It will be updated with 2019
+    data by Easter and new working points when the 2D fit is extended to the modes with
+    sensitivity to $\phi_3$.
 
-The relevant backgrounds will be described. Failures of the 1D fit and reasons
-for moving to a 2D method will be given. The 2D method will then be explained
-and a fit to the high statistics mode shown. \\
+  \item 2D Mass Fit \\
 
-Section headings: Backgrounds, 2D Mass Fit \\
+    The relevant backgrounds will be described. Failures of the 1D fit and reasons
+    for moving to a 2D method will be given. The 2D method will then be explained
+    and a fit to the high statistics mode shown. \\
 
-Status: Run2 background simulations will be processed within the next couple of
-weeks. The mass fit is under development and the plan is to conduct fit
-stability studies within the next month. 2019 data will be added to the fit by
-Easter. 
+    Section headings: Backgrounds, 2D Mass Fit \\
 
-\item $CP$ fit for $B^{\pm}\rightarrow (D^*\rightarrow
-[h^{\pm}h^{\mp}]_D\pi^0/\gamma)K^{\pm}$ decays \\
+    Status: Run2 background simulations will be processed within the next couple of
+    weeks. The mass fit is under development and the plan is to conduct fit
+    stability studies within the next month. 2019 data will be added to the fit by
+    Easter. 
 
-Description of the simultaneous fit to all two-body $D$ modes. The fit results
-will be given here and a discussion of systematic uncertainties. \\
+  \item $CP$ fit for $B^{\pm}\rightarrow (D^*\rightarrow
+    [h^{\pm}h^{\mp}]_D\pi^0/\gamma)K^{\pm}$ decays \\
 
-Section headings: Fit Setup, Optimisation, Fit Results, Systematics \\
+    Description of the simultaneous fit to all two-body $D$ modes. The fit results
+    will be given here and a discussion of systematic uncertainties. \\
 
-Status: Fit extension to GLW and ADS modes still needs to be done, aim to
-achieve this by Easter 2019. Plan to carry out the optimisation and evaluate
-systematics by summer 2019.
+    Section headings: Fit Setup, Optimisation, Fit Results, Systematics \\
 
-\item Interpretation 
+    Status: Fit extension to GLW and ADS modes still needs to be done, aim to
+    achieve this by Easter 2019. Plan to carry out the optimisation and evaluate
+    systematics by summer 2019.
 
-An interpretation of the results in terms of the parameters of interest: $r_B$,
-$\delta_B$ and $\phi_3$.
+  \item Interpretation 
 
-\item Conclusions
+    An interpretation of the results in terms of the parameters of interest: $r_B$,
+    $\delta_B$ and $\phi_3$.
+
+  \item Conclusions
 
 \end{enumerate}
 
